@@ -1,0 +1,28 @@
+# Materiais brutos e privados do projeto
+*.pdf
+*.xlsx
+*.pptx
+*.mp4
+*.mov
+*.zip
+*.jpg
+*.jpeg
+*.png
+
+# Exceções: ativos aprovados para a apresentação pública
+!web/
+!web/identidade-visual/
+!web/identidade-visual/uli-profile-reference.jpeg
+
+# Arquivos temporários e ambiente local
+.superpowers/
+cofre/.obsidian/
+web/assets/
+web/identidade-visual/assets/
+
+# Exceções: notas estratégicas selecionadas para versionamento
+!cofre/
+!cofre/01 - Estratégia/
+!cofre/01 - Estratégia/Briefing Estratégico - Personalidade e Percepção da Marca.md
+!cofre/02 - Identidade Visual/
+!cofre/02 - Identidade Visual/Direção Visual Preliminar - A1 T1 M2 F1.md
