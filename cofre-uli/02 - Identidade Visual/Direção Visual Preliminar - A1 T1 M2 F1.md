@@ -57,6 +57,9 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 > [!success] Implementação local registrada
 > Em 11/08/2026, B1 foi aplicado às apresentações de identidade visual e brandbook. A validação local confirmou os três contratos tipográficos e HTTP 200 nas duas rotas. A publicação por FTP continua sendo um estado separado.
 
+> [!success] Publicação online registrada
+> Em 11/08/2026, `assets/design-tokens.css`, `identidade-visual/index.html` e `brandbook/index.html` foram publicados via FTP na raiz pública da conta. As três URLs públicas retornaram HTTP 200 e exibiram a atualização B1.
+
 ### M2 — Monograma UZ
 
 - Símbolo principal em exploração: integração autoral das iniciais **U** e **Z**.
