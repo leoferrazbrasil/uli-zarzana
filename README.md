@@ -16,7 +16,7 @@ O sistema tipográfico foi aprovado como **B — Clássica Executiva**, no trata
 - **Libre Baskerville 700:** assinatura nominal e títulos editoriais.
 - **Source Sans 3 400/500/600:** textos, legendas e elementos funcionais.
 
-Essa aprovação define o território visual de trabalho. Não substitui a etapa de finalização do vetor do monograma, fontes definitivas, paleta técnica, regras de uso e brandbook final.
+Essa aprovação define o território visual de trabalho. A paleta técnica A1 já foi definida e publicada; permanecem em desenvolvimento a finalização do vetor do monograma, as regras completas de uso e o brandbook final.
 
 ## Visualização online
 
@@ -28,7 +28,7 @@ A hospedagem pública e o versionamento GitHub são mantidos como estados separa
 ## Organização
 
 - `web/`: apresentações estáticas publicáveis.
-- `cofre/`: notas estratégicas selecionadas do vault Obsidian.
+- `cofre-uli/`: notas estratégicas e técnicas selecionadas do vault Obsidian.
 - `docs/`: briefing e plano de trabalho.
 
 Materiais brutos, documentos pessoais, pesquisas, credenciais e arquivos não necessários à publicação permanecem fora do repositório.
@@ -37,6 +37,5 @@ Materiais brutos, documentos pessoais, pesquisas, credenciais e arquivos não ne
 
 1. vetor final do monograma UZ;
 2. validação do sistema tipográfico B1 em aplicações reais;
-3. paleta técnica com valores para impressão e tela;
-4. regras de uso e aplicações prioritárias;
-5. brandbook final e pacote de ativos.
+3. regras completas de uso e aplicações prioritárias;
+4. brandbook final e pacote de ativos.

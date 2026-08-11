@@ -36,8 +36,15 @@ foreach ($token in $required) {
   Assert-Contains $css $token
 }
 
-if ($css -match '#[0-9a-fA-F]{3,8}') {
-  throw 'Tokens de cor não pertencem à implementação tipográfica.'
+$colorTokens = @(
+  '--color-ink: #332A26;',
+  '--color-paper: #F7F0E7;',
+  '--color-accent-champagne: #CDAE85;',
+  '--color-accent-terracotta: #B46F52;'
+)
+
+foreach ($token in $colorTokens) {
+  Assert-Contains $css $token
 }
 
-Write-Host 'Typography token validation passed.'
+Write-Host 'Typography and color token validation passed.'

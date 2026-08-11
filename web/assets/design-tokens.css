@@ -1,4 +1,12 @@
 :root {
+  /* Cores canônicas — A1 / Autoridade Clássica */
+  --color-ink: #332A26;
+  --color-paper: #F7F0E7;
+  --color-accent-champagne: #CDAE85;
+  --color-accent-terracotta: #B46F52;
+  --color-ink-muted: rgb(51 42 38 / 72%);
+  --color-ink-line: rgb(51 42 38 / 14%);
+
   /* Primitive */
   --font-family-serif: "Libre Baskerville", Georgia, serif;
   --font-family-sans: "Source Sans 3", "Segoe UI", Arial, sans-serif;

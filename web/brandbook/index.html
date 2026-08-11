@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="../assets/design-tokens.css">
   <style>
     :root {
-      --espresso:#332a26; --cream:#f7f0e7; --champagne:#cdae85;
-      --terra:#b46f52; --ink:#302722; --muted:#75685f;
-      --line:#e6d8c9; --white:#fffdf9;
+      --espresso:var(--color-ink); --cream:var(--color-paper); --champagne:var(--color-accent-champagne);
+      --terra:var(--color-accent-terracotta); --ink:var(--color-ink); --muted:var(--color-ink-muted);
+      --line:var(--color-ink-line); --white:var(--color-paper);
     }
     * { box-sizing:border-box }
     body { margin:0; background:var(--cream); color:var(--ink); font-family:var(--font-body); font-size:var(--type-body); line-height:var(--leading-body) }
     .wrap { width:min(1050px,calc(100% - 40px)); margin:auto }
-    a { color:var(--terra); font-family:var(--font-interface); font-weight:var(--weight-semibold) }
+    a { color:var(--ink); font-family:var(--font-interface); font-weight:var(--weight-semibold) }
     .top { padding:30px 0 22px; display:flex; justify-content:space-between; align-items:center }
     .back { color:var(--muted); font-size:13px; text-decoration:none }
     .brand { color:var(--ink); font-family:var(--font-signature); font-size:22px; font-weight:var(--weight-bold); line-height:var(--leading-signature); letter-spacing:var(--tracking-signature); text-decoration:none }
@@ -28,8 +28,8 @@
     h1 { max-width:720px; margin-bottom:14px; font-size:clamp(40px,6vw,68px) }
     h2 { margin-bottom:14px; font-size:36px }
     h3 { margin-bottom:9px; font-size:24px }
-    .hero p { max-width:680px; color:#eadccf; font-size:17px }
-    .approved { display:inline-block; margin-top:18px; padding:9px 13px; border-radius:999px; background:#f1dfca; color:var(--espresso); letter-spacing:.08em }
+    .hero p { max-width:680px; color:rgb(247 240 231 / 82%); font-size:17px }
+    .approved { display:inline-block; margin-top:18px; padding:9px 13px; border-radius:999px; background:var(--cream); color:var(--espresso); letter-spacing:.08em }
     .section { padding:38px 0; border-bottom:1px solid var(--line) }
     .section p { max-width:760px; color:var(--muted) }
     .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px }
@@ -37,10 +37,11 @@
     .panel p { margin:0; font-size:14px }
     .table { width:100%; border:1px solid var(--line); border-radius:14px; overflow:hidden; border-collapse:collapse; background:var(--white) }
     .table th,.table td { padding:13px 15px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-size:13px }
-    .table th { color:var(--terra); font-size:10px }
+    .table th { color:var(--ink); font-size:10px }
     .table tr:last-child td { border-bottom:0 }
-    .colors { display:flex; gap:10px; flex-wrap:wrap }
-    .color { min-width:145px; height:90px; display:flex; align-items:flex-end; padding:10px; border-radius:12px; font-family:var(--font-interface); font-size:11px }
+    .colors { display:grid; grid-template-columns:repeat(4,1fr); gap:10px }
+    .color { min-width:0; height:90px; border-radius:12px }
+    .color-labels { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:8px; color:var(--ink); font-family:var(--font-interface); font-size:11px; line-height:1.35 }
     .espresso { background:var(--espresso); color:var(--cream) }
     .cream { border:1px solid var(--line); background:var(--cream); color:var(--ink) }
     .champagne { background:var(--champagne); color:var(--espresso) }
@@ -49,14 +50,15 @@
     .type-card { padding:24px; border:1px solid var(--line); border-radius:15px; background:var(--white) }
     .type-name { margin:0 0 10px; font-family:var(--font-signature); font-size:clamp(30px,4vw,48px); font-weight:var(--weight-bold); line-height:var(--leading-signature); letter-spacing:var(--tracking-signature) }
     .type-title { margin:0 0 12px; font-family:var(--font-heading); font-size:28px; font-weight:var(--weight-bold); line-height:var(--leading-heading); letter-spacing:var(--tracking-heading) }
-    .type-label { margin:0 0 12px; color:var(--terra); font-family:var(--font-interface); font-size:var(--type-label); font-weight:var(--weight-semibold); letter-spacing:var(--tracking-label); text-transform:uppercase }
+    .type-label { margin:0 0 12px; color:var(--ink); font-family:var(--font-interface); font-size:var(--type-label); font-weight:var(--weight-semibold); letter-spacing:var(--tracking-label); text-transform:uppercase }
     .type-card p { margin:0; font-size:16px; line-height:var(--leading-body) }
-    .callout { padding:20px; border-left:4px solid var(--champagne); border-radius:0 12px 12px 0; background:#f1dfca }
+    .callout { padding:20px; border-left:4px solid var(--champagne); border-radius:0 12px 12px 0; background:var(--cream) }
     .callout strong { display:block; margin-bottom:5px }
     .checklist { padding-left:22px }
     .checklist li { margin:8px 0 }
     .footer { padding:30px 0 50px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:20px }
-    @media(max-width:700px) { .wrap { width:min(100% - 28px,1050px) } .hero { padding:30px 24px } .grid,.type-sample { grid-template-columns:1fr } .footer { display:block } .footer>*+* { margin-top:10px } }
+    @media(max-width:700px) { .wrap { width:min(100% - 28px,1050px) } .hero { padding:30px 24px } .grid,.type-sample { grid-template-columns:1fr } .colors,.color-labels { grid-template-columns:1fr 1fr } .footer { display:block } .footer>*+* { margin-top:10px } }
+    @media(max-width:460px) { .colors,.color-labels { grid-template-columns:1fr } }
   </style>
 </head>
 <body>
@@ -65,10 +67,10 @@
     <section class="hero"><div class="eyebrow">documento de direção · 11 agosto 2026</div><h1>Brandbook preliminar.</h1><p>Registro público controlado da direção visual aprovada para a marca pessoal de Uli Zarzana. Este documento apresenta decisões de território e sistema; não substitui o brandbook técnico final.</p><div class="approved">Direção preliminar aprovada · A1 + T1 + M2 + F1</div></section>
     <section class="section"><h2>1. Fundamento da marca</h2><p>A marca deve comunicar autoridade vivida, clareza, firmeza, sofisticação e presença humana. O sistema é destinado a profissionais e empresários experientes que buscam reconhecimento, influência e crescimento sustentável.</p><div class="callout"><strong>Princípio visual</strong>Uma presença executiva editorial, suficientemente humana para não parecer corporativa ou distante.</div></section>
     <section class="section"><h2>2. Decisões aprovadas</h2><div class="grid"><article class="panel"><h3>A1 · Autoridade Clássica</h3><p>Território sóbrio, elegante, seletivo e premium. A paleta de trabalho usa marrom profundo, marfim, champagne e terracota de apoio.</p></article><article class="panel"><h3>B1 · Assinatura Executiva</h3><p>Tratamento tipográfico de T1: títulos serifados com presença e textos sans-serif claros, discretos e legíveis.</p></article><article class="panel"><h3>M2 · Monograma UZ</h3><p>Assinatura autoral baseada nas iniciais UZ. O conceito ainda precisa ser desenhado em vetor e testado em redução.</p></article><article class="panel"><h3>F1 · Retrato Editorial</h3><p>Retrato executivo em fundo escuro, com contraste e olhar direto. A fotografia é complementar ao monograma, não substituta dele.</p></article></div></section>
-    <section class="section"><h2>3. Paleta de trabalho</h2><p>Os tons abaixo foram aprovados como atmosfera visual e ainda precisam de validação técnica para produção.</p><div class="colors"><div class="color espresso">Marrom profundo<br>#332A26</div><div class="color cream">Marfim<br>#F7F0E7</div><div class="color champagne">Champagne<br>#CDAE85</div><div class="color terracotta">Terracota<br>#B46F52</div></div></section>
+    <section class="section"><h2>3. Paleta técnica definitiva</h2><p>Os quatro tons abaixo são as cores canônicas da identidade A1. Os valores CMYK são referências de conversão para produção; a impressão final deve ser validada no perfil ICC da gráfica.</p><div class="colors" aria-label="Paleta técnica definitiva"><div class="color espresso" aria-label="Marrom profundo"></div><div class="color cream" aria-label="Marfim"></div><div class="color champagne" aria-label="Champagne"></div><div class="color terracotta" aria-label="Terracota"></div></div><div class="color-labels"><span>Marrom profundo<br>#332A26<br>RGB 51, 42, 38<br>CMYK 0, 18, 25, 80</span><span>Marfim<br>#F7F0E7<br>RGB 247, 240, 231<br>CMYK 0, 3, 6, 3</span><span>Champagne<br>#CDAE85<br>RGB 205, 174, 133<br>CMYK 0, 15, 35, 20</span><span>Terracota<br>#B46F52<br>RGB 180, 111, 82<br>CMYK 0, 38, 54, 29</span></div><div class="callout"><strong>Regra de contraste</strong>Texto normal usa marrom sobre marfim ou marfim sobre marrom. Champagne não deve ser usado como texto pequeno sobre marfim. Terracota não deve ser usada como texto normal sobre marfim. Contrastes de referência: 12.38:1, 6.66:1 e 1.86:1.</div></section>
     <section class="section"><h2>4. Sistema tipográfico</h2><p>B1 — Assinatura Executiva combina Libre Baskerville 700 para a assinatura nominal e títulos com Source Sans 3 para textos, legendas e elementos funcionais.</p><div class="type-sample"><article class="type-card"><p class="type-label">Assinatura principal</p><p class="type-name">Uli Zarzana</p><p>Caixa mista, presença firme e proximidade humana.</p></article><article class="type-card"><p class="type-label">Título editorial</p><p class="type-title">Capacidade que vira autoridade.</p><p>Hierarquia clássica com leitura digital preservada.</p></article></div></section>
     <section class="section"><h2>5. Sistema de uso</h2><table class="table"><thead><tr><th>Elemento</th><th>Uso prioritário</th><th>Status</th></tr></thead><tbody><tr><td>Monograma UZ</td><td>Avatar, capa, apresentação e assinatura</td><td>Conceito aprovado; vetor pendente</td></tr><tr><td>Retrato editorial</td><td>Perfil, site, capa e peças de autoridade</td><td>Direção aprovada; seleção técnica pendente</td></tr><tr><td>Libre Baskerville 700</td><td>Assinatura nominal, títulos e mensagens de posicionamento</td><td>Família e tratamento aprovados</td></tr><tr><td>Source Sans 3</td><td>Textos, legendas, informações e interface</td><td>Família e pesos 400, 500 e 600 aprovados</td></tr></tbody></table></section>
-    <section class="section"><h2>6. Próximas definições</h2><ul class="checklist"><li>Validar o sistema tipográfico B1 em conteúdos e formatos reais.</li><li>Validar contraste, acessibilidade e aplicações da paleta.</li><li>Definir versões horizontal, vertical, ícone e monocromáticas.</li><li>Estabelecer área de proteção e tamanhos mínimos.</li><li>Organizar fotografias autorizadas em alta resolução.</li><li>Consolidar o brandbook técnico final.</li></ul></section>
+    <section class="section"><h2>6. Próximas definições</h2><ul class="checklist"><li>Validar o sistema tipográfico B1 em conteúdos e formatos reais.</li><li>Definir versões horizontal, vertical, ícone e monocromáticas.</li><li>Estabelecer área de proteção e tamanhos mínimos.</li><li>Organizar fotografias autorizadas em alta resolução.</li><li>Consolidar o brandbook técnico final.</li></ul></section>
     <section class="section"><div class="callout"><strong>Limite deste documento</strong>Este brandbook preliminar não representa autorização para reprodução irrestrita dos ativos, nem libera o uso do Monograma UZ como logotipo final. A identidade técnica será documentada após a validação dos ativos restantes.</div></section>
   </main>
   <footer class="wrap footer"><div>Uli Zarzana · direção visual preliminar</div><div><a href="../identidade-visual/">Ver apresentação visual →</a></div></footer>

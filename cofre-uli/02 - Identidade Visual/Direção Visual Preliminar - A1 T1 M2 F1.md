@@ -37,7 +37,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
   - Marfim: `#F7F0E7`
   - Champagne: `#CDAE85`
   - Terracota de apoio: `#B46F52`
-- Status: a atmosfera e a combinação foram aprovadas; os valores acima ainda são referências de exploração e precisam de validação técnica para produção, contraste e acessibilidade.
+- Status: paleta técnica definitiva aprovada e implementada. Os quatro valores foram normalizados como tokens canônicos; as regras de contraste e aplicação estão registradas em [[Paleta Técnica Definitiva - A1]].
 
 ### T1 — Editorial Equilibrada
 
@@ -101,7 +101,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - [x] Selecionar território e famílias tipográficas — **B: Libre Baskerville + Source Sans 3**.
 - [x] Selecionar tratamento nominal — **B1: Assinatura Executiva** — e definir sua hierarquia inicial.
 - [x] Implementar tokens tipográficos e validar legibilidade, responsividade e carregamento local.
-- [ ] Validar a paleta em fundos claros, escuros e aplicações digitais.
+- [x] Validar a paleta em fundos claros, escuros e aplicações digitais — [[Paleta Técnica Definitiva - A1]].
 - [ ] Definir versões horizontal, vertical, ícone e monocromáticas.
 - [ ] Definir área de proteção e tamanhos mínimos.
 - [ ] Selecionar e organizar fotografias autorizadas em alta resolução.
