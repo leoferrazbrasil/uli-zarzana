@@ -11,6 +11,11 @@ A direção visual preliminar foi aprovada com:
 - **M2 — Monograma UZ**
 - **F1 — Retrato Editorial**
 
+O sistema tipográfico foi aprovado como **B — Clássica Executiva**, no tratamento **B1 — Assinatura Executiva**:
+
+- **Libre Baskerville 700:** assinatura nominal e títulos editoriais.
+- **Source Sans 3 400/500/600:** textos, legendas e elementos funcionais.
+
 Essa aprovação define o território visual de trabalho. Não substitui a etapa de finalização do vetor do monograma, fontes definitivas, paleta técnica, regras de uso e brandbook final.
 
 ## Visualização online
@@ -31,7 +36,7 @@ Materiais brutos, documentos pessoais, pesquisas, credenciais e arquivos não ne
 ## Próximas definições
 
 1. vetor final do monograma UZ;
-2. seleção e licenciamento das fontes definitivas;
+2. validação do sistema tipográfico B1 em aplicações reais;
 3. paleta técnica com valores para impressão e tela;
 4. regras de uso e aplicações prioritárias;
 5. brandbook final e pacote de ativos.
