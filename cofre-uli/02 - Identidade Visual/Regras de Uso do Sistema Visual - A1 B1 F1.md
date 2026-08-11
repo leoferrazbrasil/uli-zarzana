@@ -85,5 +85,5 @@ Ver [[Paleta Técnica Definitiva - A1]] para valores HEX, RGB, CMYK e contrastes
 - [x] Regras adicionadas à identidade visual pública.
 - [x] Regras adicionadas ao brandbook público.
 - [x] Teste de contrato criado e aprovado.
-- [x] Publicação FTP e verificação pública — registrar após o upload e HTTP 200.
-- [ ] Commit/push — registrar após o versionamento.
+- [x] Publicação FTP e verificação pública — as duas páginas e os tokens retornaram HTTP 200 em 2026-08-11.
+- [x] Commit/push — `87bdbc6` publicado na `main` em 2026-08-11.
