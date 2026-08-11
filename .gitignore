@@ -16,9 +16,14 @@
 
 # Arquivos temporários e ambiente local
 .superpowers/
+.worktrees/
 cofre/.obsidian/
 web/assets/
 web/identidade-visual/assets/
+
+# Exceção: tokens tipográficos aprovados para as páginas públicas
+!web/assets/
+!web/assets/design-tokens.css
 
 # Exceções: notas estratégicas selecionadas para versionamento
 !cofre/
