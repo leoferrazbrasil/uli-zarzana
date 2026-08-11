@@ -1,6 +1,7 @@
 ---
 title: Direção Visual Preliminar - A1 T1 M2 F1
 date: 2026-08-10
+updated: 2026-08-11
 status: aprovado-preliminar
 approval: approved
 tipo: direcao-visual
@@ -43,7 +44,18 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - Títulos com presença serifada, elegantes e humanos.
 - Textos, legendas e informações com sans-serif clara e discreta.
 - Hierarquia com contraste suficiente para preservar sofisticação sem prejudicar leitura digital.
-- Status: lógica tipográfica aprovada; famílias, pesos, tamanhos, espaçamentos e licenças ainda serão definidos.
+- Território tipográfico selecionado em 11/08/2026: **B — Clássica Executiva**.
+- Família serifada de trabalho: **Libre Baskerville**.
+- Família sans-serif de trabalho: **Source Sans 3**.
+- Tratamento nominal aprovado em 11/08/2026: **B1 — Assinatura Executiva**.
+- Assinatura nominal: **Uli Zarzana** em caixa mista, Libre Baskerville 700, com composição compacta e firme.
+- Títulos editoriais: Libre Baskerville 700, entrelinha curta e espaçamento óptico discretamente negativo.
+- Textos, legendas e interfaces: Source Sans 3, priorizando os pesos 400, 500 e 600.
+- Etiquetas institucionais curtas podem usar Source Sans 3 600 em caixa alta e espaçamento ampliado; essa solução não deve ser aplicada a parágrafos.
+- Status: famílias e tratamento B1 aprovados; tokens e aplicações estáticas implementados localmente, com testes de contrato e revisão responsiva aprovados. Publicação, validação final de contraste e integração ao brandbook técnico permanecem separadas.
+
+> [!success] Implementação local registrada
+> Em 11/08/2026, B1 foi aplicado às apresentações de identidade visual e brandbook. A validação local confirmou os três contratos tipográficos e HTTP 200 nas duas rotas. A publicação por FTP continua sendo um estado separado.
 
 ### M2 — Monograma UZ
 
@@ -74,7 +86,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 
 - Logotipo final ou arquivo vetorial do monograma.
 - Paleta técnica definitiva para produção.
-- Famílias tipográficas definitivas.
+- Implementação técnica, testes responsivos e validação de acessibilidade do sistema tipográfico aprovado.
 - Regras de redução, espaçamento, contraste e fundos permitidos.
 - Tratamento fotográfico final e banco de imagens oficial.
 - Brandbook completo.
@@ -83,7 +95,9 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 ## Próximas especificações
 
 - [ ] Desenhar e comparar variações vetoriais do Monograma UZ.
-- [ ] Selecionar famílias tipográficas e validar licenças e leitura.
+- [x] Selecionar território e famílias tipográficas — **B: Libre Baskerville + Source Sans 3**.
+- [x] Selecionar tratamento nominal — **B1: Assinatura Executiva** — e definir sua hierarquia inicial.
+- [x] Implementar tokens tipográficos e validar legibilidade, responsividade e carregamento local.
 - [ ] Validar a paleta em fundos claros, escuros e aplicações digitais.
 - [ ] Definir versões horizontal, vertical, ícone e monocromáticas.
 - [ ] Definir área de proteção e tamanhos mínimos.
@@ -93,7 +107,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 
 ## Fontes de decisão
 
-- Briefing aprovado: `D:\LEONARDO\Coprodução\Experts\Uli\cofre\01 - Estratégia\Briefing Estratégico - Personalidade e Percepção da Marca.md`
+- Briefing aprovado: [[Briefing Estratégico - Personalidade e Percepção da Marca]]
 - Currículo base: `D:\LEONARDO\Coprodução\Experts\Uli\Curriculo_Base_Uli_Zarzana_de_Menezes-4.pdf`
 - Mentoria: `D:\LEONARDO\Coprodução\Experts\Uli\Mentoria Individual.pdf`
 - Aula: `D:\LEONARDO\Coprodução\Experts\Uli\Aula_7_Criterios_Invisiveis_Turma_2_V02.pptx`
