@@ -38,6 +38,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
   - Champagne: `#CDAE85`
   - Terracota de apoio: `#B46F52`
 - Status: paleta técnica definitiva aprovada e implementada. Os quatro valores foram normalizados como tokens canônicos; as regras de contraste e aplicação estão registradas em [[Paleta Técnica Definitiva - A1]].
+- Status: regras operacionais v1 aprovadas e documentadas em [[Regras de Uso do Sistema Visual - A1 B1 F1]]. O selo institucional permanece fora desta etapa.
 
 ### T1 — Editorial Equilibrada
 
@@ -102,6 +103,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - [x] Selecionar tratamento nominal — **B1: Assinatura Executiva** — e definir sua hierarquia inicial.
 - [x] Implementar tokens tipográficos e validar legibilidade, responsividade e carregamento local.
 - [x] Validar a paleta em fundos claros, escuros e aplicações digitais — [[Paleta Técnica Definitiva - A1]].
+- [x] Documentar regras de uso do sistema visual — [[Regras de Uso do Sistema Visual - A1 B1 F1]].
 - [ ] Definir versões horizontal, vertical, ícone e monocromáticas.
 - [ ] Definir área de proteção e tamanhos mínimos.
 - [ ] Selecionar e organizar fotografias autorizadas em alta resolução.

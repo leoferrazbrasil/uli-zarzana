@@ -16,7 +16,7 @@ O sistema tipográfico foi aprovado como **B — Clássica Executiva**, no trata
 - **Libre Baskerville 700:** assinatura nominal e títulos editoriais.
 - **Source Sans 3 400/500/600:** textos, legendas e elementos funcionais.
 
-Essa aprovação define o território visual de trabalho. A paleta técnica A1 já foi definida e publicada; permanecem em desenvolvimento a finalização do vetor do monograma, as regras completas de uso e o brandbook final.
+Essa aprovação define o território visual de trabalho. A paleta técnica A1 e as regras operacionais v1 já foram definidas e publicadas; permanecem em desenvolvimento a finalização do vetor do monograma, as regras específicas do selo e o brandbook técnico final.
 
 ## Visualização online
 
@@ -37,5 +37,5 @@ Materiais brutos, documentos pessoais, pesquisas, credenciais e arquivos não ne
 
 1. vetor final do monograma UZ;
 2. validação do sistema tipográfico B1 em aplicações reais;
-3. regras completas de uso e aplicações prioritárias;
-4. brandbook final e pacote de ativos.
+3. seleção de fotografias autorizadas e aplicações prioritárias;
+4. brandbook técnico final e pacote de ativos.
