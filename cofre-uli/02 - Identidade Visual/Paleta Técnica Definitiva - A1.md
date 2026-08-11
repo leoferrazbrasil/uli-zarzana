@@ -72,7 +72,7 @@ O critério adotado é WCAG 2.2: mínimo de `4.5:1` para texto normal e `3:1` pa
 - [x] Brandbook atualizado.
 - [x] Teste de contrato `tests/validate-color-palette.ps1` criado e aprovado.
 - [x] Publicação FTP e verificação das URLs públicas — `identidade-visual/`, `brandbook/` e `assets/design-tokens.css` retornaram HTTP 200 em 2026-08-11.
-- [ ] Commit/push da implementação — registrar após o versionamento.
+- [x] Commit/push da implementação — `93006c1` publicado em `main` no repositório remoto.
 
 > [!warning] Escopo
 > Esta nota consolida a paleta técnica. Não finaliza o vetor do monograma, as regras completas de redução do símbolo, o tratamento fotográfico final ou o brandbook técnico completo.
