@@ -70,6 +70,13 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 - A escolha é determinada pela base de conhecimento e não cria uma nova promessa: o conteúdo traduz a transformação central da mentoria em uma aplicação editorial de leitura imediata.
 - No desktop, as cinco etapas ocupam a faixa horizontal e a conclusão ancora o bloco no rodapé da área escura. No mobile, as etapas passam para duas colunas e a conclusão permanece empilhada, preservando contraste, respiro e legibilidade.
 
+## Conteúdo determinístico do material da mentoria
+
+- A área escura anteriormente vazia foi preenchida mantendo a mensagem principal `Entre potencial e resultado.` e corrigindo o contraste do título e do texto de apoio.
+- O conteúdo complementar usa as cinco dimensões já registradas no briefing: **SER** (identidade e posicionamento), **PENSAR** (julgamento e direção), **FALAR** (comunicação e influência), **AGIR** (evidências e execução) e **RECEBER** (reconhecimento, oportunidades e retorno).
+- A aplicação foi escolhida para o contexto de módulos, aulas e materiais de apoio: apresenta a arquitetura da mentoria de forma editorial, concreta e aplicável a profissionais e empresários experientes.
+- No desktop, as cinco dimensões formam uma faixa horizontal e a frase `Da trajetória à próxima posição.` ancora o painel. No mobile, a estrutura passa para duas colunas, com a quinta dimensão e a conclusão em sequência vertical.
+
 ## Evidência pública
 
 - [Identidade visual](https://ulizarzana.com/identidade-visual/?v=20260812-mockups-sections-v1)

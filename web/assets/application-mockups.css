@@ -862,6 +862,113 @@
   line-height: 1.1;
 }
 
+.application-mockup-section--mentoria .mockup-mentoria__copy {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 18px 20px;
+  color: var(--cream);
+}
+
+.application-mockup-section--mentoria .mockup-mentoria__copy h3 {
+  color: var(--cream);
+}
+
+.application-mockup-section--mentoria .mockup-mentoria__copy > p {
+  color: rgb(247 240 231 / 78%);
+}
+
+.mentoria-framework {
+  display: grid;
+  flex: 1;
+  gap: 14px;
+  grid-template-rows: auto auto 1fr;
+  margin-top: 22px;
+  padding-top: 15px;
+  border-top: 1px solid rgb(247 240 231 / 28%);
+}
+
+.mentoria-framework__intro {
+  display: grid;
+  grid-template-columns: minmax(100px, .43fr) 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.mentoria-framework__intro small,
+.mentoria-framework__closing span {
+  color: var(--champagne);
+  font-family: var(--font-interface);
+  font-size: 9px;
+  font-weight: var(--weight-semibold);
+  letter-spacing: .14em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.mentoria-framework__intro p {
+  margin: 0;
+  color: rgb(247 240 231 / 74%);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.mentoria-framework__dimensions {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mentoria-framework__dimension {
+  min-width: 0;
+  padding: 9px 6px 0;
+  border-top: 2px solid var(--champagne);
+}
+
+.mentoria-framework__dimension span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--champagne);
+  font-family: var(--font-interface);
+  font-size: 8px;
+  font-weight: var(--weight-semibold);
+  letter-spacing: .08em;
+}
+
+.mentoria-framework__dimension strong {
+  display: block;
+  color: var(--cream);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  line-height: 1.05;
+}
+
+.mentoria-framework__dimension p {
+  margin: 6px 0 0;
+  color: rgb(247 240 231 / 70%);
+  font-size: 10px;
+  line-height: 1.25;
+}
+
+.mentoria-framework__closing {
+  align-self: end;
+  display: grid;
+  grid-template-columns: minmax(100px, .43fr) 1fr;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgb(247 240 231 / 28%);
+}
+
+.mentoria-framework__closing strong {
+  color: var(--cream);
+  font-family: var(--font-heading);
+  font-size: clamp(15px, 1.45vw, 19px);
+  line-height: 1.1;
+}
+
 .application-mockup-section--mentoria .mockup-mentoria__surface {
   display: grid;
   grid-template-columns: .78fr 1.22fr;
@@ -889,4 +996,9 @@
   .presentation-method__step { padding-top: 9px; }
   .presentation-method__step p { margin-top: 7px; padding-top: 0; }
   .presentation-method__closing { grid-template-columns: 1fr; gap: 8px; margin-top: 6px; }
+  .application-mockup-section--mentoria .mockup-mentoria__copy { padding: 24px 16px 20px; }
+  .mentoria-framework { flex: auto; grid-template-rows: auto auto auto; margin-top: 20px; }
+  .mentoria-framework__intro { grid-template-columns: 1fr; gap: 8px; }
+  .mentoria-framework__dimensions { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 8px; }
+  .mentoria-framework__closing { grid-template-columns: 1fr; gap: 8px; margin-top: 4px; }
 }

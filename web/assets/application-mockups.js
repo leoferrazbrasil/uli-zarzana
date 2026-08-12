@@ -16,3 +16,22 @@ document.querySelectorAll('.mockup-presentation__copy').forEach((copy) => {
     </div>
   `);
 });
+
+document.querySelectorAll('.mockup-mentoria__copy').forEach((copy) => {
+  copy.insertAdjacentHTML('beforeend', `
+    <div class="mentoria-framework" aria-label="Cinco dimensões da mentoria">
+      <div class="mentoria-framework__intro">
+        <small>cinco dimensões</small>
+        <p>Uma metodologia comum para carreira e negócios, aplicada à trajetória de profissionais e empresários experientes.</p>
+      </div>
+      <ol class="mentoria-framework__dimensions">
+        <li class="mentoria-framework__dimension"><span>SER</span><strong>Identidade</strong><p>Posicionamento.</p></li>
+        <li class="mentoria-framework__dimension"><span>PENSAR</span><strong>Direção</strong><p>Julgamento.</p></li>
+        <li class="mentoria-framework__dimension"><span>FALAR</span><strong>Influência</strong><p>Comunicação.</p></li>
+        <li class="mentoria-framework__dimension"><span>AGIR</span><strong>Execução</strong><p>Evidências.</p></li>
+        <li class="mentoria-framework__dimension"><span>RECEBER</span><strong>Reconhecimento</strong><p>Oportunidades e retorno.</p></li>
+      </ol>
+      <div class="mentoria-framework__closing"><span>aplicação</span><strong>Da trajetória à próxima posição.</strong></div>
+    </div>
+  `);
+});

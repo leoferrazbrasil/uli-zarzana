@@ -40,6 +40,11 @@ if ($scriptText -notmatch 'presentation-method__closing') { throw 'Conclusão do
 foreach ($stepName in @('Ident', 'Clare', 'Decis', 'Execu', 'Result')) {
   if ($scriptText -notmatch [regex]::Escape(">$stepName")) { throw "Etapa ausente no método determinístico: $stepName" }
 }
+if ($scriptText -notmatch 'mentoria-framework') { throw 'Estrutura das dimensões da mentoria ausente no script compartilhado.' }
+if ([regex]::Matches($scriptText, 'class="mentoria-framework__dimension"').Count -ne 5) { throw 'A estrutura da mentoria não possui cinco dimensões.' }
+foreach ($dimension in @('SER', 'PENSAR', 'FALAR', 'AGIR', 'RECEBER')) {
+  if ($scriptText -notmatch [regex]::Escape(">$dimension<")) { throw "Dimensão ausente na estrutura da mentoria: $dimension" }
+}
 
 foreach ($page in $pages) {
   $html = Get-Content -Raw -Encoding UTF8 $page
