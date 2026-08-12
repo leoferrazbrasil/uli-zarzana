@@ -39,9 +39,9 @@ O sistema visual aprovado foi aplicado em quatro contextos prioritários: Instag
 ## Estados da entrega
 
 - Local: quatro mockups renderizados nas duas páginas estáticas; o mockup Instagram contém quatro capas em grade 2×2.
-- Git: a alteração ainda será versionada na `main` após a validação final.
-- FTP: a publicação desta correção ainda será executada.
-- Público: a verificação pública desta correção ainda será executada separadamente.
+- Git: commit `92fac9d` enviado para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
+- FTP: 8 arquivos publicados na raiz FTP correspondente a `public_html`: 2 HTML, 1 CSS e 5 derivados F1.
+- Público: as páginas, o CSS e os cinco derivados retornaram HTTP 200 com a versão `20260812-instagram-covers-v2`; o conteúdo público contém o novo grid e não contém as seções sociais autônomas.
 
 ## Próximo avanço
 
@@ -61,3 +61,9 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 - A conclusão determinística é incorporá-la ao mockup existente de Instagram, porque os anexos eram referência de padrão de capa e não uma nova seção educativa.
 - As seções públicas autônomas `social-vertical` e `social-covers` foram removidas; o histórico documental permanece preservado.
 - O indicador de visualização dos exemplos não foi reproduzido como métrica de marca.
+
+## Evidência pública
+
+- [Identidade visual](https://ulizarzana.com/identidade-visual/?v=20260812-instagram-covers-v2)
+- [Brandbook](https://ulizarzana.com/brandbook/?v=20260812-instagram-covers-v2)
+- [CSS dos mockups](https://ulizarzana.com/assets/application-mockups.css?v=20260812-instagram-covers-v2)

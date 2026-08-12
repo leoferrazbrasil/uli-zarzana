@@ -31,7 +31,7 @@
 ### Task 3: Validar e publicar
 
 - [x] Executar todos os testes e revisão visual local.
-- [ ] Atualizar o cofre Obsidian.
-- [ ] Publicar HTML/CSS via FTP.
-- [ ] Verificar as URLs públicas, incluindo quebra de cache do CSS.
-- [ ] Commitar e fazer push na `main`.
+- [x] Atualizar o cofre Obsidian.
+- [x] Publicar HTML/CSS e os derivados F1 via FTP.
+- [x] Verificar as URLs públicas, incluindo quebra de cache do CSS.
+- [x] Commitar e fazer push na `main`.
