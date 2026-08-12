@@ -662,7 +662,7 @@
 
 .instagram-cover-card::after {
   content: "";
-  background: linear-gradient(180deg, rgb(27 18 15 / 4%) 15%, rgb(27 18 15 / 18%) 38%, rgb(27 18 15 / 94%) 100%);
+  background: linear-gradient(180deg, rgb(51 42 38 / 62%) 0%, rgb(51 42 38 / 18%) 34%, rgb(27 18 15 / 86%) 100%);
 }
 
 .instagram-cover-card__content {
@@ -671,12 +671,15 @@
   inset: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 22px 20px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20% 17px 122px;
+  text-align: center;
 }
 
 .instagram-cover-card__context {
-  margin-bottom: 8px;
+  max-width: 220px;
+  margin-bottom: 7px;
   color: var(--champagne);
   font-family: var(--font-interface);
   font-size: 10px;
@@ -687,8 +690,8 @@
 }
 
 .instagram-cover-card h4 {
-  max-width: 245px;
-  margin: 0 0 10px;
+  max-width: 235px;
+  margin: 0 0 7px;
   color: var(--cream);
   font-family: var(--font-heading);
   font-size: 25px;
@@ -712,11 +715,11 @@
 }
 
 .instagram-cover-card p {
-  max-width: 245px;
+  max-width: 210px;
   margin: 0;
   color: rgb(247 240 231 / 80%);
   font-size: 13px;
-  line-height: 1.42;
+  line-height: 1.22;
 }
 
 .instagram-cover-card__footer {

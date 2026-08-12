@@ -45,6 +45,8 @@ if ([regex]::Matches($scriptText, 'class="mentoria-framework__dimension"').Count
 foreach ($dimension in @('SER', 'PENSAR', 'FALAR', 'AGIR', 'RECEBER')) {
   if ($scriptText -notmatch [regex]::Escape(">$dimension<")) { throw "Dimensão ausente na estrutura da mentoria: $dimension" }
 }
+if ($scriptText -notmatch 'instagramCoverCopy') { throw 'Cópias editoriais das capas Instagram ausentes.' }
+if ([regex]::Matches($scriptText, 'subtitle:').Count -ne 4) { throw 'As capas Instagram não possuem quatro subtítulos curtos.' }
 
 foreach ($page in $pages) {
   $html = Get-Content -Raw -Encoding UTF8 $page

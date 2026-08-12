@@ -50,10 +50,12 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 ## Padrão de capas sociais na seção Instagram
 
 - Formato determinado: 9:16, com referência de produção 1080 × 1920 px para Reels, Stories e conteúdos sociais.
-- Estrutura: imagem em tela cheia, gradiente inferior, contexto curto, título editorial, destaque em champagne/terracota e rodapé discreto.
+- Estrutura: imagem em tela cheia, degradê cromático da paleta A1, contexto curto, headline editorial, subtítulo curto, destaque em champagne/terracota e rodapé discreto.
 - Variações demonstradas: carreira, liderança, autoridade e ascensão.
 - A fonte manuscrita dos exemplos foi substituída pela tipografia B1 aprovada.
-- Verificação local: quatro cards na seção própria do Instagram, proporção responsiva, leitura visual e ausência de overflow confirmadas.
+- Regra editorial: o bloco textual permanece no terço superior/central, com no máximo três linhas visuais — contexto, headline e subtítulo — sem alterar foto, ordem ou proporção dos cards.
+- Degradê: marrom profundo protege a leitura na parte superior e espresso sustenta a base; champagne e terracota permanecem apenas como acentos da paleta técnica.
+- Verificação local: quatro cards na seção própria do Instagram, proporção responsiva, leitura visual e ausência de overflow confirmadas em desktop e mobile.
 
 ## Correção de escopo — capas sociais
 

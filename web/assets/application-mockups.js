@@ -1,3 +1,18 @@
+const instagramCoverCopy = [
+  { context: 'experiência que vira', title: '<strong>reconhecimento.</strong>', subtitle: 'no próximo passo' },
+  { context: 'decisões maiores pedem', title: '<strong>presença.</strong>', subtitle: 'na liderança' },
+  { context: 'o que você construiu', title: '<strong>precisa aparecer.</strong>', subtitle: 'com consistência' },
+  { context: 'o próximo passo', title: '<strong>pede direção.</strong>', subtitle: 'sem perder identidade' }
+];
+
+document.querySelectorAll('.instagram-cover-card').forEach((card, index) => {
+  const copy = instagramCoverCopy[index];
+  if (!copy) return;
+  card.querySelector('.instagram-cover-card__context').textContent = copy.context;
+  card.querySelector('h4').innerHTML = copy.title;
+  card.querySelector('p').textContent = copy.subtitle;
+});
+
 document.querySelectorAll('.mockup-presentation__copy').forEach((copy) => {
   copy.insertAdjacentHTML('beforeend', `
     <div class="presentation-method" aria-label="Método de transformação">
