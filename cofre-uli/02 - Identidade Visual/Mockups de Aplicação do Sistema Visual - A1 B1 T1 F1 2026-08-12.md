@@ -62,6 +62,14 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 - As seções públicas autônomas `social-vertical` e `social-covers` permanecem removidas; o histórico documental permanece preservado.
 - O indicador de visualização dos exemplos não foi reproduzido como métrica de marca.
 
+## Conteúdo determinístico da apresentação
+
+- A área inferior livre da capa de apresentação foi preenchida com o método central registrado no briefing estratégico: `identidade → clareza → decisão → execução → resultado`.
+- Cada etapa recebeu uma função curta e operacional: reconhecer capacidade e contexto; reposicionar a atuação; escolher o próximo movimento; transformar intenção em ação consistente; converter capacidade em reconhecimento.
+- A conclusão do bloco retoma o posicionamento aprovado para profissionais e empresários experientes: transformar capacidade em autoridade, influência e crescimento sustentável.
+- A escolha é determinada pela base de conhecimento e não cria uma nova promessa: o conteúdo traduz a transformação central da mentoria em uma aplicação editorial de leitura imediata.
+- No desktop, as cinco etapas ocupam a faixa horizontal e a conclusão ancora o bloco no rodapé da área escura. No mobile, as etapas passam para duas colunas e a conclusão permanece empilhada, preservando contraste, respiro e legibilidade.
+
 ## Evidência pública
 
 - [Identidade visual](https://ulizarzana.com/identidade-visual/?v=20260812-mockups-sections-v1)
