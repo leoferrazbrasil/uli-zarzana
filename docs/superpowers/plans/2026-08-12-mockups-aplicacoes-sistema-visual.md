@@ -54,4 +54,4 @@
 - [x] Publicar via FTP apenas os HTML, CSS e derivados aprovados.
 - [x] Verificar HTTP 200 e presença dos quatro contextos nas URLs públicas.
 - [x] Atualizar o cofre com estado local, Git, FTP e público separadamente.
-- [ ] Commitar e fazer push na `main`.
+- [x] Commitar e fazer push na `main`.
