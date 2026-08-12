@@ -106,7 +106,8 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - [x] Documentar regras de uso do sistema visual — [[Regras de Uso do Sistema Visual - A1 B1 F1]].
 - [ ] Definir versões horizontal, vertical, ícone e monocromáticas.
 - [ ] Definir área de proteção e tamanhos mínimos.
-- [ ] Selecionar e organizar fotografias autorizadas em alta resolução.
+- [x] Estruturar e classificar o acervo bruto fotográfico — [[Inventario-Fotografico-Acervo-Uli-2026-08-12]].
+- [ ] Confirmar autorização, selecionar a shortlist F1 e organizar fotografias oficiais em alta resolução.
 - [ ] Criar mockups de Instagram, site, apresentação e material da mentoria.
 - [ ] Consolidar o brandbook após aprovação dos ativos técnicos.
 
