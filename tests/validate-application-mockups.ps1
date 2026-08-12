@@ -6,11 +6,17 @@ $pages = @(
 )
 $css = Join-Path $root 'web/assets/application-mockups.css'
 $requiredClasses = @(
-  'application-mockups-grid',
-  'application-mockup--instagram',
-  'application-mockup--site',
-  'application-mockup--presentation',
-  'application-mockup--mentoria'
+  'application-mockup-section',
+  'application-mockup-section--instagram',
+  'application-mockup-section--site',
+  'application-mockup-section--presentation',
+  'application-mockup-section--mentoria',
+  'instagram-cover-grid',
+  'instagram-cover-card',
+  'instagram-cover-card--career',
+  'instagram-cover-card--leadership',
+  'instagram-cover-card--authority',
+  'instagram-cover-card--ascension'
 )
 $requiredAssets = @(
   'uli-f1-015-hero-1600x900.jpg',
@@ -30,12 +36,17 @@ foreach ($page in $pages) {
   $html = Get-Content -Raw -Encoding UTF8 $page
   if ($html -notmatch 'application-mockups\.css') { throw "CSS compartilhado não carregado: $page" }
   if ($html -notmatch 'id="mockups"') { throw "Seção de mockups ausente: $page" }
+  if ($html -match 'application-mockups-grid') { throw "Grade antiga de duas colunas ainda existe: $page" }
+  if ([regex]::Matches($html, 'class="application-mockup-section application-mockup-section--').Count -ne 4) { throw "Os quatro contextos não estão separados em seções: $page" }
+  if ([regex]::Matches($html, 'class="instagram-cover-card instagram-cover-card--').Count -ne 4) { throw "O Instagram não possui quatro cards de capa: $page" }
+  if ($html -match 'mockup-instagram__bar|mockup-instagram__avatar|mockup-instagram__follow') { throw "Chrome falso de perfil ainda existe: $page" }
   foreach ($className in $requiredClasses) {
     if ($html -notmatch [regex]::Escape($className)) { throw "Contexto ausente em $page`: $className" }
   }
   foreach ($asset in $requiredAssets) {
     if ($html -notmatch [regex]::Escape($asset)) { throw "Derivado ausente em $page`: $asset" }
   }
+  if ($html -match '(?i)(visualizações|views|mil visualizações)') { throw "Métrica fictícia presente em $page" }
   if ($html -match '(?i)(\.\./)+fotos/') { throw "Página referencia acervo privado: $page" }
 }
 

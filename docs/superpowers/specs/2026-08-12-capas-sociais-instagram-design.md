@@ -2,10 +2,12 @@
 
 ## Objetivo
 
-Criar, dentro do mockup existente de Instagram, uma demonstração reutilizável do padrão de capas independentes para Reels, Stories e conteúdos sociais da Uli Zarzana, inspirada na estrutura dos exemplos fornecidos pelo usuário.
+Organizar os mockups de aplicação em quatro seções horizontais independentes — Instagram, site, apresentação e material da mentoria — e criar, dentro da seção Instagram, quatro cards de capas sociais inspirados na seção Cards editoriais F1 e nos exemplos fornecidos pelo usuário.
 
 ## Estrutura visual determinada
 
+- Cada contexto de aplicação ocupa sua própria seção horizontal, sem uma grade geral de duas colunas.
+- Instagram usa quatro cards editoriais independentes, semelhantes aos Cards editoriais F1, mas com a gramática específica de capa social.
 - Tela vertical 9:16, referência de produção 1080 × 1920 px.
 - Imagem ou frame em tela cheia.
 - Gradiente escuro inferior para proteger o texto.
@@ -14,11 +16,11 @@ Criar, dentro do mockup existente de Instagram, uma demonstração reutilizável
 - Uma palavra ou expressão destacada em champagne ou terracota.
 - Subtexto opcional e assinatura discreta.
 - Área inferior reservada para a interface do Instagram; nenhuma informação essencial depende dela.
-- Cada capa deve funcionar sozinha dentro da demonstração, sem depender de métrica ou de uma moldura de galeria para ser compreendida.
+- Cada capa deve funcionar sozinha dentro da seção, sem depender de métrica, moldura de perfil ou de uma galeria para ser compreendida.
 
 ## Conteúdos de demonstração
 
-As quatro capas demonstram carreira, liderança, autoridade e ascensão, usando somente derivados F1 já autorizados. O indicador de visualização dos exemplos não será reproduzido como métrica de marca. A demonstração fica incorporada ao contexto Instagram dos mockups de aplicação; não existe seção pública autônoma para esse conteúdo.
+As quatro capas demonstram carreira, liderança, autoridade e ascensão, usando somente derivados F1 já autorizados. O indicador de visualização dos exemplos não será reproduzido como métrica de marca. As capas ficam na seção própria do Instagram; não existe seção social autônoma fora dos quatro contextos de aplicação.
 
 ## Compatibilidade com a marca
 

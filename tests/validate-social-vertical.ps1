@@ -5,7 +5,7 @@ $pages = @(
   Join-Path $root 'web/identidade-visual/index.html'
   Join-Path $root 'web/brandbook/index.html'
 )
-$classes = @('mockup-instagram__cover-grid','mockup-instagram__cover','mockup-instagram__cover--career','mockup-instagram__cover--leadership','mockup-instagram__cover--authority','mockup-instagram__cover--ascension')
+$classes = @('instagram-cover-grid','instagram-cover-card','instagram-cover-card--career','instagram-cover-card--leadership','instagram-cover-card--authority','instagram-cover-card--ascension')
 foreach ($className in $classes) {
   if ($css -notmatch [regex]::Escape(".$className")) { throw "Classe CSS de capa ausente: .$className" }
 }
@@ -17,7 +17,8 @@ foreach ($page in $pages) {
   foreach ($className in $classes) {
     if ($html -notmatch [regex]::Escape($className)) { throw "Classe de capa ausente em $page`: $className" }
   }
-  if ($html -notmatch 'mockup-instagram__cover-grid') { throw "Capas sociais não estão dentro do mockup do Instagram: $page" }
+  if ($html -notmatch 'application-mockup-section--instagram') { throw "Seção Instagram independente ausente: $page" }
+  if ($html -notmatch 'instagram-cover-grid') { throw "Capas sociais não estão na seção própria do Instagram: $page" }
   if ($html -match '(?i)font-family\s*:\s*[^;]*(script|hand|cursive)') { throw "Fonte manuscrita proibida em $page" }
   if ($html -match '(?i)(\.\./)+fotos/') { throw "Acervo privado referenciado em $page" }
 }
