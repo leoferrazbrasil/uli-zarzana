@@ -32,17 +32,17 @@
 - Consumes: classes `.instagram-cover-card`, `.instagram-cover-card__content`, `.instagram-cover-card__footer` e o array `instagramCoverCopy`.
 - Produces: contrato que exige quatro posições individuais, escala mínima e ausência de rodapé técnico.
 
-- [ ] **Step 1: Escrever as asserções que devem falhar**
+- [x] **Step 1: Escrever as asserções que devem falhar**
 
 Exigir no CSS os modificadores `instagram-cover-card--career`, `--leadership`, `--authority` e `--ascension` associados a `inset-block-start` ou `justify-content`; exigir headline mínima de `34px`; rejeitar `.instagram-cover-card__footer` renderizado e os textos `Uli Zarzana`, `capa` e `9:16` dentro do script de cópia.
 
-- [ ] **Step 2: Executar o teste e confirmar a falha**
+- [x] **Step 2: Executar o teste e confirmar a falha**
 
 Run: `powershell -ExecutionPolicy Bypass -File tests/validate-application-mockups.ps1`
 
 Expected: FAIL indicando escala insuficiente, ausência de posicionamento individual ou rodapé técnico ainda presente.
 
-- [ ] **Step 3: Manter o teste focado no resultado observável**
+- [x] **Step 3: Manter o teste focado no resultado observável**
 
 O teste deve verificar seletores e conteúdo final, sem acoplar-se a uma coordenada exata que impeça refinamento visual posterior.
 
@@ -56,23 +56,23 @@ O teste deve verificar seletores e conteúdo final, sem acoplar-se a uma coorden
 - Consumes: quatro cards existentes na ordem carreira, liderança, autoridade e ascensão.
 - Produces: quatro capas com headline dominante, contexto e subtítulo curtos, classes de posição por fotografia e degradê A1.
 
-- [ ] **Step 1: Remover a interface técnica interna**
+- [x] **Step 1: Remover a interface técnica interna**
 
 Ocultar ou retirar o conteúdo de `.instagram-cover-card__footer` sem alterar a legenda externa da seção.
 
-- [ ] **Step 2: Ajustar a escala editorial**
+- [x] **Step 2: Ajustar a escala editorial**
 
 Definir headline responsiva com base mínima de `34px`, limite de `42px`, line-height entre `.92` e `1`; contexto e subtítulo entre `15px` e `18px`, mantendo B1.
 
-- [ ] **Step 3: Aplicar posição por fotografia**
+- [x] **Step 3: Aplicar posição por fotografia**
 
 Usar os modificadores já existentes para posicionar os blocos: carreira no centro inferior; liderança no topo central; autoridade no topo; ascensão no topo central. Preservar rostos, microfone, gesto e grupo.
 
-- [ ] **Step 4: Individualizar o degradê**
+- [x] **Step 4: Individualizar o degradê**
 
 Definir `::after` por modificador, concentrando marrom profundo ou espresso atrás do respectivo bloco textual e mantendo transição transparente sobre a fotografia.
 
-- [ ] **Step 5: Executar o contrato**
+- [x] **Step 5: Executar o contrato**
 
 Run: `powershell -ExecutionPolicy Bypass -File tests/validate-application-mockups.ps1`
 
@@ -90,21 +90,21 @@ Expected: `Application mockups validation passed.`
 - Consumes: páginas estáticas e ativos compartilhados atualizados.
 - Produces: evidência visual desktop e mobile sem overflow, sobreposição crítica ou aparência técnica.
 
-- [ ] **Step 1: Executar todos os validadores**
+- [x] **Step 1: Executar todos os validadores**
 
 Run: `Get-ChildItem tests/validate-*.ps1 | Sort-Object Name | ForEach-Object { & $_.FullName }`
 
 Expected: todos os validadores passam.
 
-- [ ] **Step 2: Renderizar desktop**
+- [x] **Step 2: Renderizar desktop**
 
 Abrir a página local em viewport `1440 × 1000`, navegar até `.application-mockup-section--instagram` e capturar screenshot. Confirmar quatro colunas, headline dominante e posições individualizadas.
 
-- [ ] **Step 3: Renderizar mobile**
+- [x] **Step 3: Renderizar mobile**
 
 Abrir a página local em viewport `390 × 844` e confirmar uma coluna, leitura imediata, ausência de overflow e nenhum rodapé técnico.
 
-- [ ] **Step 4: Refinar apenas se a inspeção reprovar algum critério**
+- [x] **Step 4: Refinar apenas se a inspeção reprovar algum critério**
 
 Alterar somente CSS/cópia das capas Instagram; não tocar fotografias, grade geral, apresentação, site ou material da mentoria.
 
@@ -121,7 +121,7 @@ Alterar somente CSS/cópia das capas Instagram; não tocar fotografias, grade ge
 - Consumes: implementação e evidência visual aprovadas localmente.
 - Produces: decisão durável no cofre, publicação pública e histórico Git na `main`.
 
-- [ ] **Step 1: Atualizar o cofre**
+- [x] **Step 1: Atualizar o cofre**
 
 Registrar escala, posições, degradês, remoção do rodapé técnico e validações desktop/mobile usando Obsidian Markdown.
 

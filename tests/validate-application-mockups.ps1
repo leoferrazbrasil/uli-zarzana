@@ -47,6 +47,17 @@ foreach ($dimension in @('SER', 'PENSAR', 'FALAR', 'AGIR', 'RECEBER')) {
 }
 if ($scriptText -notmatch 'instagramCoverCopy') { throw 'Cópias editoriais das capas Instagram ausentes.' }
 if ([regex]::Matches($scriptText, 'subtitle:').Count -ne 4) { throw 'As capas Instagram não possuem quatro subtítulos curtos.' }
+if ($scriptText -match '(?i)Uli Zarzana|capa\s*·|9:16') { throw 'Informação técnica ainda existe dentro das capas Instagram.' }
+if ($cssText -notmatch '(?s)\.instagram-cover-card h4\s*\{[^}]*font-size:\s*clamp\(34px,') { throw 'Headline das capas não possui escala dominante mínima de 34px.' }
+foreach ($modifier in @('career', 'leadership', 'authority', 'ascension')) {
+  if ($cssText -notmatch "(?s)\.instagram-cover-card--$modifier \.instagram-cover-card__content\s*\{[^}]*(justify-content|padding-block-start|inset-block-start)") {
+    throw "Posicionamento individual ausente para a capa Instagram: $modifier"
+  }
+  if ($cssText -notmatch "(?s)\.instagram-cover-card--$modifier::after\s*\{[^}]*linear-gradient") {
+    throw "Degradê individual ausente para a capa Instagram: $modifier"
+  }
+}
+if ($cssText -notmatch '(?s)\.instagram-cover-card__footer\s*\{[^}]*display:\s*none') { throw 'Rodapé técnico das capas Instagram ainda está visível.' }
 
 foreach ($page in $pages) {
   $html = Get-Content -Raw -Encoding UTF8 $page

@@ -1,8 +1,8 @@
 const instagramCoverCopy = [
-  { context: 'experiência que vira', title: '<strong>reconhecimento.</strong>', subtitle: 'no próximo passo' },
+  { context: 'capacidade que vira', title: '<strong>autoridade.</strong>', subtitle: 'para o próximo passo' },
   { context: 'decisões maiores pedem', title: '<strong>presença.</strong>', subtitle: 'na liderança' },
-  { context: 'o que você construiu', title: '<strong>precisa aparecer.</strong>', subtitle: 'com consistência' },
-  { context: 'o próximo passo', title: '<strong>pede direção.</strong>', subtitle: 'sem perder identidade' }
+  { context: 'o que você construiu', title: '<strong>percebido.</strong>', subtitle: 'com consistência' },
+  { context: 'o próximo passo pede', title: '<strong>direção.</strong>', subtitle: 'sem perder identidade' }
 ];
 
 document.querySelectorAll('.instagram-cover-card').forEach((card, index) => {
@@ -11,6 +11,7 @@ document.querySelectorAll('.instagram-cover-card').forEach((card, index) => {
   card.querySelector('.instagram-cover-card__context').textContent = copy.context;
   card.querySelector('h4').innerHTML = copy.title;
   card.querySelector('p').textContent = copy.subtitle;
+  card.querySelector('.instagram-cover-card__footer')?.remove();
 });
 
 document.querySelectorAll('.mockup-presentation__copy').forEach((copy) => {

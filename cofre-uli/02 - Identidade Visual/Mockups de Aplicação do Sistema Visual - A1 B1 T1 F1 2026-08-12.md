@@ -50,12 +50,16 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 ## Padrão de capas sociais na seção Instagram
 
 - Formato determinado: 9:16, com referência de produção 1080 × 1920 px para Reels, Stories e conteúdos sociais.
-- Estrutura: imagem em tela cheia, degradê cromático da paleta A1, contexto curto, headline editorial, subtítulo curto, destaque em champagne/terracota e rodapé discreto.
+- Estrutura: imagem em tela cheia, degradê cromático da paleta A1, contexto curto, headline editorial, subtítulo curto e destaque em champagne/terracota, sem rodapé ou informação técnica dentro da peça.
 - Variações demonstradas: carreira, liderança, autoridade e ascensão.
 - A fonte manuscrita dos exemplos foi substituída pela tipografia B1 aprovada.
-- Regra editorial: o bloco textual permanece no terço superior/central, com no máximo três linhas visuais — contexto, headline e subtítulo — sem alterar foto, ordem ou proporção dos cards.
-- Degradê: marrom profundo protege a leitura na parte superior e espresso sustenta a base; champagne e terracota permanecem apenas como acentos da paleta técnica.
-- Verificação local: quatro cards na seção própria do Instagram, proporção responsiva, leitura visual e ausência de overflow confirmadas em desktop e mobile.
+- Regra editorial final: cada capa possui exatamente três linhas visuais — contexto, palavra-chave dominante e complemento — sem alterar foto, ordem, enquadramento ou proporção dos cards.
+- Escala: a palavra-chave usa Libre Baskerville 700 entre 34 e 42 px; contexto e complemento usam Source Sans 3 entre 15 e 18 px.
+- Posições determinadas pela fotografia: carreira no centro inferior; liderança no topo central; autoridade no topo; ascensão no topo central.
+- Degradê: cada capa recebeu proteção individual em marrom profundo `#332A26` e espresso, concentrada atrás do texto; champagne e terracota permanecem acentos da paleta técnica.
+- Redação final: `capacidade que vira / autoridade. / para o próximo passo`; `decisões maiores pedem / presença. / na liderança`; `o que você construiu / percebido. / com consistência`; `o próximo passo pede / direção. / sem perder identidade`.
+- Remoções: não aparecem nome da expert, indicação `capa`, formato `9:16`, métricas, ícones ou interface técnica dentro das peças. A referência de produção permanece apenas na legenda externa da seção.
+- Verificação local: quatro cards na seção própria do Instagram; cada bloco confirmou `1 + 1 + 1` linha visual, ausência de overflow e ausência de rodapé em `1440 × 1000` e `390 × 844`.
 
 ## Correção de escopo — capas sociais
 
