@@ -20,6 +20,7 @@ Essa aprovação define o território visual de trabalho. A paleta técnica A1 e
 
 ## Visualização online
 
+- [Aula Estratégica — Entre Potencial e Resultado](https://ulizarzana.com/)
 - [Identidade visual](https://ulizarzana.com/identidade-visual/)
 - [Brandbook preliminar](https://ulizarzana.com/brandbook/)
 

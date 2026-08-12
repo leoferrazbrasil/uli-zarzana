@@ -70,8 +70,21 @@ foreach ($asset in @(
   Assert-Contains ($html + $css) $asset 'Ativo obrigatório'
 }
 
+foreach ($cardAsset in @(
+  'fotografia/uli-f1-015-presenca-720x900.jpg',
+  'fotografia/uli-f1-080-autoridade-720x900.jpg',
+  'fotografia/uli-f1-082-lideranca-720x900.jpg',
+  'fotografia/uli-f1-087-ascensao-720x900.jpg'
+)) {
+  Assert-Contains $html $cardAsset 'Caminho de fotografia no HTML'
+}
+if ($html.Contains('assets/fotografia/uli-f1-015-presenca-720x900.jpg')) {
+  throw 'Caminho inline geraria assets/assets no navegador.'
+}
+
 Assert-Contains $css '@media (max-width: 720px)' 'Breakpoint mobile'
 Assert-Contains $css '@media (prefers-reduced-motion: reduce)' 'Preferencia de movimento reduzido'
+Assert-Contains $css 'font-size: clamp(2.55rem, 4.2vw, 4rem)' 'Escala desktop da headline'
 Assert-Contains $js '2026-09-24T19:30:00-03:00' 'Data demonstrativa'
 Assert-Contains $js 'Nenhum dado foi enviado ou armazenado.' 'Confirmacao demonstrativa'
 

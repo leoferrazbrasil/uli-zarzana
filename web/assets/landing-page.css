@@ -151,7 +151,7 @@ h1 em, h2 em { color: var(--landing-accent); font-style: normal; }
 }
 .hero__copy { max-width: 650px; padding-left: clamp(0px, 5vw, 54px); }
 .event-name { margin: -4px 0 20px; color: var(--landing-bg); font-family: var(--font-heading); font-size: .95rem; letter-spacing: .06em; }
-.hero h1 { max-width: 650px; margin: 0; font-size: clamp(2.7rem, 5.2vw, 4.95rem); font-weight: 400; line-height: 1.06; }
+.hero h1 { max-width: 650px; margin: 0; font-size: clamp(2.55rem, 4.2vw, 4rem); font-weight: 400; line-height: 1.06; }
 .hero__intro { max-width: 620px; margin: 30px 0 0; color: rgb(247 240 231 / 76%); font-size: clamp(1rem, 1.4vw, 1.15rem); }
 
 .countdown { display: grid; max-width: 520px; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 38px; }
