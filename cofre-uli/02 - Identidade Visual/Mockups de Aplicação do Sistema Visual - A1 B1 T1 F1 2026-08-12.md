@@ -38,10 +38,10 @@ O sistema visual aprovado foi reorganizado em quatro seções horizontais indepe
 
 ## Estados da entrega
 
-- Local: quatro seções horizontais renderizadas nas duas páginas estáticas; a seção Instagram contém quatro cards de capas semelhantes aos Cards editoriais F1.
-- Git: commit `69bd1db` enviado para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
-- FTP: 8 arquivos publicados na raiz FTP correspondente a `public_html`: 2 HTML, 1 CSS e 5 derivados F1.
-- Público: as duas páginas, o CSS e os cinco derivados retornaram HTTP 200 com a versão `20260812-mockups-sections-v1`; a estrutura pública contém quatro seções e quatro cards Instagram, sem a grade antiga ou seções sociais autônomas.
+- Local: quatro seções horizontais renderizadas nas duas páginas estáticas; a seção Instagram contém quatro cards de capas semelhantes aos Cards editoriais F1; a seção Apresentação contém o método determinístico em cinco etapas e uma conclusão editorial responsiva.
+- Git: commit `5a47c89` enviado para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
+- FTP: atualização incremental de 4 arquivos na raiz FTP correspondente a `public_html`: 2 HTML, 1 CSS e 1 JavaScript compartilhado. O conjunto público passou a conter 9 arquivos únicos, sem fotos brutas ou credenciais.
+- Público: as duas páginas, o CSS e o JavaScript retornaram HTTP 200 com a versão `20260812-presentation-method-v1`; a renderização pública confirmou cinco etapas no desktop e a reorganização responsiva no mobile.
 
 ## Próximo avanço
 
