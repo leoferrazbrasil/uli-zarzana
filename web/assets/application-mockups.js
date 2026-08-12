@@ -5,6 +5,22 @@ const instagramCoverCopy = [
   { context: 'o próximo passo pede', title: '<strong>direção.</strong>', subtitle: 'sem perder identidade' }
 ];
 
+const moveNextSectionToEnd = () => {
+  const main = document.querySelector('main');
+  if (!main) return;
+
+  const sections = [...main.querySelectorAll('section')];
+  const nextSection = sections.find((section) => {
+    const title = section.querySelector('h2');
+    const text = title?.textContent.trim() ?? '';
+    return text === 'O que vem a seguir' || text.includes('Próximas definições');
+  });
+
+  if (nextSection) main.appendChild(nextSection);
+};
+
+moveNextSectionToEnd();
+
 document.querySelectorAll('.instagram-cover-card').forEach((card, index) => {
   const copy = instagramCoverCopy[index];
   if (!copy) return;

@@ -89,3 +89,11 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 - [Brandbook](https://ulizarzana.com/brandbook/?v=20260812-instagram-feed-v3)
 - [CSS dos mockups](https://ulizarzana.com/assets/application-mockups.css?v=20260812-instagram-feed-v3)
 - [JavaScript dos mockups](https://ulizarzana.com/assets/application-mockups.js?v=20260812-instagram-feed-v3)
+
+## Ordem final das páginas
+
+- Decisão: a seção `O que vem a seguir` foi reposicionada para ser o último bloco de conteúdo da página de identidade visual.
+- Decisão equivalente: `8. Próximas definições` foi reposicionada para ser o último bloco de conteúdo do brandbook.
+- Implementação: o script compartilhado identifica os títulos e anexa as seções ao final do elemento `<main>`, preservando conteúdo, estilo, links e responsividade.
+- Verificação local: a ordem final foi confirmada no DOM em `1440 × 1000` e `390 × 844` para as duas páginas.
+- Publicação prevista: repetir a publicação FTP das duas páginas e do JavaScript compartilhado após o commit desta alteração.
