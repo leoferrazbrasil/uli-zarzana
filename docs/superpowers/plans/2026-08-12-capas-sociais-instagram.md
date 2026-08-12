@@ -28,10 +28,10 @@
 - Modify: `tests/validate-social-covers.ps1`
 - Modify: `tests/validate-social-vertical.ps1`
 
-- [ ] Exigir quatro `application-mockup-section` e quatro aplicações independentes em cada página.
-- [ ] Exigir quatro `instagram-cover-card` no contexto Instagram e proibir a grade antiga `application-mockups-grid`.
-- [ ] Exigir a ausência de `social-vertical` e `social-covers` como seções públicas.
-- [ ] Executar os testes e confirmar a falha antes da implementação.
+- [x] Exigir quatro `application-mockup-section` e quatro aplicações independentes em cada página.
+- [x] Exigir quatro `instagram-cover-card` no contexto Instagram e proibir a grade antiga `application-mockups-grid`.
+- [x] Exigir a ausência de `social-vertical` e `social-covers` como seções públicas.
+- [x] Executar os testes e confirmar a falha antes da implementação.
 
 ### Task 2: Reestruturar o HTML
 
@@ -39,20 +39,20 @@
 - Modify: `web/identidade-visual/index.html`
 - Modify: `web/brandbook/index.html`
 
-- [ ] Substituir o container de duas colunas por quatro seções horizontais independentes.
-- [ ] Criar no Instagram quatro cards com os derivados `uli-f1-015-presenca`, `uli-f1-082-lideranca`, `uli-f1-080-autoridade` e `uli-f1-087-ascensao`.
-- [ ] Manter site, apresentação e material da mentoria como uma aplicação única por seção.
-- [ ] Remover o chrome falso de perfil, as métricas e qualquer seção social autônoma.
+- [x] Substituir o container de duas colunas por quatro seções horizontais independentes.
+- [x] Criar no Instagram quatro cards com os derivados `uli-f1-015-presenca`, `uli-f1-082-lideranca`, `uli-f1-080-autoridade` e `uli-f1-087-ascensao`.
+- [x] Manter site, apresentação e material da mentoria como uma aplicação única por seção.
+- [x] Remover o chrome falso de perfil, as métricas e qualquer seção social autônoma.
 
 ### Task 3: Reestruturar o CSS
 
 **Files:**
 - Modify: `web/assets/application-mockups.css`
 
-- [ ] Criar layout vertical de seções com `application-mockup-section`.
-- [ ] Criar os cards `instagram-cover-card` no padrão visual dos Cards editoriais F1.
-- [ ] Garantir 9:16, texto protegido, leitura e responsividade em desktop e telas estreitas.
-- [ ] Remover regras posicionais que possam ocultar uma seção por ordem no DOM.
+- [x] Criar layout vertical de seções com `application-mockup-section`.
+- [x] Criar os cards `instagram-cover-card` no padrão visual dos Cards editoriais F1.
+- [x] Garantir 9:16, texto protegido, leitura e responsividade em desktop e telas estreitas.
+- [x] Remover regras posicionais que possam ocultar uma seção por ordem no DOM.
 
 ### Task 4: Validar, registrar e publicar
 
@@ -60,8 +60,8 @@
 - Modify: `cofre-uli/02 - Identidade Visual/Mockups de Aplicação do Sistema Visual - A1 B1 T1 F1 2026-08-12.md`
 - Modify: `docs/superpowers/specs/2026-08-12-capas-sociais-instagram-design.md`
 
-- [ ] Executar todos os validadores e revisar visualmente as duas páginas.
-- [ ] Registrar no cofre a decisão de separar os quatro contextos e o padrão Instagram em quatro cards F1.
-- [ ] Commitar e fazer push na `main`.
-- [ ] Publicar os HTML, CSS e derivados F1 via FTP.
-- [ ] Verificar as duas páginas públicas, o CSS e os derivados com HTTP 200 e conteúdo atualizado.
+- [x] Executar todos os validadores e revisar visualmente as duas páginas.
+- [x] Registrar no cofre a decisão de separar os quatro contextos e o padrão Instagram em quatro cards F1.
+- [x] Commitar e fazer push na `main`.
+- [x] Publicar os HTML, CSS e derivados F1 via FTP.
+- [x] Verificar as duas páginas públicas, o CSS e os derivados com HTTP 200 e conteúdo atualizado.

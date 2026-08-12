@@ -1,7 +1,7 @@
 ---
 title: Mockups de Aplicação do Sistema Visual - A1 B1 T1 F1 2026-08-12
 date: 2026-08-12
-status: local-validado
+status: publicado-e-verificado
 tipo: mockups-aplicacao
 tags:
   - uli-zarzana
@@ -39,9 +39,9 @@ O sistema visual aprovado foi reorganizado em quatro seções horizontais indepe
 ## Estados da entrega
 
 - Local: quatro seções horizontais renderizadas nas duas páginas estáticas; a seção Instagram contém quatro cards de capas semelhantes aos Cards editoriais F1.
-- Git: a reorganização ainda será versionada na `main` após a publicação desta etapa.
-- FTP: a publicação desta reorganização ainda será executada.
-- Público: a verificação pública desta reorganização ainda será executada separadamente.
+- Git: commit `69bd1db` enviado para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
+- FTP: 8 arquivos publicados na raiz FTP correspondente a `public_html`: 2 HTML, 1 CSS e 5 derivados F1.
+- Público: as duas páginas, o CSS e os cinco derivados retornaram HTTP 200 com a versão `20260812-mockups-sections-v1`; a estrutura pública contém quatro seções e quatro cards Instagram, sem a grade antiga ou seções sociais autônomas.
 
 ## Próximo avanço
 
@@ -58,12 +58,12 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 ## Correção de escopo — capas sociais
 
 - A aplicação social oficial permanece denominada **Padrão de aplicabilidade de capas para Instagram e conteúdo social**.
-- A conclusão determinística é separar os quatro contextos em seções horizontais e usar o Instagram como uma seção de quatro cards de capas, porque os anexos eram referência de padrão visual e não uma nova seção educativa.
+- A conclusão determinística é separar os quatro contextos em seções horizontais e usar o Instagram como uma seção de quatro cards de capas semelhantes aos Cards editoriais F1, porque os anexos eram referência de padrão visual e não uma nova seção educativa.
 - As seções públicas autônomas `social-vertical` e `social-covers` permanecem removidas; o histórico documental permanece preservado.
 - O indicador de visualização dos exemplos não foi reproduzido como métrica de marca.
 
 ## Evidência pública
 
-- [Identidade visual](https://ulizarzana.com/identidade-visual/?v=20260812-instagram-covers-v2)
-- [Brandbook](https://ulizarzana.com/brandbook/?v=20260812-instagram-covers-v2)
-- [CSS dos mockups](https://ulizarzana.com/assets/application-mockups.css?v=20260812-instagram-covers-v2)
+- [Identidade visual](https://ulizarzana.com/identidade-visual/?v=20260812-mockups-sections-v1)
+- [Brandbook](https://ulizarzana.com/brandbook/?v=20260812-mockups-sections-v1)
+- [CSS dos mockups](https://ulizarzana.com/assets/application-mockups.css?v=20260812-mockups-sections-v1)
