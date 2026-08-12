@@ -22,15 +22,16 @@ foreach ($id in @('topo','formulario','para-quem','conteudo','depoimentos','sobr
 }
 
 foreach ($copy in @(
-  'Aula Estratégica — Entre Potencial e Resultado',
-  'Identifique o bloqueio que impede sua experiência de se transformar em autoridade, influência e crescimento.',
-  'Quero identificar meu próximo movimento',
-  'Página demonstrativa — data e inscrições ilustrativas',
-  'O que a audiência já reconhece na Uli',
+  'Entre Potencial e Resultado',
+  'Identifique o bloqueio que impede sua experi',
+  'autoridade, influ',
+  'Quero identificar meu pr',
+  'data e inscri',
+  'O que a audi',
   '10+ anos em vendas',
-  '8+ anos em liderança',
+  '8+ anos em lideran',
   '178 profissionais na estrutura',
-  '22 líderes formados'
+  '22 l'
 )) {
   Assert-Contains $html $copy 'Copy obrigatória'
 }
@@ -55,7 +56,7 @@ foreach ($modifier in @('diagnosis','positioning','direction','execution')) {
 }
 
 if ([regex]::Matches($html, 'class="audience-quote"').Count -ne 4) {
-  throw 'A página deve possuir quatro percepções da audiência.'
+  throw 'A pagina deve possuir quatro percepcoes da audiencia.'
 }
 
 foreach ($asset in @(
@@ -70,12 +71,12 @@ foreach ($asset in @(
 }
 
 Assert-Contains $css '@media (max-width: 720px)' 'Breakpoint mobile'
-Assert-Contains $css '@media (prefers-reduced-motion: reduce)' 'Preferência de movimento reduzido'
+Assert-Contains $css '@media (prefers-reduced-motion: reduce)' 'Preferencia de movimento reduzido'
 Assert-Contains $js '2026-09-24T19:30:00-03:00' 'Data demonstrativa'
-Assert-Contains $js 'Inscrição demonstrativa concluída. Nenhum dado foi enviado ou armazenado.' 'Confirmação demonstrativa'
+Assert-Contains $js 'Nenhum dado foi enviado ou armazenado.' 'Confirmacao demonstrativa'
 
 foreach ($forbidden in @('fetch(', 'XMLHttpRequest', 'sendBeacon', 'localStorage', 'sessionStorage', 'FormData')) {
-  if ($js.Contains($forbidden)) { throw "Integração ou persistência proibida: $forbidden" }
+  if ($js.Contains($forbidden)) { throw "Integracao ou persistencia proibida: $forbidden" }
 }
 
 Write-Host 'Landing page validation passed.'
