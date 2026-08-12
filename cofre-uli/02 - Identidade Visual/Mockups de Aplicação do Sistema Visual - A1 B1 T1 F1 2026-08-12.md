@@ -46,3 +46,11 @@ O sistema visual aprovado foi aplicado em quatro contextos prioritários: Instag
 ## Próximo avanço
 
 Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups; manter a finalização do selo institucional como frente futura separada.
+
+## Aplicação social vertical
+
+- Formato determinado: 9:16 para Reels, Stories e vídeos curtos.
+- Estrutura: contexto curto, título editorial, destaque em champagne/terracota e rodapé discreto.
+- Variações demonstradas: carreira, liderança, autoridade e ascensão.
+- A fonte manuscrita dos exemplos foi substituída pela tipografia B1 aprovada.
+- Verificação local: quatro cards, proporção responsiva e ausência de overflow confirmadas.

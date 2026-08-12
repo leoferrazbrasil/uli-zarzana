@@ -110,6 +110,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - [x] Selecionar a shortlist F1 — [[Shortlist-F1-Fotografias-Uli-2026-08-12]].
 - [x] Preparar derivados oficiais e mockups de aplicação F1 — [[Aplicações Fotográficas F1 - Derivados e Mockups 2026-08-12]].
 - [x] Criar mockups de Instagram, site, apresentação e material da mentoria — [[Mockups de Aplicação do Sistema Visual - A1 B1 T1 F1 2026-08-12]].
+- [x] Determinar padrão social vertical 9:16 para Reels, Stories e conteúdo curto — [[Mockups de Aplicação do Sistema Visual - A1 B1 T1 F1 2026-08-12]].
 - [ ] Consolidar o brandbook após aprovação dos ativos técnicos.
 
 ## Fontes de decisão
