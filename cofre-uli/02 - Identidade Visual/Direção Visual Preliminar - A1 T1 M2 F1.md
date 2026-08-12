@@ -1,7 +1,7 @@
 ---
 title: Direção Visual Preliminar - A1 T1 M2 F1
 date: 2026-08-10
-updated: 2026-08-11
+updated: 2026-08-12
 status: aprovado-preliminar
 approval: approved
 tipo: direcao-visual
@@ -76,7 +76,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - Arquivos de referência fornecidos no projeto:
   - `D:\LEONARDO\Coprodução\Experts\Uli\perfil-uli-zarzana.jpeg`
   - `D:\LEONARDO\Coprodução\Experts\Uli\uli-zarzana-3.jpg`
-- Status: direção fotográfica aprovada; é necessário confirmar autorização de uso, qualidade final, seleção de arquivos e necessidade de nova sessão.
+- Status: direção fotográfica aprovada; autorização de uso confirmada. Permanecem pendentes qualidade final, seleção de arquivos e necessidade de nova sessão.
 
 ## Aplicações prioritárias
 
@@ -107,7 +107,8 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - [ ] Definir versões horizontal, vertical, ícone e monocromáticas.
 - [ ] Definir área de proteção e tamanhos mínimos.
 - [x] Estruturar e classificar o acervo bruto fotográfico — [[Inventario-Fotografico-Acervo-Uli-2026-08-12]].
-- [ ] Confirmar autorização, selecionar a shortlist F1 e organizar fotografias oficiais em alta resolução.
+- [x] Confirmar autorização de uso das fotografias do acervo — confirmado em 12/08/2026.
+- [ ] Selecionar a shortlist F1 e organizar fotografias oficiais em alta resolução.
 - [ ] Criar mockups de Instagram, site, apresentação e material da mentoria.
 - [ ] Consolidar o brandbook após aprovação dos ativos técnicos.
 
@@ -120,4 +121,4 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - Fotografias de referência: arquivos listados na seção F1.
 
 > [!warning] Privacidade e publicação
-> As fotografias e demais materiais do projeto devem permanecer em ambiente privado até confirmação de autorização, organização dos ativos e aprovação da identidade final. Não publicar arquivos brutos ou dados de audiência em repositórios públicos.
+> A autorização das fotografias foi confirmada, mas os arquivos devem permanecer em ambiente privado até seleção dos ativos, organização e aprovação da identidade final. Não publicar arquivos brutos ou dados de audiência em repositórios públicos.

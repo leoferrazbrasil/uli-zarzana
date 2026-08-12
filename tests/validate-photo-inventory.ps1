@@ -60,9 +60,12 @@ Assert-Condition (($ids | Sort-Object) -join ',' -eq ((1..108) -join ',')) 'Os I
 $inventory = Get-Content -LiteralPath $inventoryPath -Raw -Encoding UTF8
 $inventoryRows = @([regex]::Matches($inventory, '(?m)^\| \d{3} \|'))
 Assert-Condition ($inventoryRows.Count -eq 108) "O inventário deve conter 108 registros; encontrados $($inventoryRows.Count)."
+Assert-Condition ($inventory.Contains("autorizacao: confirmada")) 'O inventário não registra a autorização confirmada no frontmatter.'
+$authorizedRows = @([regex]::Matches($inventory, '(?m)^\| \d{3} \|.*confirmada.*$'))
+Assert-Condition ($authorizedRows.Count -eq 108) "Esperadas 108 autorizações confirmadas; encontradas $($authorizedRows.Count)."
 
 foreach ($filename in $filenames) {
     Assert-Condition $inventory.Contains(('`' + $filename + '`')) "Arquivo ausente no inventário: $filename."
 }
 
-Write-Output "PASS: 108 fotos, IDs 001-108, categorias válidas e inventário sincronizado."
+Write-Output 'PASS: 108 photos, IDs 001-108, valid categories, confirmed authorization, and synchronized inventory.'
