@@ -72,4 +72,4 @@
 - [x] Publicar somente os arquivos aprovados via FTP — 9 arquivos enviados; fotos brutas não foram publicadas.
 - [x] Verificar HTTP 200 e referências dos derivados em `https://ulizarzana.com/identidade-visual/`.
 - [x] Verificar HTTP 200 e referências dos derivados em `https://ulizarzana.com/brandbook/`.
-- [ ] Commitar e fazer push na `main`.
+- [x] Commitar e fazer push na `main`.
