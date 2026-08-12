@@ -89,12 +89,11 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 ## O que ainda não está aprovado
 
 - Logotipo final ou arquivo vetorial do monograma.
-- Paleta técnica definitiva para produção.
-- Implementação técnica, testes responsivos e validação de acessibilidade do sistema tipográfico aprovado.
-- Regras de redução, espaçamento, contraste e fundos permitidos.
-- Tratamento fotográfico final e banco de imagens oficial.
+- Paleta técnica definitiva para produção já aprovada e registrada em [[Paleta Técnica Definitiva - A1]].
+- Validação específica do selo, regras de redução, espaçamento, contraste e fundos permitidos.
+- Tratamento fotográfico de novas sessões e banco de imagens ampliado.
 - Brandbook completo.
-- Uso público, publicação ou distribuição de ativos.
+- Uso do selo institucional como logo final; os derivados F1 e mockups autorizados possuem publicação própria.
 
 ## Próximas especificações
 
@@ -110,7 +109,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - [x] Confirmar autorização de uso das fotografias do acervo — confirmado em 12/08/2026.
 - [x] Selecionar a shortlist F1 — [[Shortlist-F1-Fotografias-Uli-2026-08-12]].
 - [x] Preparar derivados oficiais e mockups de aplicação F1 — [[Aplicações Fotográficas F1 - Derivados e Mockups 2026-08-12]].
-- [ ] Criar mockups de Instagram, site, apresentação e material da mentoria.
+- [x] Criar mockups de Instagram, site, apresentação e material da mentoria — [[Mockups de Aplicação do Sistema Visual - A1 B1 T1 F1 2026-08-12]].
 - [ ] Consolidar o brandbook após aprovação dos ativos técnicos.
 
 ## Fontes de decisão

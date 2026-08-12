@@ -35,7 +35,6 @@ Materiais brutos, documentos pessoais, pesquisas, credenciais e arquivos não ne
 
 ## Próximas definições
 
-1. vetor final do monograma UZ;
-2. validação do sistema tipográfico B1 em aplicações reais;
-3. seleção de fotografias autorizadas e aplicações prioritárias;
-4. brandbook técnico final e pacote de ativos.
+1. brandbook técnico final e pacote de ativos;
+2. vetor final do monograma UZ e suas regras específicas;
+3. novas aplicações somente após a consolidação do brandbook.
