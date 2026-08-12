@@ -54,3 +54,10 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 - Variações demonstradas: carreira, liderança, autoridade e ascensão.
 - A fonte manuscrita dos exemplos foi substituída pela tipografia B1 aprovada.
 - Verificação local: quatro cards, proporção responsiva e ausência de overflow confirmadas.
+
+## Correção de escopo — capas sociais
+
+- A aplicação social oficial passa a ser denominada **Padrão de aplicabilidade de capas para Instagram e conteúdo social**.
+- A unidade não é uma galeria de cards: cada capa funciona como uma peça independente para conteúdo.
+- A galeria técnica anterior foi retirada da apresentação pública, preservando seus arquivos no histórico do projeto.
+- Referência de produção: 1080 × 1920 px, 9:16, imagem em tela cheia, gradiente inferior, contexto, título, destaque e assinatura discreta.
