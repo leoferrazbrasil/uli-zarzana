@@ -2,9 +2,9 @@
 
 > **For agentic workers:** Execute inline, mantendo os estados local, Git, FTP e público separados.
 
-**Goal:** Criar um padrão de aplicabilidade de capas independentes para Instagram e conteúdo social.
+**Goal:** Incorporar quatro capas sociais legíveis ao mockup existente de Instagram e retirar as seções públicas autônomas criadas por engano.
 
-**Architecture:** A nova seção de capas sociais reutilizará a folha `application-mockups.css`, mas terá componentes próprios sem moldura de galeria. A antiga galeria técnica será ocultada na apresentação pública para evitar ambiguidade de escopo.
+**Architecture:** O mockup existente de Instagram terá uma grade 2×2 de capas verticais 9:16 com fotografia F1, contexto, título, destaque e assinatura. As seções públicas autônomas de conteúdo social vertical e padrão de capas serão removidas; a regra permanece documentada no próprio mockup.
 
 **Tech Stack:** HTML5, CSS3, PowerShell, FTP e Git.
 
@@ -18,19 +18,20 @@
 
 ### Task 1: Criar teste red
 
-- [ ] Criar `tests/validate-social-covers.ps1`.
-- [ ] Confirmar falha por ausência da nova seção.
+- [x] Atualizar `tests/validate-social-covers.ps1` para exigir as capas dentro de `#mockups` e proibir as seções autônomas.
+- [x] Confirmar falha inicial por ausência das classes do novo mockup.
 
 ### Task 2: Implementar o padrão
 
-- [x] Criar classes `social-cover-grid` e `social-cover` no CSS compartilhado.
-- [x] Inserir quatro capas independentes nas duas páginas.
-- [x] Ocultar a galeria técnica anterior sem removê-la do histórico de implementação.
+- [x] Criar classes `mockup-instagram__cover-grid` e `mockup-instagram__cover` no CSS compartilhado.
+- [x] Inserir quatro capas independentes dentro do mockup Instagram nas duas páginas.
+- [x] Remover as seções públicas `social-vertical` e `social-covers` sem apagar o histórico documental.
+- [x] Eliminar a regra posicional que poderia ocultar o mockup após a remoção das seções.
 
 ### Task 3: Validar e publicar
 
-- [x] Executar todos os testes e revisão responsiva.
-- [x] Atualizar o cofre Obsidian.
-- [x] Publicar HTML/CSS via FTP.
-- [x] Verificar as URLs públicas, incluindo quebra de cache do CSS.
+- [x] Executar todos os testes e revisão visual local.
+- [ ] Atualizar o cofre Obsidian.
+- [ ] Publicar HTML/CSS via FTP.
+- [ ] Verificar as URLs públicas, incluindo quebra de cache do CSS.
 - [ ] Commitar e fazer push na `main`.

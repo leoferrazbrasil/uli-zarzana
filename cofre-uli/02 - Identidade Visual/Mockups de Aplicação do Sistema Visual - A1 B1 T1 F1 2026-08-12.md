@@ -23,7 +23,7 @@ O sistema visual aprovado foi aplicado em quatro contextos prioritários: Instag
 
 | Contexto | Função | Ativo fotográfico |
 | --- | --- | --- |
-| Instagram | Publicação editorial e capa de destaque | `uli-f1-015-presenca-720x900.jpg` |
+| Instagram | Publicação editorial e quatro capas sociais de demonstração | `uli-f1-015-presenca-720x900.jpg`, `uli-f1-082-lideranca-720x900.jpg`, `uli-f1-080-autoridade-720x900.jpg`, `uli-f1-087-ascensao-720x900.jpg` |
 | Site | Hero institucional | `uli-f1-015-hero-1600x900.jpg` |
 | Apresentação | Capa e slide de conteúdo 16:9 | `uli-f1-080-autoridade-720x900.jpg` |
 | Material da mentoria | Capa de módulo, aula ou apoio | `uli-f1-087-ascensao-720x900.jpg` |
@@ -38,26 +38,26 @@ O sistema visual aprovado foi aplicado em quatro contextos prioritários: Instag
 
 ## Estados da entrega
 
-- Local: quatro mockups renderizados nas duas páginas estáticas.
-- Git: arquivos intencionais serão versionados na `main`.
-- FTP: concluído; 8 arquivos enviados na raiz FTP correspondente a `public_html`.
-- Público: as duas páginas, o CSS compartilhado e os cinco recursos JPG retornaram HTTP 200.
+- Local: quatro mockups renderizados nas duas páginas estáticas; o mockup Instagram contém quatro capas em grade 2×2.
+- Git: a alteração ainda será versionada na `main` após a validação final.
+- FTP: a publicação desta correção ainda será executada.
+- Público: a verificação pública desta correção ainda será executada separadamente.
 
 ## Próximo avanço
 
 Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups; manter a finalização do selo institucional como frente futura separada.
 
-## Aplicação social vertical
+## Padrão de capas sociais no mockup Instagram
 
-- Formato determinado: 9:16 para Reels, Stories e vídeos curtos.
-- Estrutura: contexto curto, título editorial, destaque em champagne/terracota e rodapé discreto.
+- Formato determinado: 9:16, com referência de produção 1080 × 1920 px para Reels, Stories e conteúdos sociais.
+- Estrutura: imagem em tela cheia, gradiente inferior, contexto curto, título editorial, destaque em champagne/terracota e rodapé discreto.
 - Variações demonstradas: carreira, liderança, autoridade e ascensão.
 - A fonte manuscrita dos exemplos foi substituída pela tipografia B1 aprovada.
-- Verificação local: quatro cards, proporção responsiva e ausência de overflow confirmadas.
+- Verificação local: quatro capas dentro do mockup de Instagram, proporção responsiva, leitura visual e ausência de overflow confirmadas.
 
 ## Correção de escopo — capas sociais
 
-- A aplicação social oficial passa a ser denominada **Padrão de aplicabilidade de capas para Instagram e conteúdo social**.
-- A unidade não é uma galeria de cards: cada capa funciona como uma peça independente para conteúdo.
-- A galeria técnica anterior foi retirada da apresentação pública, preservando seus arquivos no histórico do projeto.
-- Referência de produção: 1080 × 1920 px, 9:16, imagem em tela cheia, gradiente inferior, contexto, título, destaque e assinatura discreta.
+- A aplicação social oficial permanece denominada **Padrão de aplicabilidade de capas para Instagram e conteúdo social**.
+- A conclusão determinística é incorporá-la ao mockup existente de Instagram, porque os anexos eram referência de padrão de capa e não uma nova seção educativa.
+- As seções públicas autônomas `social-vertical` e `social-covers` foram removidas; o histórico documental permanece preservado.
+- O indicador de visualização dos exemplos não foi reproduzido como métrica de marca.

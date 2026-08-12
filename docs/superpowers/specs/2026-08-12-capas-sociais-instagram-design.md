@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Criar um padrão reutilizável para capas independentes de Reels, Stories e conteúdos sociais da Uli Zarzana, inspirado na estrutura dos exemplos fornecidos pelo usuário.
+Criar, dentro do mockup existente de Instagram, uma demonstração reutilizável do padrão de capas independentes para Reels, Stories e conteúdos sociais da Uli Zarzana, inspirada na estrutura dos exemplos fornecidos pelo usuário.
 
 ## Estrutura visual determinada
 
@@ -14,11 +14,11 @@ Criar um padrão reutilizável para capas independentes de Reels, Stories e cont
 - Uma palavra ou expressão destacada em champagne ou terracota.
 - Subtexto opcional e assinatura discreta.
 - Área inferior reservada para a interface do Instagram; nenhuma informação essencial depende dela.
-- Cada capa deve funcionar sozinha, sem moldura de galeria ou chrome de aplicativo.
+- Cada capa deve funcionar sozinha dentro da demonstração, sem depender de métrica ou de uma moldura de galeria para ser compreendida.
 
 ## Conteúdos de demonstração
 
-As quatro capas demonstram carreira, liderança, autoridade e ascensão, usando somente derivados F1 já autorizados. O indicador de visualização dos exemplos não será reproduzido como métrica de marca.
+As quatro capas demonstram carreira, liderança, autoridade e ascensão, usando somente derivados F1 já autorizados. O indicador de visualização dos exemplos não será reproduzido como métrica de marca. A demonstração fica incorporada ao contexto Instagram dos mockups de aplicação; não existe seção pública autônoma para esse conteúdo.
 
 ## Compatibilidade com a marca
 
@@ -26,4 +26,4 @@ A estrutura dos exemplos é preservada. A fonte manuscrita é substituída pela 
 
 ## Limites
 
-O padrão é uma regra de aplicação e não finaliza o selo institucional. Não inclui novas fontes, fotos brutas, métricas fictícias ou publicação do monograma como logo final.
+O padrão é uma regra de aplicação e não finaliza o selo institucional. Não inclui novas fontes, fotos brutas, métricas fictícias ou publicação do monograma como logo final. A referência técnica 1080 × 1920 px / 9:16 permanece documentada no mockup, sem criar uma página educativa independente.
