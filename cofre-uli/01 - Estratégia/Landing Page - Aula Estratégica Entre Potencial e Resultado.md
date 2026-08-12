@@ -1,7 +1,7 @@
 ---
 title: Landing Page - Aula Estratégica Entre Potencial e Resultado
 date: 2026-08-12
-status: design-aprovado
+status: implementado-publicado
 tipo: decisao-estrategica
 tags:
   - uli-zarzana
@@ -97,3 +97,38 @@ CTA:
 ## Fonte técnica detalhada
 
 A especificação integral está versionada em `docs/superpowers/specs/2026-08-12-landing-page-aula-estrategica-design.md`.
+
+## Implementação e publicação
+
+> [!success] Entrega verificada em 2026-08-12
+> A landing page foi implementada na raiz do domínio e validada como demonstração estática. O formulário simula a conclusão da inscrição no próprio navegador, limpa os campos e não transmite nem armazena os valores digitados.
+
+### Estado local
+
+- Entrada principal: `web/index.html`.
+- Sistema visual: `web/assets/design-tokens.css` e `web/assets/landing-page.css`.
+- Interações demonstrativas: `web/assets/landing-page.js`.
+- Cinco derivados fotográficos oficiais utilizados na composição.
+- Contrato estático: `tests/validate-landing-page.ps1`.
+- Testes de comportamento: `tests/landing-page.test.mjs`.
+- Validação responsiva concluída em desktop, tablet e mobile, sem estouro horizontal.
+
+### Estado Git
+
+- Implementação e ajustes finais versionados na branch `main`.
+- Commit de fechamento visual: `5b61754`.
+- Repositório remoto sincronizado em `https://github.com/leoferrazbrasil/uli-zarzana`.
+
+### Estado de hospedagem
+
+- Nove arquivos publicados por FTP na raiz pública e em `assets/`.
+- Os diretórios `identidade-visual/` e `brandbook/` foram preservados.
+- Nenhuma credencial foi registrada neste cofre ou no repositório.
+
+### Estado público verificado
+
+- Landing page: `https://ulizarzana.com/` — HTTP 200.
+- Identidade visual: `https://ulizarzana.com/identidade-visual/` — HTTP 200.
+- Brandbook: `https://ulizarzana.com/brandbook/` — HTTP 200.
+- CSS, JavaScript e fotografia principal: HTTP 200.
+- Formulário demonstrativo testado publicamente, com confirmação local, limpeza dos campos e console sem erros.
