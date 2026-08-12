@@ -55,7 +55,7 @@ aliases:
 ## Estado da entrega
 
 - Seleção F1: registrada e autorizada.
-- Derivados: preparados localmente.
-- Mockups HTML: preparados nas duas páginas públicas.
-- FTP: pendente de execução nesta entrega.
-- URLs públicas: pendentes de verificação após FTP.
+- Derivados: preparados localmente e publicados.
+- Mockups HTML: preparados nas duas páginas públicas e publicados.
+- FTP: concluído; 9 arquivos aprovados enviados para o escopo FTP raiz correspondente a `public_html`.
+- URLs públicas: verificadas após FTP; páginas, CSS e derivados JPG retornaram HTTP 200.

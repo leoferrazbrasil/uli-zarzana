@@ -69,7 +69,7 @@
 **Files:**
 - Deploy: `web/assets/design-tokens.css`, `web/assets/fotografia/*.jpg`, `web/identidade-visual/index.html`, `web/brandbook/index.html`
 
-- [ ] Publicar somente os arquivos aprovados via FTP — pendente de credencial segura no ambiente.
-- [ ] Verificar HTTP 200 e referências dos derivados em `https://ulizarzana.com/identidade-visual/`.
-- [ ] Verificar HTTP 200 e referências dos derivados em `https://ulizarzana.com/brandbook/`.
+- [x] Publicar somente os arquivos aprovados via FTP — 9 arquivos enviados; fotos brutas não foram publicadas.
+- [x] Verificar HTTP 200 e referências dos derivados em `https://ulizarzana.com/identidade-visual/`.
+- [x] Verificar HTTP 200 e referências dos derivados em `https://ulizarzana.com/brandbook/`.
 - [ ] Commitar e fazer push na `main`.
