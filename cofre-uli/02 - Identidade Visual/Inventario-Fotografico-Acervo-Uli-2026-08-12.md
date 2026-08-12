@@ -2,7 +2,7 @@
 title: Inventário Fotográfico - Acervo Uli 2026-08-12
 date: 2026-08-12
 updated: 2026-08-12
-status: em-triagem
+status: shortlist-f1-registrada
 tipo: inventario-fotografico
 autorizacao: confirmada
 tags:
@@ -39,6 +39,8 @@ aliases:
 - Orientação: 95 verticais, 13 horizontais, 0 quadradas.
 - Faixa técnica: 90 em A, 18 em B, 0 em C.
 - Triagem F1: 42 imagens.
+- Shortlist F1 registrada: 10 imagens.
+- Candidatas F1 n?o selecionadas nesta etapa: 32 imagens.
 - Acervo contextual: 66 imagens.
 - Autorização: `confirmada` para os 108 registros.
 
@@ -81,7 +83,7 @@ aliases:
 | 004 | `uli-004-retrato-editorial.jpeg` | `retrato-editorial` | 853×1280 | vertical | B | site, perfil, capa e peças de autoridade | `triagem-f1` | `confirmada` |
 | 005 | `uli-005-evento-corporativo.jpeg` | `evento-corporativo` | 1280×853 | horizontal | B | eventos, networking e prova de presença profissional | `triagem-f1` | `confirmada` |
 | 006 | `uli-006-lifestyle-pessoal.jpeg` | `lifestyle-pessoal` | 960×1280 | vertical | B | narrativa pessoal; não prioritário para F1 | `acervo-contextual` | `confirmada` |
-| 007 | `uli-007-retrato-editorial.jpeg` | `retrato-editorial` | 851×1280 | vertical | B | site, perfil, capa e peças de autoridade | `triagem-f1` | `confirmada` |
+| 007 | `uli-007-retrato-editorial.jpeg` | `retrato-editorial` | 851×1280 | vertical | B | site, perfil, capa e peças de autoridade | `shortlist-f1` | `confirmada` |
 | 008 | `uli-008-retrato-editorial.jpeg` | `retrato-editorial` | 851×1280 | vertical | B | site, perfil, capa e peças de autoridade | `triagem-f1` | `confirmada` |
 | 009 | `uli-009-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 1280×1098 | horizontal | B | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
 | 010 | `uli-010-bastidores-trabalho.jpeg` | `bastidores-trabalho` | 960×1280 | vertical | B | processo, rotina e contexto profissional | `acervo-contextual` | `confirmada` |
@@ -89,8 +91,8 @@ aliases:
 | 012 | `uli-012-bastidores-trabalho.jpeg` | `bastidores-trabalho` | 960×1280 | vertical | B | processo, rotina e contexto profissional | `acervo-contextual` | `confirmada` |
 | 013 | `uli-013-equipe-corporativa.jpeg` | `equipe-corporativa` | 1004×1280 | vertical | B | prova social, liderança e contexto de equipe | `triagem-f1` | `confirmada` |
 | 014 | `uli-014-bastidores-trabalho.jpeg` | `bastidores-trabalho` | 960×1280 | vertical | B | processo, rotina e contexto profissional | `acervo-contextual` | `confirmada` |
-| 015 | `uli-015-retrato-editorial.jpeg` | `retrato-editorial` | 1600×1152 | horizontal | A | site, perfil, capa e peças de autoridade | `triagem-f1` | `confirmada` |
-| 016 | `uli-016-retrato-editorial.jpeg` | `retrato-editorial` | 1024×1536 | vertical | B | site, perfil, capa e peças de autoridade | `triagem-f1` | `confirmada` |
+| 015 | `uli-015-retrato-editorial.jpeg` | `retrato-editorial` | 1600×1152 | horizontal | A | site, perfil, capa e peças de autoridade | `shortlist-f1` | `confirmada` |
+| 016 | `uli-016-retrato-editorial.jpeg` | `retrato-editorial` | 1024×1536 | vertical | B | site, perfil, capa e peças de autoridade | `shortlist-f1` | `confirmada` |
 | 017 | `uli-017-leitura-bem-estar.jpeg` | `leitura-bem-estar` | 1200×1600 | vertical | A | valores, estudo e repertório; não prioritário para F1 | `acervo-contextual` | `confirmada` |
 | 018 | `uli-018-gastronomia-ambiente.jpeg` | `gastronomia-ambiente` | 1200×1600 | vertical | A | contexto pessoal/ambiente; não prioritário para F1 | `acervo-contextual` | `confirmada` |
 | 019 | `uli-019-gastronomia-ambiente.jpeg` | `gastronomia-ambiente` | 1200×1600 | vertical | A | contexto pessoal/ambiente; não prioritário para F1 | `acervo-contextual` | `confirmada` |
@@ -154,25 +156,25 @@ aliases:
 | 077 | `uli-077-viagem-lifestyle.jpeg` | `viagem-lifestyle` | 960×1280 | vertical | B | narrativa pessoal; não prioritário para F1 | `acervo-contextual` | `confirmada` |
 | 078 | `uli-078-viagem-lifestyle.jpeg` | `viagem-lifestyle` | 1200×1600 | vertical | A | narrativa pessoal; não prioritário para F1 | `acervo-contextual` | `confirmada` |
 | 079 | `uli-079-bastidores-trabalho.jpeg` | `bastidores-trabalho` | 1200×1600 | vertical | A | processo, rotina e contexto profissional | `acervo-contextual` | `confirmada` |
-| 080 | `uli-080-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 1600×1373 | horizontal | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
-| 081 | `uli-081-evento-corporativo.jpeg` | `evento-corporativo` | 1600×1067 | horizontal | A | eventos, networking e prova de presença profissional | `triagem-f1` | `confirmada` |
-| 082 | `uli-082-corporativa-documental.jpeg` | `corporativa-documental` | 1443×1600 | vertical | A | memória institucional e bastidores de liderança | `triagem-f1` | `confirmada` |
+| 080 | `uli-080-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 1600×1373 | horizontal | A | aulas, palestras, lives e prova de autoridade | `shortlist-f1` | `confirmada` |
+| 081 | `uli-081-evento-corporativo.jpeg` | `evento-corporativo` | 1600×1067 | horizontal | A | eventos, networking e prova de presença profissional | `shortlist-f1` | `confirmada` |
+| 082 | `uli-082-corporativa-documental.jpeg` | `corporativa-documental` | 1443×1600 | vertical | A | memória institucional e bastidores de liderança | `shortlist-f1` | `confirmada` |
 | 083 | `uli-083-lifestyle-pessoal.jpeg` | `lifestyle-pessoal` | 900×1600 | vertical | A | narrativa pessoal; não prioritário para F1 | `acervo-contextual` | `confirmada` |
 | 084 | `uli-084-bastidores-trabalho.jpeg` | `bastidores-trabalho` | 900×1600 | vertical | A | processo, rotina e contexto profissional | `acervo-contextual` | `confirmada` |
 | 085 | `uli-085-corporativa-documental.jpeg` | `corporativa-documental` | 1200×1600 | vertical | A | memória institucional e bastidores de liderança | `triagem-f1` | `confirmada` |
 | 086 | `uli-086-bastidores-trabalho.jpeg` | `bastidores-trabalho` | 1200×1600 | vertical | A | processo, rotina e contexto profissional | `acervo-contextual` | `confirmada` |
-| 087 | `uli-087-equipe-corporativa.jpeg` | `equipe-corporativa` | 1600×1200 | horizontal | A | prova social, liderança e contexto de equipe | `triagem-f1` | `confirmada` |
+| 087 | `uli-087-equipe-corporativa.jpeg` | `equipe-corporativa` | 1600×1200 | horizontal | A | prova social, liderança e contexto de equipe | `shortlist-f1` | `confirmada` |
 | 088 | `uli-088-equipe-corporativa.jpeg` | `equipe-corporativa` | 1600×1200 | horizontal | A | prova social, liderança e contexto de equipe | `triagem-f1` | `confirmada` |
 | 089 | `uli-089-gastronomia-ambiente.jpeg` | `gastronomia-ambiente` | 1200×1600 | vertical | A | contexto pessoal/ambiente; não prioritário para F1 | `acervo-contextual` | `confirmada` |
 | 090 | `uli-090-viagem-lifestyle.jpeg` | `viagem-lifestyle` | 850×1600 | vertical | B | narrativa pessoal; não prioritário para F1 | `acervo-contextual` | `confirmada` |
-| 091 | `uli-091-evento-corporativo.jpeg` | `evento-corporativo` | 1600×1298 | horizontal | A | eventos, networking e prova de presença profissional | `triagem-f1` | `confirmada` |
+| 091 | `uli-091-evento-corporativo.jpeg` | `evento-corporativo` | 1600×1298 | horizontal | A | eventos, networking e prova de presença profissional | `shortlist-f1` | `confirmada` |
 | 092 | `uli-092-lifestyle-pessoal.jpeg` | `lifestyle-pessoal` | 1200×1600 | vertical | A | narrativa pessoal; não prioritário para F1 | `acervo-contextual` | `confirmada` |
-| 093 | `uli-093-retrato-corporativo.jpeg` | `retrato-corporativo` | 900×1600 | vertical | A | perfil profissional, site e apresentação institucional | `triagem-f1` | `confirmada` |
+| 093 | `uli-093-retrato-corporativo.jpeg` | `retrato-corporativo` | 900×1600 | vertical | A | perfil profissional, site e apresentação institucional | `shortlist-f1` | `confirmada` |
 | 094 | `uli-094-retrato-corporativo.jpeg` | `retrato-corporativo` | 900×1600 | vertical | A | perfil profissional, site e apresentação institucional | `triagem-f1` | `confirmada` |
 | 095 | `uli-095-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
 | 096 | `uli-096-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
 | 097 | `uli-097-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
-| 098 | `uli-098-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
+| 098 | `uli-098-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `shortlist-f1` | `confirmada` |
 | 099 | `uli-099-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
 | 100 | `uli-100-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
 | 101 | `uli-101-palestra-apresentacao.jpeg` | `palestra-apresentacao` | 900×1600 | vertical | A | aulas, palestras, lives e prova de autoridade | `triagem-f1` | `confirmada` |
