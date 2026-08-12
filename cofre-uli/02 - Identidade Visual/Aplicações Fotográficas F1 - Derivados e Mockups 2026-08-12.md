@@ -1,7 +1,7 @@
 ---
 title: Aplicações Fotográficas F1 - Derivados e Mockups 2026-08-12
 date: 2026-08-12
-status: preparado-para-publicacao
+status: publicado-e-verificado
 tipo: aplicacoes-fotograficas
 autorizacao: confirmada
 tags:
