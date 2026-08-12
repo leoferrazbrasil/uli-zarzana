@@ -38,10 +38,10 @@ O sistema visual aprovado foi reorganizado em quatro seções horizontais indepe
 
 ## Estados da entrega
 
-- Local: quatro seções horizontais renderizadas nas duas páginas estáticas; a seção Instagram contém quatro cards de capas semelhantes aos Cards editoriais F1; a seção Apresentação contém o método determinístico em cinco etapas e uma conclusão editorial responsiva.
-- Git: commit `5a47c89` enviado para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
-- FTP: atualização incremental de 4 arquivos na raiz FTP correspondente a `public_html`: 2 HTML, 1 CSS e 1 JavaScript compartilhado. O conjunto público passou a conter 9 arquivos únicos, sem fotos brutas ou credenciais.
-- Público: as duas páginas, o CSS e o JavaScript retornaram HTTP 200 com a versão `20260812-presentation-method-v1`; a renderização pública confirmou cinco etapas no desktop e a reorganização responsiva no mobile.
+- Local: quatro seções horizontais renderizadas nas duas páginas estáticas; a seção Instagram contém quatro cards de capas semelhantes aos Cards editoriais F1; a Apresentação contém o método determinístico em cinco etapas; o Material da mentoria contém as cinco dimensões e a conclusão editorial responsiva.
+- Git: commit `5760e99` enviado para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
+- FTP: atualização incremental de 4 arquivos na raiz FTP correspondente a `public_html`: 1 CSS, 1 JavaScript compartilhado e os registros já publicados das duas páginas. O conjunto público permanece sem fotos brutas ou credenciais.
+- Público: as duas páginas, o CSS e o JavaScript retornaram HTTP 200 com a versão `20260812-mentoria-framework-v1`; a renderização pública confirmou cinco dimensões no desktop e no mobile.
 
 ## Próximo avanço
 
