@@ -125,18 +125,18 @@ Alterar somente CSS/cópia das capas Instagram; não tocar fotografias, grade ge
 
 Registrar escala, posições, degradês, remoção do rodapé técnico e validações desktop/mobile usando Obsidian Markdown.
 
-- [ ] **Step 2: Publicar via FTP**
+- [x] **Step 2: Publicar via FTP**
 
 Enviar somente os dois HTML já públicos, o CSS e o JavaScript compartilhados aos caminhos equivalentes em `public_html`, sem persistir credenciais.
 
-- [ ] **Step 3: Verificar publicamente**
+- [x] **Step 3: Verificar publicamente**
 
 Confirmar HTTP 200 para as duas páginas, CSS e JavaScript; renderizar a seção pública e confirmar quatro capas, ausência de rodapé técnico e escala dominante.
 
-- [ ] **Step 4: Versionar somente os arquivos da tarefa**
+- [x] **Step 4: Versionar somente os arquivos da tarefa**
 
 Stage explícito dos arquivos deste plano, `git diff --cached --check`, commit de implementação, push para `origin/main`; atualizar o cofre com commit e versão pública e criar commit documental final.
 
-- [ ] **Step 5: Confirmar estado final**
+- [x] **Step 5: Confirmar estado final**
 
 Executar novamente todos os validadores, `git status --short` e `git log -2 --oneline --decorate`; relatar separadamente local, cofre, Git, FTP e público.

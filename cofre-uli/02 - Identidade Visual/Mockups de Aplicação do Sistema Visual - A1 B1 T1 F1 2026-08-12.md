@@ -39,9 +39,9 @@ O sistema visual aprovado foi reorganizado em quatro seções horizontais indepe
 ## Estados da entrega
 
 - Local: quatro seções horizontais renderizadas nas duas páginas estáticas; a seção Instagram contém quatro cards de capas com cópia curta e degradê cromático; a Apresentação contém o método determinístico em cinco etapas; o Material da mentoria contém as cinco dimensões e a conclusão editorial responsiva.
-- Git: commit `9964a12` enviado para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
-- FTP: atualização incremental de 4 arquivos na raiz FTP correspondente a `public_html`: 1 CSS, 1 JavaScript compartilhado e os registros já publicados das duas páginas. O conjunto público permanece sem fotos brutas ou credenciais.
-- Público: as duas páginas, o CSS e o JavaScript retornaram HTTP 200 com a versão `20260812-instagram-covers-v2`; a renderização pública confirmou quatro cards, quatro subtítulos e leitura responsiva em desktop e mobile.
+- Git: implementação no commit `d442db7`, enviada para `main` em `https://github.com/leoferrazbrasil/uli-zarzana`.
+- FTP: atualização incremental de 4 arquivos na raiz pública efetiva: 1 CSS, 1 JavaScript compartilhado e os dois HTML. Uma árvore redundante criada durante a identificação da raiz foi verificada, removida integralmente e não afetou os diretórios públicos legítimos. O conjunto público permanece sem fotos brutas ou credenciais.
+- Público: as duas páginas, o CSS e o JavaScript retornaram HTTP 200 com a versão `20260812-instagram-feed-v3`; a renderização pública confirmou quatro cards, três linhas visuais por capa, ausência de overflow e leitura responsiva em desktop e mobile.
 
 ## Próximo avanço
 
@@ -85,6 +85,7 @@ Consolidar o brandbook técnico final com as regras, tokens, derivados e mockups
 
 ## Evidência pública
 
-- [Identidade visual](https://ulizarzana.com/identidade-visual/?v=20260812-mockups-sections-v1)
-- [Brandbook](https://ulizarzana.com/brandbook/?v=20260812-mockups-sections-v1)
-- [CSS dos mockups](https://ulizarzana.com/assets/application-mockups.css?v=20260812-mockups-sections-v1)
+- [Identidade visual](https://ulizarzana.com/identidade-visual/?v=20260812-instagram-feed-v3)
+- [Brandbook](https://ulizarzana.com/brandbook/?v=20260812-instagram-feed-v3)
+- [CSS dos mockups](https://ulizarzana.com/assets/application-mockups.css?v=20260812-instagram-feed-v3)
+- [JavaScript dos mockups](https://ulizarzana.com/assets/application-mockups.js?v=20260812-instagram-feed-v3)
