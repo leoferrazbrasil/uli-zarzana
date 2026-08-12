@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#332A26">
+  <title>Aula Estratégica Entre Potencial e Resultado | Uli Zarzana</title>
+  <meta name="description" content="Identifique o bloqueio que impede sua experiência de se transformar em autoridade, influência e crescimento.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/design-tokens.css">
+  <link rel="stylesheet" href="assets/landing-page.css">
+  <script src="assets/landing-page.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+  <div class="hero-shell">
+    <header class="site-header" id="topo">
+      <div class="section-shell site-header__inner">
+        <a class="wordmark" href="#topo" aria-label="Uli Zarzana — início">Uli Zarzana</a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <div class="site-nav__links">
+            <a href="#para-quem">Para quem</a>
+            <a href="#conteudo">Conteúdo</a>
+            <a href="#sobre-uli">Sobre a Uli</a>
+          </div>
+          <a class="button button--outline" href="#formulario" data-focus-form>Reservar minha vaga</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__portrait" role="img" aria-label="Uli Zarzana em retrato editorial"></div>
+        <div class="section-shell hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Aula estratégica</p>
+            <p class="event-name">Entre Potencial e Resultado</p>
+            <h1 id="hero-title">Identifique o bloqueio que impede sua experiência de se transformar em <em>autoridade, influência e crescimento.</em></h1>
+            <p class="hero__intro">Em duas horas, você compreenderá por que capacidade e entrega nem sempre se convertem em reconhecimento — e sairá com clareza sobre o próximo movimento para sua carreira, liderança ou negócio.</p>
+
+            <div class="countdown" aria-label="Contagem regressiva demonstrativa">
+              <div><strong data-countdown="days">00</strong><span>dias</span></div>
+              <div><strong data-countdown="hours">00</strong><span>horas</span></div>
+              <div><strong data-countdown="minutes">00</strong><span>min</span></div>
+              <div><strong data-countdown="seconds">00</strong><span>seg</span></div>
+            </div>
+            <p class="countdown__status" data-countdown-status aria-live="polite"></p>
+
+            <p class="event-meta">Gratuita <span>·</span> on-line <span>·</span> ao vivo <span>·</span> 24 de setembro de 2026, às 19h30</p>
+            <p class="demo-pill"><span aria-hidden="true"></span>Página demonstrativa — data e inscrições ilustrativas</p>
+          </div>
+
+          <div class="registration" id="formulario">
+            <p class="eyebrow">Inscrição demonstrativa</p>
+            <h2>Reserve sua vaga na Aula Estratégica</h2>
+            <form id="lead-form" novalidate>
+              <div class="field">
+                <label for="lead-name">Nome completo</label>
+                <input id="lead-name" name="name" type="text" autocomplete="name" placeholder="Digite seu nome completo" required>
+              </div>
+              <div class="field">
+                <label for="lead-email">E-mail</label>
+                <input id="lead-email" name="email" type="email" autocomplete="email" placeholder="Digite seu melhor e-mail" required>
+              </div>
+              <div class="field">
+                <label for="lead-phone">Telefone</label>
+                <input id="lead-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" required>
+              </div>
+              <div class="field">
+                <label for="lead-role">Cargo ou momento profissional</label>
+                <select id="lead-role" name="role" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="analista-especialista">Analista ou especialista</option>
+                  <option value="consultor-autonomo">Consultor ou profissional autônomo</option>
+                  <option value="supervisor-coordenador">Supervisor ou coordenador</option>
+                  <option value="gerente">Gerente</option>
+                  <option value="diretor-executivo">Diretor, VP ou C-level</option>
+                  <option value="empresario-fundador">Empresário ou fundador</option>
+                  <option value="transicao-recolocacao">Em transição ou recolocação</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="lead-income">Faixa de renda mensal</label>
+                <select id="lead-income" name="income" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="ate-5">Até R$ 5 mil</option>
+                  <option value="5-10">De R$ 5 mil a R$ 10 mil</option>
+                  <option value="10-15">De R$ 10 mil a R$ 15 mil</option>
+                  <option value="15-20">De R$ 15 mil a R$ 20 mil</option>
+                  <option value="20-30">De R$ 20 mil a R$ 30 mil</option>
+                  <option value="30-50">De R$ 30 mil a R$ 50 mil</option>
+                  <option value="acima-50">Acima de R$ 50 mil</option>
+                </select>
+              </div>
+              <button class="button button--light button--full" type="submit">Quero identificar meu próximo movimento</button>
+              <p class="demo-notice">Página demonstrativa — data e inscrições ilustrativas.</p>
+              <p id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="audience section section--paper" id="para-quem" aria-labelledby="audience-title">
+        <div class="section-shell section-heading section-heading--center">
+          <p class="eyebrow">Sobre a aula</p>
+          <h2 id="audience-title">Esta aula é para <em>você</em> se...</h2>
+        </div>
+        <div class="section-shell audience-cards">
+          <article class="audience-card audience-card--yes">
+            <h3><span aria-hidden="true">+</span> É para quem</h3>
+            <ul>
+              <li>Você já possui experiência e entrega resultados, mas seu crescimento ainda não acompanha sua capacidade.</li>
+              <li>Suas responsabilidades aumentaram, mas reconhecimento, influência ou retorno não evoluíram na mesma proporção.</li>
+              <li>Você não consegue identificar se o bloqueio está no posicionamento, nas decisões, na comunicação ou na execução.</li>
+              <li>Você lidera uma carreira, uma equipe ou um negócio e precisa definir o próximo movimento com clareza.</li>
+            </ul>
+          </article>
+          <article class="audience-card audience-card--no">
+            <h3><span aria-hidden="true">×</span> Não é para quem</h3>
+            <ul>
+              <li>Procura motivação passageira ou uma fórmula automática de promoção e crescimento.</li>
+              <li>Espera resultado sem rever decisões, comportamentos e formas de atuação.</li>
+              <li>Busca recomendações sobre investimentos ou enriquecimento rápido.</li>
+              <li>Ainda não possui experiência suficiente para aplicar uma discussão sobre posicionamento, liderança e influência.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section section--paper" id="conteudo" aria-labelledby="content-title">
+        <div class="section-shell section-heading section-heading--center">
+          <p class="eyebrow">O que você vai compreender</p>
+          <h2 id="content-title">Uma aula para transformar percepção difusa em <em>direção concreta</em></h2>
+        </div>
+        <div class="section-shell content-grid">
+          <article class="content-card content-card--diagnosis" style="--card-image: url('fotografia/uli-f1-015-presenca-720x900.jpg')">
+            <div class="content-card__copy"><p>Diagnóstico</p><h3>O bloqueio que você ainda não nomeou</h3><span>Diferencie falta de capacidade de problemas de percepção, direção, comunicação ou execução.</span></div>
+          </article>
+          <article class="content-card content-card--positioning" style="--card-image: url('fotografia/uli-f1-080-autoridade-720x900.jpg')">
+            <div class="content-card__copy"><p>Posicionamento</p><h3>Como experiência se transforma em valor percebido</h3><span>Torne sua contribuição visível sem depender de autopromoção vazia.</span></div>
+          </article>
+          <article class="content-card content-card--direction" style="--card-image: url('fotografia/uli-f1-082-lideranca-720x900.jpg')">
+            <div class="content-card__copy"><p>Direção</p><h3>O próximo movimento que faz sentido agora</h3><span>Identifique o que precisa mudar primeiro em sua carreira, liderança ou negócio.</span></div>
+          </article>
+          <article class="content-card content-card--execution" style="--card-image: url('fotografia/uli-f1-087-ascensao-720x900.jpg')">
+            <div class="content-card__copy"><p>Execução</p><h3>Uma decisão traduzida em ação</h3><span>Saia da aula com um movimento concreto para reduzir a distância entre potencial e resultado.</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="proof section section--paper" id="depoimentos" aria-labelledby="proof-title">
+        <div class="section-shell section-heading section-heading--center">
+          <p class="eyebrow">Percepções da audiência</p>
+          <h2 id="proof-title">O que a audiência já reconhece na Uli</h2>
+          <p>Percepções registradas na pesquisa de audiência. Identidades preservadas.</p>
+        </div>
+        <div class="proof__viewport section-shell">
+          <div class="audience-quotes" id="testimonials-track">
+            <blockquote class="audience-quote"><span>“</span><p>Referência em liderança e em executar as ideias.</p></blockquote>
+            <blockquote class="audience-quote"><span>“</span><p>Liderança e autoconfiança.</p></blockquote>
+            <blockquote class="audience-quote"><span>“</span><p>Constância e propósito.</p></blockquote>
+            <blockquote class="audience-quote"><span>“</span><p>Admiro a profissional que é e a forma como conduz o time.</p></blockquote>
+          </div>
+          <div class="proof__controls" aria-label="Navegar pelas percepções">
+            <button type="button" data-scroll="previous" aria-label="Ver percepções anteriores">←</button>
+            <button type="button" data-scroll="next" aria-label="Ver próximas percepções">→</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section section--ink" id="sobre-uli" aria-labelledby="about-title">
+        <div class="section-shell about__grid">
+          <figure class="about__portrait"><img src="assets/fotografia/uli-f1-080-autoridade-720x900.jpg" alt="Uli Zarzana em retrato editorial"></figure>
+          <div class="about__copy">
+            <p class="eyebrow">Sobre a Uli</p>
+            <h2 id="about-title">Uli Zarzana</h2>
+            <p>Executiva de estratégia comercial, fundadora da UZM Assessoria Empresarial e mentora de profissionais e empresários. Possui mais de dez anos de experiência em vendas e mais de oito anos em liderança, com progressão até posições de diretoria.</p>
+            <p>No Grupo Fictor, avançou de Executiva Comercial a Diretora Comercial e liderou uma estrutura de 178 profissionais, apoiada por 22 líderes formados. Sua experiência reúne estratégia, crescimento, posicionamento, liderança e execução — fundamentos aplicados hoje ao desenvolvimento de pessoas que precisam reduzir a distância entre capacidade e resultado.</p>
+            <div class="metrics">
+              <div><strong>10+</strong><span>10+ anos em vendas</span></div>
+              <div><strong>8+</strong><span>8+ anos em liderança</span></div>
+              <div><strong>178</strong><span>178 profissionais na estrutura</span></div>
+              <div><strong>22</strong><span>22 líderes formados</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing section section--ink" id="cta-final" aria-labelledby="closing-title">
+        <div class="section-shell closing__inner">
+          <p class="eyebrow">O próximo movimento</p>
+          <h2 id="closing-title">Seu próximo resultado começa quando você identifica o que realmente precisa mudar.</h2>
+          <p>A Aula Estratégica Entre Potencial e Resultado foi construída para transformar uma sensação difusa de estagnação em diagnóstico, direção e um próximo movimento concreto.</p>
+          <a class="button button--light" href="#formulario" data-focus-form>Quero identificar meu próximo movimento</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell site-footer__inner">
+        <span class="wordmark">Uli Zarzana</span>
+        <p>Página demonstrativa — data e inscrições ilustrativas.</p>
+        <div class="site-footer__links">
+          <a href="https://www.instagram.com/uli.zarzana/" target="_blank" rel="noreferrer">Instagram</a>
+          <button type="button" data-open-privacy>Política de privacidade</button>
+        </div>
+        <p>© 2026 Uli Zarzana.</p>
+      </div>
+    </footer>
+  </div>
+
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title">
+    <div class="dialog__content">
+      <button class="dialog__close" type="button" data-close-privacy aria-label="Fechar política de privacidade">×</button>
+      <p class="eyebrow">Privacidade</p>
+      <h2 id="privacy-title">Esta demonstração não coleta dados.</h2>
+      <p>Os campos simulam uma inscrição real, mas nenhum valor digitado é transmitido, armazenado ou compartilhado. Ao concluir a simulação, os campos são limpos no próprio navegador.</p>
+      <button class="button button--ink" type="button" data-close-privacy>Entendi</button>
+    </div>
+  </dialog>
+</body>
+</html>
