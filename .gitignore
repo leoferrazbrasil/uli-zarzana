@@ -25,6 +25,9 @@ web/identidade-visual/assets/
 # Exceção: tokens tipográficos aprovados para as páginas públicas
 !web/assets/
 !web/assets/design-tokens.css
+!web/assets/photo-cards.css
+!web/assets/fotografia/
+!web/assets/fotografia/*.jpg
 
 # Exceções: notas estratégicas selecionadas para versionamento
 !cofre/

@@ -109,7 +109,7 @@ O sistema visual deve posicionar Uli Zarzana como uma conselheira estratégica p
 - [x] Estruturar e classificar o acervo bruto fotográfico — [[Inventario-Fotografico-Acervo-Uli-2026-08-12]].
 - [x] Confirmar autorização de uso das fotografias do acervo — confirmado em 12/08/2026.
 - [x] Selecionar a shortlist F1 — [[Shortlist-F1-Fotografias-Uli-2026-08-12]].
-- [ ] Organizar derivados oficiais em alta resolução para as aplicações definidas.
+- [x] Preparar derivados oficiais e mockups de aplicação F1 — [[Aplicações Fotográficas F1 - Derivados e Mockups 2026-08-12]].
 - [ ] Criar mockups de Instagram, site, apresentação e material da mentoria.
 - [ ] Consolidar o brandbook após aprovação dos ativos técnicos.
 
