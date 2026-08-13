@@ -12,7 +12,7 @@ tags:
 
 ## Decisão
 
-Enquanto a hospedagem não disponibilizar uma vaga de Web App Node.js para o projeto, o CRM continuará sendo publicado como site estático no subdomínio `crm.ulizarzana.com`. O workflow `deploy-crm-static.yml` sincroniza somente `web/crm/` para o diretório remoto `crm/`.
+O CRM operacional agora é publicado como Web App Node.js no subdomínio `crm.ulizarzana.com`, conectado ao GitHub e ao diretório raiz `apps/crm-next`. O workflow `deploy-crm-static.yml` permanece no repositório como fallback/arquivo de rollback e sincroniza somente `web/crm/`; ele não é o runtime atual do subdomínio.
 
 O domínio raiz e as páginas de identidade visual, brandbook e landing page não fazem parte desse workflow.
 
@@ -28,4 +28,12 @@ O workflow utiliza FTP na porta 21, conforme os dados operacionais da hospedagem
 
 ## Migração futura para Next.js
 
-O aplicativo Next.js permanece em `apps/crm-next/`, isolado do site público. A migração para Web App Node.js deverá ocorrer somente quando houver capacidade disponível na hospedagem ou quando uma infraestrutura compatível for contratada. Antes da troca do subdomínio, o novo app deve passar por build, teste, deploy de prévia e verificação pública; o CRM estático permanece como fallback até essa validação.
+O aplicativo Next.js está em `apps/crm-next/`, isolado do site institucional. A migração foi validada localmente com build/testes e no hPanel com deployment concluído, Node 22, Next.js e implantação automática via GitHub. O `web/crm/` permanece preservado para rollback/recriação de uma instalação estática caso seja necessário.
+
+## Estado atual — 13/08/2026
+
+- Hostinger Node.js Web App criado para `crm.ulizarzana.com` a partir de `leoferrazbrasil/uli-zarzana`, branch `main`, diretório raiz `apps/crm-next`.
+- Compatibilidade do build corrigida com `next.config.mjs` e `next build --webpack`; commits técnicos: `24fc104` e `5bb4dd2`.
+- O app usa `server.mjs` como comando de inicialização (`node server.mjs`) e respeita `process.env.PORT`, requisito do runtime da hospedagem.
+- A instalação anterior PHP/HTML do subdomínio foi removida somente depois da validação do novo deployment. A raiz `ulizarzana.com`, `/identidade-visual/` e `/brandbook/` não foram alterados.
+- O deployment final aparece como `Concluído` e o hPanel mostra o app `Em execução`/`Implantação automática`. A verificação pública do subdomínio deve ser repetida após a reinicialização/propagação do processo Node.

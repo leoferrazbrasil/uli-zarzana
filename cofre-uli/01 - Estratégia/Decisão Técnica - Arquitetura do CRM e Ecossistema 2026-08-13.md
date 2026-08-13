@@ -151,3 +151,25 @@ A arquitetura só deverá ser revista se surgirem requisitos comprovados que o c
 - [Supabase Database](https://supabase.com/docs/guides/database/overview)
 - [Supabase Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security)
 - [Supabase Edge Functions](https://supabase.com/docs/guides/functions)
+## Migração para Web App Node.js — 13/08/2026
+
+### Conclusão determinística
+
+Após a liberação de uma vaga no plano, a arquitetura adequada para o CRM é um Web App Node.js separado no subdomínio `crm.ulizarzana.com`, conectado ao GitHub e preservando o site institucional estático na raiz `ulizarzana.com`. A troca não exige converter as páginas de identidade visual e brandbook para o framework: elas permanecem em `web/` e na hospedagem principal.
+
+### Implementação realizada
+
+- Web App Hostinger criado a partir de `leoferrazbrasil/uli-zarzana`, branch `main`, framework Next.js, Node 22 e diretório raiz `apps/crm-next`.
+- O build foi compatibilizado com a infraestrutura por meio de `next.config.mjs` e `next build --webpack`; o servidor de produção passou a usar `server.mjs` com `process.env.PORT`.
+- Build local e testes do CRM passaram após a correção.
+- O deployment final no hPanel aparece como `Concluído`, com `Em execução` e `Implantação automática`.
+- A instalação anterior PHP/HTML de `crm.ulizarzana.com` foi removida somente após a validação do novo deployment. A exclusão foi limitada ao subdomínio; a raiz e suas páginas estáticas não foram removidas.
+- O protótipo estático `web/crm/` permanece preservado no repositório como fallback/rollback.
+
+### Estado de verificação
+
+O DNS de `crm.ulizarzana.com` aponta para a Hostinger e as páginas `https://ulizarzana.com/`, `/identidade-visual/` e `/brandbook/` continuam respondendo `200`. Na última verificação, o subdomínio ainda retornava `503`, embora o hPanel mostrasse o app em execução; a publicação só deve ser considerada operacional após uma nova confirmação pública sem `503`.
+
+### Governança
+
+O código permanece versionado na `main`. Nenhuma credencial foi registrada no cofre. A documentação operacional está em `docs/deploy/CRM-Deployment-GitHub-Actions.md`.
