@@ -157,6 +157,17 @@ Ao selecionar ou acionar o encerramento como **Perdido**, o sistema deverá bloq
 
 O motivo padronizado deverá ser definido na especificação funcional do MVP antes da implementação. O sistema não deverá aceitar texto livre como único motivo, pois isso impediria a análise determinística das perdas.
 
+#### Motivos padronizados aprovados
+
+O modal obrigatório de encerramento como **Perdido** terá, inicialmente, somente as seguintes opções:
+
+| Código | Motivo exibido | Observação |
+| --- | --- | --- |
+| `entrou-em-contato-por-engano` | **Entrou em contato por engano** | O contato informa ou demonstra que a entrada ocorreu equivocadamente. |
+| `nao-tem-interesse` | **Não tem interesse** | O contato declara ausência de interesse na oferta ou continuidade. |
+
+O campo de motivo será obrigatório. A observação complementar poderá ser preenchida, mas não substituirá a seleção de uma das categorias aprovadas. Novos motivos somente poderão ser adicionados após evidência operacional e nova decisão registrada.
+
 #### Fonte de verdade
 
 O estado atual exibido no CRM deverá ser calculado a partir do último evento válido registrado no histórico do lead. Alterações manuais somente poderão existir como ação controlada, com permissão adequada, motivo e auditoria; elas não poderão apagar os eventos automáticos.
