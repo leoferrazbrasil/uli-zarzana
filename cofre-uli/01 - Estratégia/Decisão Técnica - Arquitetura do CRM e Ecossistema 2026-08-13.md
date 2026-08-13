@@ -168,7 +168,7 @@ Após a liberação de uma vaga no plano, a arquitetura adequada para o CRM é u
 
 ### Estado de verificação
 
-O DNS de `crm.ulizarzana.com` aponta para a Hostinger e as páginas `https://ulizarzana.com/`, `/identidade-visual/` e `/brandbook/` continuam respondendo `200`. Na última verificação, o subdomínio ainda retornava `503`, embora o hPanel mostrasse o app em execução; a publicação só deve ser considerada operacional após uma nova confirmação pública sem `503`.
+O DNS de `crm.ulizarzana.com` aponta para a Hostinger. Após o redeploy do commit `9e4e697`, a verificação pública confirmou `200` no CRM com o título `CRM Uli Zarzana`. A raiz `https://ulizarzana.com/`, `/identidade-visual/` e `/brandbook/` também responderam `200`, confirmando que o site institucional não foi afetado.
 
 ### Governança
 
