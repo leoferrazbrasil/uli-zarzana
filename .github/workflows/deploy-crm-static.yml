@@ -31,4 +31,4 @@ jobs:
           port: 21
           local-dir: ./web/crm/
           server-dir: ./crm/
-          state-name: .github/ftp-state-crm.json
+          state-name: .ftp-state-crm.json
