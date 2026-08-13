@@ -120,6 +120,16 @@ O protótipo atual continua em `https://crm.ulizarzana.com/` como demonstração
 
 Neste momento a migração externa está bloqueada porque o hPanel aberto não possui sessão autenticada. Nenhum arquivo publicado foi apagado ou sobrescrito.
 
+## Estado desta execução — scaffold Next.js
+
+- Criado o projeto isolado `apps/crm-next/` com Next.js 16.3.0, React 19.2.8, TypeScript strict e Node 22.
+- Criada a primeira Visão Geral local com dados fictícios, seis indicadores e os cinco estados do funil.
+- Criado `.env.example` sem valores reais.
+- Testes locais do scaffold e da Visão Geral: 4 testes aprovados.
+- Build de produção Next.js: aprovado.
+- Nenhum arquivo em `web/`, nenhuma página estática publicada e nenhum registro DNS foi alterado.
+- O deploy automático permanece pendente de sessão autenticada no hPanel e confirmação de que o plano oferece Node.js Web Apps + GitHub; Vercel permanece fallback.
+
 ## Critério para reconsiderar a arquitetura
 
 A arquitetura só deverá ser revista se surgirem requisitos comprovados que o conjunto Next.js + Supabase não atenda, como processamento assíncrono pesado, volume elevado de mensagens, necessidade de workers persistentes ou integrações que exijam infraestrutura própria. Até que esses sinais apareçam, adicionar um backend Node/Express separado aumentaria complexidade sem resolver uma necessidade do MVP.

@@ -34,3 +34,7 @@ O Supabase será a fonte de verdade do negócio. As regras do funil não ficarã
 6. Webhooks e integrações externas.
 
 O sistema de membros continuará em Hotmart, Kiwify ou Hubla. Não será recriado dentro do CRM nesta fase.
+
+## Estado da migração
+
+O scaffold Next.js foi criado em `apps/crm-next/`, com Visão Geral local, dados fictícios e build de produção validado. A migração pública ainda não ocorreu: o hPanel estava deslogado, o DNS não foi alterado e o protótipo estático permanece como rollback.

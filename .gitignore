@@ -19,6 +19,13 @@
 .worktrees/
 cofre/.obsidian/
 cofre-uli/.obsidian/
+
+# Aplicação Next.js do CRM
+apps/*/node_modules/
+apps/*/.next/
+apps/*/.env
+apps/*/.env.*
+!apps/*/.env.example
 web/assets/
 web/identidade-visual/assets/
 
