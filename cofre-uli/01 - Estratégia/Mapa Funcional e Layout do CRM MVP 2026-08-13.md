@@ -85,6 +85,16 @@ O protótipo usa a data fictícia de 13 de agosto de 2026 apenas para demonstrar
 
 Esta entrega não inclui Supabase, autenticação, persistência, WhatsApp oficial, Instagram, envio de mensagens, dados reais ou área de membros. A publicação é uma demonstração isolada no subdomínio `crm.ulizarzana.com`.
 
+## Entrega e verificação
+
+- Repositório: `main` do repositório remoto `leoferrazbrasil/uli-zarzana`.
+- Commit da implementação: `3ee0400`.
+- Publicação: `https://crm.ulizarzana.com/`.
+- Arquivos publicados: `index.html`, `assets/crm.css` e `assets/crm-app.js` no diretório remoto `/crm/`.
+- Verificação pública: HTML, CSS e JavaScript retornaram HTTP 200; a Visão Geral renderizou com seis indicadores e sem erros de console.
+- Verificação de preservação: `https://ulizarzana.com/identidade-visual/` e `https://ulizarzana.com/brandbook/` continuam retornando HTTP 200.
+- Validações: todos os validadores PowerShell existentes passaram; os quatro testes Node do CRM MVP passaram.
+
 ## Próximo avanço determinado
 
 Após a verificação pública desta interface, criar a fundação técnica autenticada do CRM: schema Supabase mínimo, RLS para Administradora/Comercial, tabela de eventos append-only e contrato de entrada do formulário da landing page. A integração oficial do WhatsApp e a integração com Instagram permanecem posteriores.
