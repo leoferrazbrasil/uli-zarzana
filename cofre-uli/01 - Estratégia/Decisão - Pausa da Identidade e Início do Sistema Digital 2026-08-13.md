@@ -108,6 +108,28 @@ O objetivo da tela é apresentar uma visão geral do CRM e os indicadores da ope
 
 Os indicadores, fórmulas, filtros e estados vazios serão definidos no mapa funcional antes da implementação. A tela deverá usar a identidade A1/B1/T1/F1: marrom profundo e marfim como base, champagne e terracota apenas como acentos, Libre Baskerville para títulos e Source Sans 3 para interface e dados.
 
+#### Indicadores básicos de hoje
+
+A primeira versão da Visão Geral exibirá somente indicadores diretamente derivados do CRM e dos eventos do dia atual:
+
+| Indicador | Definição da primeira versão |
+| --- | --- |
+| **Novos leads hoje** | Quantidade de leads criados desde 00:00 até o momento atual. |
+| **Leads em qualificação** | Quantidade de leads cujo estado atual é **Qualificando**. |
+| **Ofertas apresentadas hoje** | Quantidade de registros de oferta criados no dia atual. |
+| **Ganhos hoje** | Quantidade de conversões para **Ganho** registradas no dia atual. |
+| **Perdidos hoje** | Quantidade de transições para **Perdido** registradas no dia atual. |
+| **Tarefas pendentes hoje** | Quantidade de tarefas vencidas ou com prazo para o dia atual e ainda não concluídas. |
+
+Regras da primeira versão:
+
+- Os indicadores respeitarão o fuso horário configurado para a operação.
+- O período padrão será o dia atual, sem comparação automática com períodos anteriores.
+- Cada indicador deverá permitir acesso ao recorte correspondente do CRM quando essa navegação estiver disponível.
+- Estados vazios serão exibidos como `0`, sem dados fictícios.
+- Não serão incluídos inicialmente ticket médio, taxa de conversão, previsão de receita, gráficos avançados ou metas; essas métricas dependerão de dados suficientes e uso prático do sistema.
+- A lista poderá ser aprimorada após a operação real produzir evidências de quais indicadores apoiam decisões comerciais.
+
 ## Limite desta decisão
 
 Esta nota autoriza o início da fase de descoberta e arquitetura do sistema. Ela não aprova ainda uma stack, um framework, uma integração, um banco de dados, uma contratação de serviço ou uma publicação de aplicação funcional.
