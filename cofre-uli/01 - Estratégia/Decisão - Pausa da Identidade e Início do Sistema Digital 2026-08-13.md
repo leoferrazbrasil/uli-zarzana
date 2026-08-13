@@ -93,6 +93,21 @@ O próximo trabalho do projeto não é finalizar o selo nem iniciar diretamente 
 
 Definir as telas e os fluxos operacionais do CRM do MVP: autenticação, painel, cadastro de lead, detalhe do lead, pipeline, tarefas e registro de oferta.
 
+### Tela inicial do sistema
+
+A primeira tela após a autenticação será **Visão Geral**. Ela não abrirá diretamente no pipeline.
+
+O objetivo da tela é apresentar uma visão geral do CRM e os indicadores da operação comercial referentes ao dia atual. O pipeline continuará sendo uma tela própria, acessível pela navegação principal.
+
+#### Estrutura determinada da Visão Geral
+
+- resumo do CRM;
+- indicadores comerciais de hoje;
+- leitura rápida da movimentação dos leads;
+- acesso direto ao pipeline e às ações operacionais necessárias.
+
+Os indicadores, fórmulas, filtros e estados vazios serão definidos no mapa funcional antes da implementação. A tela deverá usar a identidade A1/B1/T1/F1: marrom profundo e marfim como base, champagne e terracota apenas como acentos, Libre Baskerville para títulos e Source Sans 3 para interface e dados.
+
 ## Limite desta decisão
 
 Esta nota autoriza o início da fase de descoberta e arquitetura do sistema. Ela não aprova ainda uma stack, um framework, uma integração, um banco de dados, uma contratação de serviço ou uma publicação de aplicação funcional.
