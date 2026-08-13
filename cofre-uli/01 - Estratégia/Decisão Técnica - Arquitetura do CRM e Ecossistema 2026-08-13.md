@@ -122,6 +122,14 @@ Na verificação autenticada do hPanel em 13/08/2026, o recurso **Implante web a
 
 Enquanto o limite persistir, a alternativa operacional é o workflow `deploy-crm-static.yml`, que publica somente `web/crm/` por FTP na porta 21, no diretório remoto `crm/`, usando secrets do GitHub Actions. O app Next.js permanece versionado em `apps/crm-next/` e pronto para futura migração quando houver vaga Node.js ou infraestrutura compatível.
 
+## Resultado da publicação automática — 13/08/2026
+
+- Secrets `CRM_FTP_SERVER`, `CRM_FTP_USERNAME` e `CRM_FTP_PASSWORD` foram configurados no repositório como secrets protegidos do GitHub Actions; os valores não foram versionados nem registrados no cofre.
+- A primeira execução falhou antes da conexão por configuração do arquivo de estado; o workflow foi corrigido para usar `.ftp-state-crm.json`.
+- A segunda execução concluiu com sucesso: workflow `Deploy CRM static`, run `31740953463`.
+- Verificação pública posterior: `https://crm.ulizarzana.com/` retornou HTTP 200.
+- Verificação de preservação: `https://ulizarzana.com/`, `/identidade-visual/` e `/brandbook/` retornaram HTTP 200.
+
 ## Estado desta execução — scaffold Next.js
 
 - Criado o projeto isolado `apps/crm-next/` com Next.js 16.3.0, React 19.2.8, TypeScript strict e Node 22.
