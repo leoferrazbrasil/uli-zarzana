@@ -89,6 +89,10 @@ O próximo trabalho do projeto não é finalizar o selo nem iniciar diretamente 
 - [[Regras de Uso do Sistema Visual - A1 B1 F1]]
 - [[Paleta Técnica Definitiva - A1]]
 
+## Próximo avanço após esta confirmação
+
+Definir as telas e os fluxos operacionais do CRM do MVP: autenticação, painel, cadastro de lead, detalhe do lead, pipeline, tarefas e registro de oferta.
+
 ## Limite desta decisão
 
 Esta nota autoriza o início da fase de descoberta e arquitetura do sistema. Ela não aprova ainda uma stack, um framework, uma integração, um banco de dados, uma contratação de serviço ou uma publicação de aplicação funcional.
@@ -143,30 +147,30 @@ O estado do lead será derivado automaticamente dos eventos válidos do relacion
 3. Mensagens vagas, vazias, erros, respostas automáticas sem conteúdo e interações inválidas não avançam o lead.
 4. A apresentação de uma oferta altera automaticamente o estado para **Oferta**.
 5. A confirmação de entrada na comunidade Vida Extraordinária altera o estado para **Ganho**.
-6. Quando a oportunidade for encerrada sem entrada na comunidade, o sistema deverá abrir um modal obrigatório para seleção do motivo de **Perdido**.
-7. O estado **Perdido** não poderá ser salvo sem motivo selecionado e registrado no histórico.
+6. Quando a oportunidade for encerrada sem entrada na comunidade, o estado poderá ser alterado para **Perdido** no MVP sem modal obrigatório.
+7. O registro estruturado do motivo de perda fica no roadmap futuro e não bloqueará a transição nesta primeira entrega.
 8. Cada mudança automática deverá preservar evento, data, usuário responsável, origem e estado anterior para auditoria.
 
-#### Modal obrigatório de perda
+#### Roadmap futuro — modal de perda
 
-Ao selecionar ou acionar o encerramento como **Perdido**, o sistema deverá bloquear a conclusão e abrir um modal. O modal deverá exigir:
+Em uma fase futura, ao selecionar ou acionar o encerramento como **Perdido**, o sistema deverá bloquear a conclusão e abrir um modal. O modal deverá exigir:
 
 - motivo padronizado selecionado pelo usuário;
 - observação complementar somente quando necessária;
 - confirmação explícita do encerramento.
 
-O motivo padronizado deverá ser definido na especificação funcional do MVP antes da implementação. O sistema não deverá aceitar texto livre como único motivo, pois isso impediria a análise determinística das perdas.
+Essa funcionalidade não fará parte da primeira entrega do MVP. Quando for implementada, o sistema não deverá aceitar texto livre como único motivo, pois isso impediria a análise determinística das perdas.
 
 #### Motivos padronizados aprovados
 
-O modal obrigatório de encerramento como **Perdido** terá, inicialmente, somente as seguintes opções:
+Quando implementado, o modal de encerramento como **Perdido** terá, inicialmente, somente as seguintes opções:
 
 | Código | Motivo exibido | Observação |
 | --- | --- | --- |
 | `entrou-em-contato-por-engano` | **Entrou em contato por engano** | O contato informa ou demonstra que a entrada ocorreu equivocadamente. |
 | `nao-tem-interesse` | **Não tem interesse** | O contato declara ausência de interesse na oferta ou continuidade. |
 
-O campo de motivo será obrigatório. A observação complementar poderá ser preenchida, mas não substituirá a seleção de uma das categorias aprovadas. Novos motivos somente poderão ser adicionados após evidência operacional e nova decisão registrada.
+Quando implementado, o campo de motivo será obrigatório. A observação complementar poderá ser preenchida, mas não substituirá a seleção de uma das categorias aprovadas. Novos motivos somente poderão ser adicionados após evidência operacional e nova decisão registrada.
 
 #### Fonte de verdade
 
@@ -199,7 +203,7 @@ O modelo de dados será orientado ao lead e ao histórico imutável de eventos. 
 
 | Entidade | Campos obrigatórios | Campos condicionais ou complementares |
 | --- | --- | --- |
-| **Lead** | `id`, `nome`, `telefone`, `origem`, `estado_atual`, `criado_em`, `atualizado_em` | `email`, `campanha`, `cidade`, `observacao`, `responsavel_id`, `ultimo_contato_em`, `perdido_motivo_id` |
+| **Lead** | `id`, `nome`, `telefone`, `origem`, `estado_atual`, `criado_em`, `atualizado_em` | `email`, `campanha`, `cidade`, `observacao`, `responsavel_id`, `ultimo_contato_em`, `perdido_motivo_id` (roadmap) |
 | **Interação** | `id`, `lead_id`, `canal`, `tipo`, `validade`, `ocorreu_em`, `criado_por` | `resumo`, `referencia_externa`, `direcao`, `conteudo_restrito` |
 | **Oferta** | `id`, `lead_id`, `nome`, `apresentada_em`, `apresentada_por`, `estado` | `valor_referencial`, `produto`, `observacao`, `decidida_em` |
 | **Tarefa** | `id`, `lead_id`, `titulo`, `responsavel_id`, `status`, `criada_em` | `prazo_em`, `concluida_em`, `observacao`, `tipo` |
@@ -217,7 +221,7 @@ O modelo de dados será orientado ao lead e ao histórico imutável de eventos. 
 5. Interações inválidas podem ser registradas para auditoria, mas não podem produzir transição no funil.
 6. Toda oferta precisa registrar qual oferta foi apresentada, quando e por quem.
 7. Toda tarefa precisa ter responsável e status; tarefas concluídas preservam a data de conclusão.
-8. Um lead em `perdido` exige `perdido_motivo_id`; não será permitido concluir a transição sem esse vínculo.
+8. Um lead em `perdido` não exige `perdido_motivo_id` no MVP; o vínculo será obrigatório somente quando o modal de perda entrar no roadmap implementado.
 9. Um lead em `ganho` exige registro de confirmação na comunidade Vida Extraordinária.
 10. Eventos do funil são append-only no MVP: não podem ser apagados pelo perfil Comercial.
 
