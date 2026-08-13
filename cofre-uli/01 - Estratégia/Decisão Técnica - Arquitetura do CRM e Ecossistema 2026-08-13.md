@@ -19,7 +19,7 @@ aliases:
 # Decisão técnica — arquitetura do CRM e do ecossistema digital
 
 > [!success] Conclusão determinada
-> O sistema será desenvolvido com **Next.js App Router + React + TypeScript** no frontend e na camada de aplicação, usando **Supabase** como backend gerenciado: PostgreSQL, Auth, Row Level Security, Storage e Edge Functions. A aplicação autenticada será hospedada em runtime compatível com Next.js, preferencialmente **Vercel**. Não será criado um backend Node.js/Express separado no MVP.
+> O sistema será desenvolvido com **Next.js App Router + React + TypeScript** no frontend e na camada de aplicação, usando **Supabase** como backend gerenciado: PostgreSQL, Auth, Row Level Security, Storage e Edge Functions. A aplicação autenticada será hospedada como **Hostinger Node.js Web App conectado ao GitHub**, se esse recurso estiver disponível no plano atual; **Vercel** será o fallback. Não será criado um backend Node.js/Express separado no MVP.
 
 ## Por que esta é a escolha adequada
 
@@ -29,7 +29,7 @@ O MVP precisa de uma interface autenticada para Administradora e Comercial, dado
 - TypeScript reduz ambiguidades no modelo Lead/Event/Offer/Task e permite gerar tipos a partir do banco;
 - Supabase fornece Postgres, autenticação e controle de acesso por RLS;
 - Edge Functions recebem webhooks e executam integrações que não devem expor segredos ao navegador;
-- Vercel fornece o runtime adequado para uma aplicação Next.js dinâmica.
+- Hostinger Node.js Web App fornece o runtime adequado se o plano atual oferecer o recurso; Vercel é o fallback compatível com Next.js.
 
 ## Stack oficial
 
@@ -45,7 +45,7 @@ O MVP precisa de uma interface autenticada para Administradora e Comercial, dado
 | Dados no cliente | **Supabase JS + TanStack Query** | Sessão, consultas, cache e invalidação no painel autenticado. |
 | Testes | **Vitest + Testing Library + Playwright** | Regras puras, componentes e fluxos críticos autenticados. |
 | Qualidade | **ESLint + Prettier + TypeScript strict** | Padronização e bloqueio de erros evitáveis. |
-| Hospedagem do sistema | **Vercel** | Runtime dinâmico do Next.js e deploy conectado ao GitHub. |
+| Hospedagem do sistema | **Hostinger Node.js Web App + GitHub**, se disponível no plano atual; Vercel como fallback | Runtime dinâmico do Next.js e deploy automático a partir da `main`. |
 | Hospedagem estática atual | **Hostinger via FTP** | Landing, identidade visual, brandbook e protótipo estático enquanto permanecerem estáticos. |
 
 ## Backend: o que será e o que não será
@@ -105,7 +105,20 @@ O navegador poderá usar somente a chave pública do Supabase, sempre com RLS at
 
 ## Decisão de hospedagem
 
-O protótipo atual continua em `https://crm.ulizarzana.com/` como demonstração estática. A aplicação real deverá ocupar esse subdomínio em uma hospedagem de runtime Next.js, preferencialmente Vercel. A raiz `https://ulizarzana.com/` e as áreas estáticas existentes permanecem na Hostinger até uma migração futura, caso ela se torne necessária.
+O protótipo atual continua em `https://crm.ulizarzana.com/` como demonstração estática até a aplicação real estar validada. A aplicação real deverá ocupar esse mesmo subdomínio em uma instalação Node.js Web App separada, sem substituir os arquivos estáticos da raiz. A primeira implementação de deploy será a integração GitHub nativa da Hostinger, caso o plano atual ofereça Node.js Web Apps; se essa capacidade não estiver disponível, o mesmo projeto será conectado à Vercel e o DNS do subdomínio será apontado para ela. A raiz `https://ulizarzana.com/` e as áreas estáticas existentes permanecem na Hostinger.
+
+## Migração segura e condição de execução
+
+1. Manter o site estático atual e o protótipo do CRM intactos como rollback.
+2. Criar o projeto Next.js em diretório próprio do repositório, sem misturá-lo com `web/`.
+3. Validar no hPanel se o plano possui **Node.js Web App** e conexão GitHub.
+4. Criar uma aplicação separada vinculada a `crm.ulizarzana.com`, com build e start do Next.js.
+5. Fazer deploy de teste e validar a aplicação em URL temporária.
+6. Só depois apontar o subdomínio para o novo runtime.
+7. Preservar a raiz e as rotas `/identidade-visual/` e `/brandbook/`.
+8. Remover o protótipo estático do subdomínio somente após o novo app responder em produção e após confirmar rollback.
+
+Neste momento a migração externa está bloqueada porque o hPanel aberto não possui sessão autenticada. Nenhum arquivo publicado foi apagado ou sobrescrito.
 
 ## Critério para reconsiderar a arquitetura
 

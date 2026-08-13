@@ -13,12 +13,14 @@ status: determinada
 - **Backend principal:** Supabase, com PostgreSQL, Auth, RLS, Storage e Edge Functions.
 - **Backend Node separado:** não no MVP.
 - **Funções de servidor:** Route Handlers do Next.js quando forem necessários; Edge Functions do Supabase para webhooks e integrações externas.
-- **Hospedagem do sistema:** Vercel.
+- **Hospedagem do sistema:** Hostinger Node.js Web App conectado ao GitHub, se disponível no plano atual; Vercel como fallback técnico.
 - **Hospedagem das páginas estáticas atuais:** Hostinger via FTP.
 
 ## Decisão
 
-O CRM real não será uma continuação do HTML estático publicado. O HTML atual é o protótipo visual e funcional inicial. A aplicação operacional será criada em uma área própria Next.js, mantendo landing, identidade visual e brandbook isolados.
+O CRM real não será uma continuação destrutiva do HTML estático publicado. O HTML atual é o protótipo visual e funcional inicial e permanecerá como rollback até a nova aplicação ser validada. A aplicação operacional será criada em uma área própria Next.js, mantendo landing, identidade visual e brandbook isolados.
+
+O subdomínio `crm.ulizarzana.com` receberá uma aplicação Node.js separada. A raiz `ulizarzana.com` continuará servindo as páginas estáticas existentes. A Hostinger será o primeiro destino porque mantém a operação do domínio no mesmo provedor e oferece integração GitHub para Node.js Web Apps nos planos compatíveis; Vercel será usada somente se o plano atual não disponibilizar essa capacidade.
 
 O Supabase será a fonte de verdade do negócio. As regras do funil não ficarão apenas no navegador: transições, auditoria, perfis e permissões serão verificadas no servidor/banco. O frontend consumirá dados com RLS; segredos ficarão em ambiente servidor.
 
