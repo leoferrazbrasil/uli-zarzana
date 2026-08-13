@@ -118,7 +118,9 @@ O protótipo atual continua em `https://crm.ulizarzana.com/` como demonstração
 7. Preservar a raiz e as rotas `/identidade-visual/` e `/brandbook/`.
 8. Remover o protótipo estático do subdomínio somente após o novo app responder em produção e após confirmar rollback.
 
-Neste momento a migração externa está bloqueada porque o hPanel aberto não possui sessão autenticada. Nenhum arquivo publicado foi apagado ou sobrescrito.
+Na verificação autenticada do hPanel em 13/08/2026, o recurso **Implante web app / Node.js** estava visível, porém bloqueado: o plano Premium atingiu o limite de 5 Web Apps Node.js. O hPanel ofereceu upgrade para Cloud. Nenhum upgrade foi contratado, nenhum aplicativo foi removido e nenhum arquivo publicado foi apagado ou sobrescrito.
+
+Enquanto o limite persistir, a alternativa operacional é o workflow `deploy-crm-static.yml`, que publica somente `web/crm/` por FTP na porta 21, no diretório remoto `crm/`, usando secrets do GitHub Actions. O app Next.js permanece versionado em `apps/crm-next/` e pronto para futura migração quando houver vaga Node.js ou infraestrutura compatível.
 
 ## Estado desta execução — scaffold Next.js
 
@@ -128,7 +130,7 @@ Neste momento a migração externa está bloqueada porque o hPanel aberto não p
 - Testes locais do scaffold e da Visão Geral: 4 testes aprovados.
 - Build de produção Next.js: aprovado.
 - Nenhum arquivo em `web/`, nenhuma página estática publicada e nenhum registro DNS foi alterado.
-- O deploy automático permanece pendente de sessão autenticada no hPanel e confirmação de que o plano oferece Node.js Web Apps + GitHub; Vercel permanece fallback.
+- O deploy Node.js permanece pendente de capacidade no plano; a publicação automática estática por GitHub Actions/FTPS é o fallback vigente. Vercel permanece alternativa futura de runtime.
 
 ## Critério para reconsiderar a arquitetura
 
