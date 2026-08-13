@@ -160,3 +160,22 @@ O motivo padronizado deverá ser definido na especificação funcional do MVP an
 #### Fonte de verdade
 
 O estado atual exibido no CRM deverá ser calculado a partir do último evento válido registrado no histórico do lead. Alterações manuais somente poderão existir como ação controlada, com permissão adequada, motivo e auditoria; elas não poderão apagar os eventos automáticos.
+
+### Perfis de usuário e permissões do MVP
+
+O MVP terá três perfis conceituais. Somente os dois primeiros terão acesso autenticado ao sistema.
+
+| Perfil | Acesso e responsabilidades | Limite |
+| --- | --- | --- |
+| **Administradora** | Acesso total ao sistema, configurações, usuários, relatórios e CRM. | Responsável pela governança e pelas permissões da operação. |
+| **Comercial** | Cadastro, qualificação, ofertas, tarefas e atualização de leads. | Não administra configurações globais nem usuários, salvo autorização futura explícita. |
+| **Lead** | Não terá acesso ao sistema no MVP; participa apenas dos canais externos, como landing page, WhatsApp e comunidade. | Não haverá login, painel ou área autenticada de lead nesta fase. |
+
+#### Regras de autorização
+
+1. Toda operação autenticada deverá estar vinculada a um usuário com perfil **Administradora** ou **Comercial**.
+2. A **Administradora** poderá consultar e operar todos os registros necessários ao CRM, além de gerenciar usuários e configurações.
+3. O perfil **Comercial** poderá operar leads e oportunidades, registrar interações, tarefas e ofertas, respeitando o histórico de auditoria.
+4. O perfil **Comercial** não poderá criar ou remover usuários, alterar configurações críticas ou apagar o histórico de um lead.
+5. O **Lead** será uma entidade do CRM, não um perfil autenticado do sistema.
+6. A autenticação, a recuperação de acesso, a expiração de sessão e a proteção contra acesso indevido serão requisitos técnicos do MVP.
