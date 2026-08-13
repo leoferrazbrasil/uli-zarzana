@@ -92,3 +92,71 @@ O próximo trabalho do projeto não é finalizar o selo nem iniciar diretamente 
 ## Limite desta decisão
 
 Esta nota autoriza o início da fase de descoberta e arquitetura do sistema. Ela não aprova ainda uma stack, um framework, uma integração, um banco de dados, uma contratação de serviço ou uma publicação de aplicação funcional.
+
+## Decisões de descoberta registradas posteriormente
+
+### Núcleo do MVP
+
+O MVP será um sistema próprio para centralizar a operação comercial do negócio digital da Uli: cadastro de leads, CRM, funil de vendas, histórico de relacionamento e acompanhamento de oportunidades.
+
+A entrega da mentoria permanecerá inicialmente em uma área de membros de plataformas de pagamento, como Hotmart, Kiwify ou Hubla. Central de conteúdo, materiais de endomarketing e outras extensões ficarão para fases posteriores.
+
+### Entrada de leads
+
+As primeiras origens determinadas são:
+
+- formulário da página de vendas ou landing page, com nome, e-mail e telefone, registro no Supabase e redirecionamento para o grupo da oferta no WhatsApp;
+- botões de WhatsApp nas páginas, com registro de clique, campanha e origem; a identificação automática do contato dependerá da integração oficial, prevista para a última fase;
+- redes sociais, especialmente Instagram, como integração posterior por sua maior complexidade de API, permissões e consentimento.
+
+Até as integrações oficiais, contatos de WhatsApp e redes sociais poderão entrar por cadastro manual ou importação de planilhas.
+
+### Funil comercial do MVP
+
+O pipeline terá exatamente cinco estados:
+
+1. **Novo** — lead recém-cadastrado, ainda sem qualificação concluída;
+2. **Qualificando** — contato em análise ou em conversa para entender contexto, momento e aderência;
+3. **Oferta** — oferta ou próximo passo comercial apresentado;
+4. **Ganho** — oportunidade convertida em cliente;
+5. **Perdido** — oportunidade encerrada sem conversão ou sem continuidade.
+
+Não será criado um estado separado de negociação nesta primeira versão; a decisão comercial permanecerá dentro de **Oferta**.
+
+### Automação determinística do estado do lead
+
+O estado do lead será derivado automaticamente dos eventos válidos do relacionamento comercial. O usuário não deverá mover livremente o lead entre etapas quando houver um evento que determine o estado.
+
+| Evento determinante | Novo estado | Regra |
+| --- | --- | --- |
+| Entrada de lead por formulário, WhatsApp, rede social, cadastro manual ou importação | **Novo** | Todo lead começa obrigatoriamente em **Novo**. |
+| Primeira interação válida entre as partes | **Qualificando** | Uma interação válida é uma mensagem ou resposta com conteúdo suficiente para iniciar a análise do contexto, momento e aderência do lead. |
+| Mensagem vaga, vazia, erro, resposta automática sem conteúdo ou interação inválida | **Novo** | Não avança o funil nem altera o estado atual. |
+| Oferta apresentada ao lead | **Oferta** | O registro da oferta é o gatilho obrigatório para a mudança automática. |
+| Lead entra na comunidade Vida Extraordinária | **Ganho** | A entrada confirmada na comunidade encerra a oportunidade como convertida. |
+| Lead não entra na comunidade Vida Extraordinária | **Perdido** | O encerramento sem conversão exige motivo obrigatório antes de concluir a mudança. |
+
+#### Regras de transição
+
+1. Todo cadastro inicia em **Novo**, independentemente da origem.
+2. A primeira mensagem ou resposta válida entre equipe e lead altera automaticamente o estado para **Qualificando**.
+3. Mensagens vagas, vazias, erros, respostas automáticas sem conteúdo e interações inválidas não avançam o lead.
+4. A apresentação de uma oferta altera automaticamente o estado para **Oferta**.
+5. A confirmação de entrada na comunidade Vida Extraordinária altera o estado para **Ganho**.
+6. Quando a oportunidade for encerrada sem entrada na comunidade, o sistema deverá abrir um modal obrigatório para seleção do motivo de **Perdido**.
+7. O estado **Perdido** não poderá ser salvo sem motivo selecionado e registrado no histórico.
+8. Cada mudança automática deverá preservar evento, data, usuário responsável, origem e estado anterior para auditoria.
+
+#### Modal obrigatório de perda
+
+Ao selecionar ou acionar o encerramento como **Perdido**, o sistema deverá bloquear a conclusão e abrir um modal. O modal deverá exigir:
+
+- motivo padronizado selecionado pelo usuário;
+- observação complementar somente quando necessária;
+- confirmação explícita do encerramento.
+
+O motivo padronizado deverá ser definido na especificação funcional do MVP antes da implementação. O sistema não deverá aceitar texto livre como único motivo, pois isso impediria a análise determinística das perdas.
+
+#### Fonte de verdade
+
+O estado atual exibido no CRM deverá ser calculado a partir do último evento válido registrado no histórico do lead. Alterações manuais somente poderão existir como ação controlada, com permissão adequada, motivo e auditoria; elas não poderão apagar os eventos automáticos.
