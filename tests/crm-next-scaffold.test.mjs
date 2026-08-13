@@ -13,6 +13,8 @@ test('o scaffold Next.js possui scripts e App Router mínimos', () => {
   assert.ok(existsSync(resolve(root, 'app', 'layout.tsx')));
   assert.ok(existsSync(resolve(root, 'app', 'page.tsx')));
   assert.ok(existsSync(resolve(root, 'app', 'globals.css')));
+  assert.ok(existsSync(resolve(root, 'next.config.mjs')));
+  assert.equal(existsSync(resolve(root, 'next.config.ts')), false);
 });
 
 test('o scaffold não contém segredos nem aponta para o protótipo estático como dependência', () => {
