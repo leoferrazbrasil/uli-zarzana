@@ -179,3 +179,58 @@ O MVP terá três perfis conceituais. Somente os dois primeiros terão acesso au
 4. O perfil **Comercial** não poderá criar ou remover usuários, alterar configurações críticas ou apagar o histórico de um lead.
 5. O **Lead** será uma entidade do CRM, não um perfil autenticado do sistema.
 6. A autenticação, a recuperação de acesso, a expiração de sessão e a proteção contra acesso indevido serão requisitos técnicos do MVP.
+
+### Modelo de dados do MVP comercial
+
+O modelo de dados será orientado ao lead e ao histórico imutável de eventos. O estado atual do funil será uma projeção do último evento válido, e não a única fonte de informação.
+
+#### Entidades e campos
+
+| Entidade | Campos obrigatórios | Campos condicionais ou complementares |
+| --- | --- | --- |
+| **Lead** | `id`, `nome`, `telefone`, `origem`, `estado_atual`, `criado_em`, `atualizado_em` | `email`, `campanha`, `cidade`, `observacao`, `responsavel_id`, `ultimo_contato_em`, `perdido_motivo_id` |
+| **Interação** | `id`, `lead_id`, `canal`, `tipo`, `validade`, `ocorreu_em`, `criado_por` | `resumo`, `referencia_externa`, `direcao`, `conteudo_restrito` |
+| **Oferta** | `id`, `lead_id`, `nome`, `apresentada_em`, `apresentada_por`, `estado` | `valor_referencial`, `produto`, `observacao`, `decidida_em` |
+| **Tarefa** | `id`, `lead_id`, `titulo`, `responsavel_id`, `status`, `criada_em` | `prazo_em`, `concluida_em`, `observacao`, `tipo` |
+| **Evento do funil** | `id`, `lead_id`, `tipo_evento`, `estado_anterior`, `estado_novo`, `ocorreu_em`, `criado_por` | `origem`, `entidade_tipo`, `entidade_id`, `metadados` |
+| **Motivo de perda** | `id`, `codigo`, `nome`, `ativo` | `descricao`, `ordem` |
+| **Usuário** | `id`, `nome`, `email`, `perfil`, `ativo`, `criado_em` | `ultimo_acesso_em` |
+| **Conversão na comunidade** | `id`, `lead_id`, `comunidade`, `confirmada_em`, `confirmada_por` | `referencia_externa`, `observacao` |
+
+#### Regras de obrigatoriedade
+
+1. `telefone` e `origem` são obrigatórios para todo lead; o e-mail é obrigatório quando a origem for formulário de página de vendas.
+2. A origem deve ser um valor controlado, inicialmente: `landing_page`, `whatsapp`, `instagram`, `cadastro_manual` ou `importacao`.
+3. O estado inicial de todo lead é `novo`.
+4. Toda interação precisa identificar canal, tipo, validade, data e responsável ou fonte técnica.
+5. Interações inválidas podem ser registradas para auditoria, mas não podem produzir transição no funil.
+6. Toda oferta precisa registrar qual oferta foi apresentada, quando e por quem.
+7. Toda tarefa precisa ter responsável e status; tarefas concluídas preservam a data de conclusão.
+8. Um lead em `perdido` exige `perdido_motivo_id`; não será permitido concluir a transição sem esse vínculo.
+9. Um lead em `ganho` exige registro de confirmação na comunidade Vida Extraordinária.
+10. Eventos do funil são append-only no MVP: não podem ser apagados pelo perfil Comercial.
+
+#### Relações
+
+```mermaid
+erDiagram
+    USUARIO ||--o{ LEAD : responsavel
+    USUARIO ||--o{ INTERACAO : registra
+    USUARIO ||--o{ OFERTA : apresenta
+    USUARIO ||--o{ TAREFA : executa
+    LEAD ||--o{ INTERACAO : possui
+    LEAD ||--o{ OFERTA : recebe
+    LEAD ||--o{ TAREFA : demanda
+    LEAD ||--o{ EVENTO_FUNIL : produz
+    LEAD ||--o| CONVERSAO_COMUNIDADE : confirma
+    MOTIVO_PERDA ||--o{ LEAD : classifica
+    USUARIO ||--o{ EVENTO_FUNIL : audita
+```
+
+#### Integridade do histórico
+
+- O histórico registra o estado anterior e o novo estado, mesmo quando a transição for automática.
+- O estado atual do lead deve ser recalculável a partir dos eventos válidos.
+- A exclusão física de leads, interações, ofertas, tarefas e eventos não faz parte do MVP; o sistema deverá usar desativação ou arquivamento controlado quando necessário.
+- Dados pessoais devem ser minimizados, protegidos por controle de acesso e mantidos apenas enquanto houver finalidade operacional ou obrigação aplicável.
+- Nenhum dado real será usado durante a fase de protótipo; testes usarão dados fictícios.
