@@ -42,3 +42,11 @@ Após a fundação de dados validada, a ordem será: Auth, cadastro real de lead
 ## Estado de publicação
 
 Esta decisão altera somente o roadmap e o cofre. Não requer FTP nem novo deployment. O código publicado permanece inalterado até a implementação do schema e da integração correspondente.
+
+## Configuração de ambiente — 13/08/2026
+
+- Variável pública `NEXT_PUBLIC_SUPABASE_URL` configurada no Web App Node.js da Hostinger.
+- Valor configurado: Project URL `https://pzschinocxlpuwrrmukr.supabase.co`.
+- A alteração foi aplicada e o redeploy automático terminou como `Concluído`.
+- Verificação pública: `https://crm.ulizarzana.com/` respondeu HTTP 200; a raiz `https://ulizarzana.com/` também respondeu HTTP 200.
+- A chave `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` ainda não foi configurada porque não foi fornecida. Nenhuma chave privada ou credencial foi registrada no cofre.
