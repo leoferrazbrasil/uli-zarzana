@@ -50,3 +50,12 @@ Esta decisão altera somente o roadmap e o cofre. Não requer FTP nem novo deplo
 - A alteração foi aplicada e o redeploy automático terminou como `Concluído`.
 - Verificação pública: `https://crm.ulizarzana.com/` respondeu HTTP 200; a raiz `https://ulizarzana.com/` também respondeu HTTP 200.
 - A chave `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` ainda não foi configurada porque não foi fornecida. Nenhuma chave privada ou credencial foi registrada no cofre.
+
+## Chave pública configurada — 13/08/2026
+
+- A chave publishable pública foi obtida no painel autenticado do projeto Supabase `uli-zarzana` sem ser exposta na conversa ou registrada em arquivos.
+- Variável configurada no Web App Node.js da Hostinger: `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
+- As duas variáveis públicas necessárias agora estão persistidas: `NEXT_PUBLIC_SUPABASE_URL` e `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
+- O redeploy automático terminou como `Concluído`.
+- Verificação pública final: `https://crm.ulizarzana.com/` respondeu HTTP 200 com o título `CRM Uli Zarzana`; `https://ulizarzana.com/` também respondeu HTTP 200.
+- Nenhuma `service_role`, senha de banco ou outra credencial privada foi utilizada ou registrada.
