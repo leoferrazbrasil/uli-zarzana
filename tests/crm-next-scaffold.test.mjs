@@ -8,7 +8,7 @@ const root = resolve(process.cwd(), 'apps', 'crm-next');
 test('o scaffold Next.js possui scripts e App Router mínimos', () => {
   const packageJson = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
   assert.equal(packageJson.scripts.dev, 'next dev');
-  assert.equal(packageJson.scripts.build, 'next build');
+  assert.equal(packageJson.scripts.build, 'next build --webpack');
   assert.equal(packageJson.scripts.start, 'next start');
   assert.ok(existsSync(resolve(root, 'app', 'layout.tsx')));
   assert.ok(existsSync(resolve(root, 'app', 'page.tsx')));
