@@ -59,3 +59,30 @@ Esta decisão altera somente o roadmap e o cofre. Não requer FTP nem novo deplo
 - O redeploy automático terminou como `Concluído`.
 - Verificação pública final: `https://crm.ulizarzana.com/` respondeu HTTP 200 com o título `CRM Uli Zarzana`; `https://ulizarzana.com/` também respondeu HTTP 200.
 - Nenhuma `service_role`, senha de banco ou outra credencial privada foi utilizada ou registrada.
+
+## Migration inicial aplicada — 13/08/2026
+
+> [!success] Conclusão determinada
+> A fundação de dados mínima do CRM foi criada como migration versionada e aplicada no projeto Supabase autenticado `uli-zarzana`. A fonte de verdade do schema agora está no repositório; a Visão Geral ainda permanece demonstrativa até a etapa de Auth e consultas reais.
+
+### Entrega técnica
+
+- Migration: `supabase/migrations/202608130001_initial_crm.sql`.
+- Seed seguro de referência: `supabase/seed.example.sql`, sem usuários, leads ou credenciais.
+- Entidades criadas: `profiles`, `leads`, `interactions`, `offers`, `tasks`, `funnel_events` e `community_conversions`.
+- Estados do funil: `Novo`, `Qualificando`, `Oferta`, `Ganho` e `Perdido`.
+- Perfis operacionais: `Administradora` e `Comercial`; o Lead continua sem acesso ao sistema no MVP.
+- RLS habilitado e verificado nas sete tabelas. Eventos de funil são append-only na primeira versão.
+- A exigência de modal/motivo obrigatório para `Perdido` permanece no roadmap futuro, conforme decisão anterior.
+
+### Validação e publicação
+
+- Teste estrutural local: `tests/supabase-schema.test.mjs` — 5/5 testes aprovados.
+- Aplicação remota: SQL Editor do projeto Supabase correto retornou `Success. No rows returned.`.
+- Verificação remota: consulta do catálogo confirmou as sete tabelas com `rls_enabled = true`.
+- Nenhum dado real foi inserido. O arquivo local não versionado `supabase/data-base.txt` foi preservado, não foi lido, usado ou incluído no commit.
+- Como esta entrega altera apenas o schema remoto e artefatos de migration, não houve upload FTP de HTML/CSS. O commit na `main` poderá acionar o redeploy automático do Web App, que será verificado separadamente.
+
+### Próximo avanço determinístico
+
+Configurar Auth para os perfis Administradora/Comercial e substituir progressivamente os dados fictícios da Visão Geral por consultas protegidas ao Supabase. Integrações de WhatsApp, Instagram e checkout continuam posteriores aos contratos básicos.
