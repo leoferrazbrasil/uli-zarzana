@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Protótipo funcional do CRM comercial da Uli Zarzana.">
+    <title>Visão Geral | Uli Zarzana CRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/design-tokens.css">
+    <link rel="stylesheet" href="assets/crm.css">
+    <script src="assets/crm-app.js" defer></script>
+  </head>
+  <body>
+    <div class="crm-shell">
+      <aside class="sidebar" aria-label="Navegação principal">
+        <div class="sidebar__brand">
+          <span class="brand-mark" aria-hidden="true">UZ</span>
+          <div>
+            <strong>Uli Zarzana</strong>
+            <small>Operação comercial</small>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Módulos do CRM">
+          <a class="nav-link is-active" href="#visao-geral" data-screen-link="overview"><span class="nav-icon">⌂</span>Visão Geral</a>
+          <a class="nav-link" href="#pipeline" data-screen-link="pipeline"><span class="nav-icon">◈</span>Pipeline</a>
+          <a class="nav-link" href="#leads" data-screen-link="leads"><span class="nav-icon">◎</span>Leads</a>
+          <a class="nav-link" href="#tarefas" data-screen-link="tasks"><span class="nav-icon">✓</span>Tarefas</a>
+          <a class="nav-link" href="#ofertas" data-screen-link="offers"><span class="nav-icon">◇</span>Ofertas</a>
+          <a class="nav-link" href="#relatorios" data-screen-link="reports"><span class="nav-icon">▥</span>Relatórios</a>
+        </nav>
+
+        <div class="sidebar__bottom">
+          <a class="nav-link" href="#configuracoes" data-screen-link="settings"><span class="nav-icon">⚙</span>Configurações</a>
+          <div class="sidebar__user">
+            <span class="avatar avatar--small">UZ</span>
+            <span><strong>Uli Zarzana</strong><small>Administradora</small></span>
+            <button class="icon-button icon-button--muted" type="button" aria-label="Opções do usuário">•••</button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="app-area">
+        <header class="topbar">
+          <button class="mobile-menu" type="button" aria-label="Abrir navegação" aria-expanded="false">☰</button>
+          <div class="breadcrumbs"><span>CRM</span><span aria-hidden="true">/</span><strong id="breadcrumb-current">Visão Geral</strong></div>
+          <div class="topbar__actions">
+            <span class="prototype-badge"><i aria-hidden="true"></i>Protótipo com dados fictícios</span>
+            <button class="icon-button" type="button" aria-label="Notificações">♢<b class="notification-dot"></b></button>
+            <span class="avatar">UZ</span>
+          </div>
+        </header>
+
+        <main id="app-main" class="main-content" tabindex="-1">
+          <section class="screen is-visible" data-screen="overview" aria-labelledby="overview-title">
+            <div class="page-heading">
+              <div><span class="eyebrow">OPERAÇÃO COMERCIAL · HOJE</span><h1 id="overview-title">Visão Geral</h1><p>Uma leitura clara do que está acontecendo na operação comercial da Uli.</p></div>
+              <div class="heading-actions"><span class="date-chip">13 de agosto de 2026</span><a class="button button--primary" href="#leads">+ Novo lead</a></div>
+            </div>
+            <div class="metric-grid" id="metric-grid" aria-label="Indicadores de hoje"></div>
+            <div class="overview-grid">
+              <article class="panel panel--pipeline"><div class="panel-heading"><div><span class="eyebrow">MOVIMENTAÇÃO</span><h2>Visão do pipeline</h2></div><a class="text-link" href="#pipeline">Ver pipeline →</a></div><div id="overview-pipeline" class="pipeline-bars"></div></article>
+              <article class="panel"><div class="panel-heading"><div><span class="eyebrow">ATENÇÃO</span><h2>Tarefas de hoje</h2></div><a class="text-link" href="#tarefas">Ver tarefas →</a></div><div id="overview-tasks" class="task-list"></div></article>
+            </div>
+            <div class="overview-grid overview-grid--bottom">
+              <article class="panel"><div class="panel-heading"><div><span class="eyebrow">ATIVIDADE RECENTE</span><h2>Últimos movimentos</h2></div><a class="text-link" href="#leads">Ver leads →</a></div><div id="overview-activity" class="activity-list"></div></article>
+              <article class="panel panel--principle"><span class="eyebrow">PRINCÍPIO DA OPERAÇÃO</span><blockquote>“Diagnóstico antes de recomendação.”</blockquote><p>O CRM organiza a decisão comercial sem perder a leitura humana de cada relacionamento.</p></article>
+            </div>
+          </section>
+
+          <section class="screen" data-screen="pipeline" aria-labelledby="pipeline-title"><div class="page-heading"><div><span class="eyebrow">CRM · FLUXO COMERCIAL</span><h1 id="pipeline-title">Pipeline</h1><p>Acompanhe cada oportunidade pelo próximo movimento determinado.</p></div><a class="button button--primary" href="#leads">+ Novo lead</a></div><div id="pipeline-board" class="kanban-board"></div></section>
+
+          <section class="screen" data-screen="leads" aria-labelledby="leads-title"><div class="page-heading"><div><span class="eyebrow">BASE DE RELACIONAMENTOS</span><h1 id="leads-title">Leads</h1><p>Todos os contatos, organizados por origem e estado atual.</p></div><button class="button button--primary" type="button" data-action="new-lead">+ Novo lead</button></div><div class="toolbar"><label class="search-field"><span aria-hidden="true">⌕</span><input id="lead-search" type="search" placeholder="Buscar por nome, e-mail ou telefone" aria-label="Buscar leads"></label><select id="lead-state-filter" aria-label="Filtrar por estado"><option value="todos">Todos os estados</option><option value="novo">Novo</option><option value="qualificando">Qualificando</option><option value="oferta">Oferta</option><option value="ganho">Ganho</option><option value="perdido">Perdido</option></select><select id="lead-source-filter" aria-label="Filtrar por origem"><option value="todas">Todas as origens</option><option value="landing_page">Landing page</option><option value="whatsapp">WhatsApp</option><option value="instagram">Instagram</option><option value="cadastro_manual">Cadastro manual</option><option value="importacao">Importação</option></select></div><div class="panel table-panel"><div class="table-summary" id="lead-summary"></div><div class="table-scroll"><table><thead><tr><th>Lead</th><th>Origem</th><th>Estado atual</th><th>Responsável</th><th>Último movimento</th><th></th></tr></thead><tbody id="leads-table"></tbody></table></div></div></section>
+
+          <section class="screen" data-screen="lead-detail" aria-labelledby="lead-detail-title"><div id="lead-detail-content"></div></section>
+
+          <section class="screen" data-screen="tasks" aria-labelledby="tasks-title"><div class="page-heading"><div><span class="eyebrow">EXECUÇÃO COMERCIAL</span><h1 id="tasks-title">Tarefas</h1><p>Próximas ações para manter cada oportunidade em movimento.</p></div><button class="button button--primary" type="button" data-action="new-task">+ Nova tarefa</button></div><div class="task-tabs" role="tablist"><button class="tab is-active" type="button" role="tab">Hoje <b>3</b></button><button class="tab" type="button" role="tab">Próximas</button><button class="tab" type="button" role="tab">Concluídas</button></div><div class="panel task-panel"><div id="tasks-list" class="task-list task-list--large"></div></div></section>
+
+          <section class="screen" data-screen="offers" aria-labelledby="offers-title"><div class="page-heading"><div><span class="eyebrow">MOMENTO COMERCIAL</span><h1 id="offers-title">Ofertas</h1><p>Registre o que foi apresentado e acompanhe as decisões.</p></div><button class="button button--primary" type="button" data-action="new-offer">+ Registrar oferta</button></div><div class="metric-grid metric-grid--compact"><div class="metric-card"><span class="metric-icon metric-icon--champagne">◇</span><small>Ofertas no período</small><strong>8</strong><em>desde 01 ago</em></div><div class="metric-card"><span class="metric-icon metric-icon--terracotta">↗</span><small>Em decisão</small><strong>4</strong><em>aguardando próximo passo</em></div></div><div class="panel table-panel"><div class="table-scroll"><table><thead><tr><th>Oferta</th><th>Lead</th><th>Apresentada em</th><th>Responsável</th><th>Estado</th></tr></thead><tbody id="offers-table"></tbody></table></div></div></section>
+
+          <section class="screen" data-screen="reports" aria-labelledby="reports-title"><div class="page-heading"><div><span class="eyebrow">LEITURA DA OPERAÇÃO</span><h1 id="reports-title">Relatórios</h1><p>Indicadores simples para aprender com a operação em prática.</p></div><span class="date-chip">Agosto de 2026</span></div><div class="report-grid"><article class="panel report-card"><span class="eyebrow">FUNIL</span><h2>Distribuição por estado</h2><div id="report-funnel" class="report-funnel"></div></article><article class="panel report-card"><span class="eyebrow">ORIGEM</span><h2>Leads por origem</h2><div id="report-sources" class="source-list"></div></article><article class="panel report-card report-card--wide"><span class="eyebrow">NOTA DE LEITURA</span><h2>O que este relatório responde</h2><p>Quantos contatos entraram, em que ponto estão e quais canais estão gerando oportunidades. Métricas de conversão e receita serão adicionadas somente depois que a operação gerar dados suficientes.</p></article></div></section>
+
+          <section class="screen" data-screen="settings" aria-labelledby="settings-title"><div class="page-heading"><div><span class="eyebrow">GOVERNANÇA</span><h1 id="settings-title">Configurações</h1><p>Definições essenciais para manter a operação coerente.</p></div></div><div class="settings-grid"><article class="panel settings-card"><span class="eyebrow">SEU ACESSO</span><h2>Uli Zarzana</h2><p>Administradora</p><button class="button button--secondary" type="button">Editar perfil</button></article><article class="panel settings-card"><span class="eyebrow">EQUIPE</span><h2>Usuários do sistema</h2><p>1 administradora · 2 comerciais</p><a class="button button--secondary" href="#configuracoes">Gerenciar usuários</a></article><article class="panel settings-card"><span class="eyebrow">INTEGRAÇÕES</span><h2>Próximos conectores</h2><p>Supabase preparado para o MVP. WhatsApp oficial e Instagram permanecem no roadmap posterior.</p><span class="status-badge status-badge--neutral">Planejado</span></article><article class="panel settings-card"><span class="eyebrow">DADOS</span><h2>Ambiente de protótipo</h2><p>Os dados exibidos nesta versão são fictícios e não são persistidos.</p><span class="status-badge status-badge--champagne">Demonstração</span></article></div></section>
+        </main>
+      </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
