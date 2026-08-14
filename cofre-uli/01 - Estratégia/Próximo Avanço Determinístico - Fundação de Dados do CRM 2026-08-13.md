@@ -128,3 +128,27 @@ As contas Auth Administradora/Comercial não foram criadas porque não existem e
 ### Próximo avanço determinístico
 
 Criar as duas contas operacionais reais no Supabase Auth, associá-las aos perfis `administradora` e `comercial` e validar o primeiro login. Em seguida, cadastrar o primeiro lead real pelo CRM; integrações de entrada por landing page, WhatsApp e Instagram permanecem posteriores.
+
+## Conta administradora criada e validada — 14/08/2026
+
+> [!success] Conclusão determinada
+> A primeira conta operacional real do CRM foi criada no Supabase Auth com confirmação automática, vinculada ao perfil `administradora` e validada no ambiente público do CRM.
+
+### Entrega operacional
+
+- Usuário real de Leonardo Brasil criado no projeto Supabase `uli-zarzana`.
+- A opção `Auto confirm user?` permaneceu ativada; nenhuma confirmação por e-mail foi necessária ou enviada.
+- Registro correspondente criado/atualizado em `public.profiles` com o papel `administradora`.
+- A senha não é registrada no cofre, no repositório, em logs ou em qualquer artefato do projeto.
+
+### Validação
+
+- Consulta remota confirmou o vínculo entre `auth.users` e `public.profiles`.
+- `email_confirmed_at` está preenchido, confirmando a autenticação automática.
+- Login validado em `https://crm.ulizarzana.com/`.
+- A Visão Geral exibiu `Leonardo Brasil · Administradora`, os indicadores reais e nenhum marcador de dados fictícios.
+- Como ainda não existem leads, ofertas, eventos ou tarefas reais, os indicadores atuais aparecem zerados.
+
+### Próximo avanço determinístico
+
+Criar a conta operacional `comercial` quando o e-mail real correspondente for fornecido. Depois, iniciar o cadastro do primeiro lead real e os fluxos de entrada via landing page e WhatsApp.
