@@ -112,6 +112,15 @@ Configurar Auth para os perfis Administradora/Comercial e substituir progressiva
 - A rota `/` foi marcada como `force-dynamic`, confirmando renderização sob demanda.
 - Dependências `@supabase/ssr` e `@supabase/supabase-js` adicionadas ao app e ao lockfile.
 
+### Publicação verificada
+
+- Commit publicado: `8bfca3f` — `feat: conectar auth e visao geral ao supabase`.
+- Redeploy automático do Web App Hostinger: `Concluído` e marcado como atual.
+- `https://crm.ulizarzana.com/`: visitante sem sessão redirecionado para `/login`.
+- `https://crm.ulizarzana.com/login`: formulário de autenticação publicado.
+- `https://ulizarzana.com/`, `/identidade-visual/` e `/brandbook/`: HTTP 200, sem alteração.
+- Não houve FTP: o CRM é o Web App Node.js conectado ao GitHub; a publicação ocorreu pelo redeploy automático.
+
 ### Limite operacional
 
 As contas Auth Administradora/Comercial não foram criadas porque não existem e-mails operacionais autorizados nesta base de conhecimento. A criação deve ocorrer quando os e-mails reais forem fornecidos no painel Supabase; a aplicação já está preparada para associar cada usuário ao registro correspondente em `profiles`.
