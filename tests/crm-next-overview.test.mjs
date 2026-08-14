@@ -9,8 +9,8 @@ test('calcula os seis indicadores da Visão Geral a partir dos dados locais', ()
   assert.deepEqual(metrics, { newLeads: 5, qualifying: 2, offers: 2, won: 1, lost: 1, pendingTasks: 3 });
 });
 
-test('a tela inicial explicita os cinco estados e o caráter demonstrativo', () => {
-  const source = readFileSync(resolve(process.cwd(), 'apps/crm-next/app/page.tsx'), 'utf8') + readFileSync(resolve(process.cwd(), 'apps/crm-next/lib/demo-data.mjs'), 'utf8');
+test('a tela inicial explicita os cinco estados e usa a fonte real do CRM', () => {
+  const source = readFileSync(resolve(process.cwd(), 'apps/crm-next/app/page.tsx'), 'utf8');
   for (const state of FUNNEL_STATES) assert.match(source, new RegExp(state.label));
-  assert.match(source, /dados fictícios|Protótipo/i);
+  assert.match(source, /from\('leads'\)/);
 });

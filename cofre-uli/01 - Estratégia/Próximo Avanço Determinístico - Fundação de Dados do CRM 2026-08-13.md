@@ -86,3 +86,36 @@ Esta decisão altera somente o roadmap e o cofre. Não requer FTP nem novo deplo
 ### Próximo avanço determinístico
 
 Configurar Auth para os perfis Administradora/Comercial e substituir progressivamente os dados fictícios da Visão Geral por consultas protegidas ao Supabase. Integrações de WhatsApp, Instagram e checkout continuam posteriores aos contratos básicos.
+
+## Auth e Visão Geral real — 14/08/2026
+
+> [!success] Conclusão determinada
+> O CRM passou a usar Supabase Auth e dados reais protegidos por sessão. A rota `/` não expõe mais dados fictícios nem é pré-renderizada como página estática; ela consulta o perfil operacional e as métricas das tabelas do CRM.
+
+### Implementação
+
+- Login por e-mail e senha em `apps/crm-next/app/login/page.tsx`.
+- Cliente browser e cliente server Supabase em `apps/crm-next/lib/supabase/`.
+- Middleware protege todas as rotas operacionais e redireciona visitantes sem sessão para `/login`.
+- Apenas perfis `administradora` e `comercial` conseguem consultar a operação pela RLS já aplicada.
+- Botão de encerramento de sessão incluído na Visão Geral.
+- Indicadores reais consultam `leads`, `offers`, `funnel_events` e `tasks`.
+- Pipeline usa os cinco estados reais: Novo, Qualificando, Oferta, Ganho e Perdido.
+- Ausência de perfil Auth correspondente gera estado seguro de “Perfil operacional pendente”; nenhum usuário fictício foi criado.
+
+### Validação
+
+- Testes de Auth, proteção e consultas: `tests/crm-next-auth-overview.test.mjs` — 4/4 aprovados.
+- Regressão do CRM: testes existentes — 5/5 aprovados.
+- Total validado nesta etapa: 9/9 testes aprovados.
+- `npm run build` em `apps/crm-next`: concluído com TypeScript válido.
+- A rota `/` foi marcada como `force-dynamic`, confirmando renderização sob demanda.
+- Dependências `@supabase/ssr` e `@supabase/supabase-js` adicionadas ao app e ao lockfile.
+
+### Limite operacional
+
+As contas Auth Administradora/Comercial não foram criadas porque não existem e-mails operacionais autorizados nesta base de conhecimento. A criação deve ocorrer quando os e-mails reais forem fornecidos no painel Supabase; a aplicação já está preparada para associar cada usuário ao registro correspondente em `profiles`.
+
+### Próximo avanço determinístico
+
+Criar as duas contas operacionais reais no Supabase Auth, associá-las aos perfis `administradora` e `comercial` e validar o primeiro login. Em seguida, cadastrar o primeiro lead real pelo CRM; integrações de entrada por landing page, WhatsApp e Instagram permanecem posteriores.
