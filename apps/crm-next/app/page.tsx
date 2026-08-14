@@ -47,7 +47,7 @@ export default async function HomePage() {
 
   const { data: profile, error: profileError } = await supabase.from('profiles').select('full_name, role').eq('id', user.id).maybeSingle();
   if (profileError || !profile) {
-    return <AccessState title="Perfil operacional pendente" detail="Seu usuário Auth existe, mas ainda não está associado a um perfil Administradora ou Comercial." />;
+    return <AccessState title="Perfil operacional pendente" detail="Seu usuário Auth existe, mas ainda não está associado a um perfil administrador ou comercial." />;
   }
 
   const [{ data: leads, error: leadsError }, { data: offers, error: offersError }, { data: events, error: eventsError }, { data: tasks, error: tasksError }] = await Promise.all([
@@ -82,7 +82,7 @@ export default async function HomePage() {
     <main className="crm-page">
       <header className="crm-header">
         <div><span className="eyebrow">OPERAÇÃO COMERCIAL · HOJE</span><h1>Visão Geral</h1><p className="lede">Uma leitura clara do que está acontecendo na operação comercial da Uli.</p></div>
-        <div className="header-actions"><span className="user-badge">{profile.full_name} · {profile.role === 'administradora' ? 'Administradora' : 'Comercial'}</span><SignOutButton /></div>
+        <div className="header-actions"><span className="user-badge">{profile.full_name} · {profile.role === 'administradora' ? 'Usuário administrador' : 'Usuário comercial'}</span><SignOutButton /></div>
       </header>
       <section className="metric-grid" aria-label="Indicadores de hoje">
         {metricLabels.map(([key, label, detail]) => <article className="metric-card" key={key}><small>{label}</small><strong>{metrics[key]}</strong><em>{detail}</em></article>)}

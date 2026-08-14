@@ -152,3 +152,13 @@ Criar as duas contas operacionais reais no Supabase Auth, associá-las aos perfi
 ### Próximo avanço determinístico
 
 Criar a conta operacional `comercial` quando o e-mail real correspondente for fornecido. Depois, iniciar o cadastro do primeiro lead real e os fluxos de entrada via landing page e WhatsApp.
+
+## Ajuste de linguagem para usuários do CRM — 14/08/2026
+
+> [!success] Conclusão determinada
+> A interface deve utilizar linguagem compatível com usuários homens e mulheres, sem alterar os valores internos de função do sistema.
+
+- Login: `Acesso restrito a usuários administradores ou comerciais.`
+- Identificação da sessão: `Usuário administrador` ou `Usuário comercial`.
+- Mensagem de perfil pendente: `perfil administrador ou comercial`.
+- Os valores técnicos dos papéis permanecem inalterados no banco (`administradora` e `comercial`) para preservar o contrato de autorização e as políticas RLS.

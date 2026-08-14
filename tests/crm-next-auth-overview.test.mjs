@@ -19,6 +19,7 @@ test('o CRM possui login Supabase e proteção de sessão por middleware', () =>
   assert.match(middleware, /createServerClient/);
   assert.match(middleware, /login/);
   assert.match(middleware, /auth\.getUser/);
+  assert.match(login, /usuários administradores ou comerciais/);
 });
 
 test('a Visão Geral consulta a sessão e dados reais do Supabase', () => {
@@ -39,7 +40,9 @@ test('a Visão Geral trata erro de configuração e ausência de perfil operacio
 
   assert.match(page, /Configuração do Supabase/);
   assert.match(page, /perfil operacional/i);
-  assert.match(page, /Administradora|Comercial/);
+  assert.match(page, /perfil administrador ou comercial/);
+  assert.match(page, /Usuário administrador/);
+  assert.match(page, /Usuário comercial/);
 });
 
 test('o cliente server não expõe service role nem credenciais privadas', () => {

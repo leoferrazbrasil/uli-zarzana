@@ -48,7 +48,7 @@ export default function LoginPage() {
           {error && <p className="form-error" role="alert">{error}</p>}
           <button type="submit" disabled={loading}>{loading ? 'Entrando…' : 'Entrar'}</button>
         </form>
-        <p className="auth-note">Acesso restrito a usuários com perfil Administradora ou Comercial.</p>
+        <p className="auth-note">Acesso restrito a usuários administradores ou comerciais.</p>
       </section>
     </main>
   );
