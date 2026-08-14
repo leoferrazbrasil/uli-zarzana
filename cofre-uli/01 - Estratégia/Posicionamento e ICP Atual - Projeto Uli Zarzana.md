@@ -100,3 +100,48 @@ Se não atender a esses critérios, a proposta deve ser revisada ou descartada a
 Esta definição representa o ICP e o posicionamento prioritários no momento atual do projeto. Ela deve ser consultada como fonte de verdade para estratégia, conteúdo, identidade verbal, páginas de venda, ofertas, campanhas e futuras decisões de produto.
 
 Novas pesquisas, entrevistas, dados de audiência, comportamento de leads e resultados comerciais podem atualizar esta nota. Qualquer mudança deve ser registrada com evidências, data e justificativa, sem substituir a diretriz atual por preferência subjetiva.
+
+## Motivação de clique e objetivo de consumo — 14/08/2026
+
+> [!success] Diretriz de comportamento do ICP
+> O público não clica apenas para aprender sobre carreira. Ele clica quando reconhece uma tensão profissional própria e percebe que o conteúdo pode revelar o que está impedindo seu próximo avanço.
+
+### O que motiva o clique
+
+O título e a capa devem tornar visível uma situação que o ICP já vive ou teme viver:
+
+- ter experiência, mas não ser reconhecido como deveria;
+- entregar resultados sem ser percebido para oportunidades maiores;
+- sentir que uma decisão, comportamento ou dinâmica de influência está bloqueando o avanço;
+- querer crescer sem perder identidade, autenticidade ou coerência;
+- precisar entender como aplicar o mesmo princípio no ambiente corporativo ou no próprio negócio.
+
+O estímulo ao clique deve combinar:
+
+1. problema reconhecível;
+2. tensão específica;
+3. promessa de clareza prática;
+4. curiosidade sobre uma regra, decisão ou comportamento ainda não percebido.
+
+A autoridade executiva da Uli deve funcionar como elemento de confiança, mas não substituir a relevância imediata do problema apresentado.
+
+### Objetivo ao consumir o conteúdo
+
+Ao assistir ao vídeo ou ler o carrossel, a pessoa deve conseguir:
+
+1. diagnosticar melhor a própria situação;
+2. identificar o critério, comportamento ou dinâmica que não estava percebendo;
+3. obter uma orientação prática para agir;
+4. compreender como aumentar clareza, visibilidade, influência e capacidade de ascensão;
+5. avaliar a autoridade, o método e a aplicabilidade da Uli para sua realidade;
+6. perceber se a mentoria pode ajudá-la a avançar.
+
+### Regra editorial determinada
+
+O conteúdo deve conduzir a pessoa da sensação de estagnação ou invisibilidade para **clareza, decisão e ação**. Não deve ser apenas informativo, motivacional ou genérico: deve demonstrar a capacidade da Uli de diagnosticar situações e orientar decisões profissionais e empresariais.
+
+Estrutura preferencial:
+
+`tensão reconhecível → diagnóstico da causa → novo critério de leitura → orientação prática → próximo passo`
+
+Essa diretriz deve ser consultada antes de aprovar títulos, capas, roteiros, carrosséis, vídeos, anúncios, páginas de venda e chamadas para a mentoria.
